@@ -7,11 +7,11 @@
   --accent-color: hsl(55, 86%, 65%);
   --white-color: hsl(0, 0%, 100%);
   --blue-semi-dark: hsl(217, 92%, 61%);
-  --blue-light :hsl(217, 75%, 80%);
+  --blue-light :hsl(217, 75%, 85%);
   --lemon-green:hsl(78, 100%, 55%);
-  --lemon-green-light:hsl(78, 98%, 75%);
+  --lemon-green-light:hsl(78, 98%, 80%);
   --red-dark: hsl(358, 100%, 69%);
-  --red-light: hsl(358, 100%, 78%);
+  --red-light: hsl(358, 100%, 83%);
   --yellow-dark:hsl(40, 96%, 53%);
   --yellow-light:hsl(55, 86%, 87%);
 }
