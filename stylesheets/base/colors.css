@@ -6,4 +6,10 @@
   --text-color: hsl(225, 4%, 20%);
   --accent-color: hsl(55, 86%, 65%);
   --white-color: hsl(0, 0%, 100%);
+  --primary-alert:hsl(228, 100%, 73%);
+  --primary-alert:#4285f4;
+  --secondary-alert:#ACA9BB;
+  --success-alert:#00C992 ;
+  --danger-alert:#FF6369 ;
+  --warning-alert:#FFC558;
 }
