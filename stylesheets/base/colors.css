@@ -1,0 +1,8 @@
+:root {
+  --primary-color: hsl(235, 86%, 65%);
+  --primary-hover: hsl(235, 87%, 70%);
+  --secondary-color: hsl(248, 10%, 30%);
+  --secondary-color:hsl(248, 10%, 40%);
+  --text-color: hsl(225, 4%, 20%);
+  --accent-color: hsl(55, 86%, 65%);
+}
