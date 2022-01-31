@@ -28,8 +28,8 @@
   height: clamp(8rem, 8.5rem, 9rem);
 }
 .avatar-xl {
-  width: clamp(10rem, 10.5rem, 11rem);
-  height: clamp(10rem, 10.5rem, 11rem);
+  width: clamp(9.5rem, 10.2rem, 10.5rem);
+  height: clamp(9.5rem, 10.2rem, 10.5rem);
 }
 .avatar-text {
   display: flex;
