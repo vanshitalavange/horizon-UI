@@ -1,0 +1,30 @@
+.avatar-wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    background-color:#e5e5e5;
+    justify-content: space-around;
+    align-items:flex-end;
+    padding:1rem;
+    border-radius:6px;
+    align-content: space-around;
+    border:2px solid hsl(0, 0%, 80%);
+}
+.avatar-circular{
+    border-radius: 50%;
+}
+.avatar-xs{
+    max-width:2.5rem;
+    
+}
+.avatar-sm{
+    max-width:4.5rem;
+}
+.avatar-md{
+    max-width:6.5rem;
+}
+.avatar-lg{
+    max-width:8.5rem;
+}
+.avatar-xl{
+    max-width:10.5rem;
+}
