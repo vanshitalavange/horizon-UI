@@ -62,3 +62,6 @@
   background-color: var(--skyblue-light);
   border: 1px solid var(--skyblue-dark);
 }
+.avatar-square {
+  border-radius: 0.75rem;
+}
