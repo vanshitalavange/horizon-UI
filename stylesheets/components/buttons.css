@@ -87,3 +87,57 @@
 .btn-warning-outline:hover {
   background-color: var(--orange-peel);
 }
+
+/** button with icon */
+.icon-btn-container {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.8rem;
+}
+.icon-btn-logout {
+  order: -1;
+}
+.icon-btn-container-restore {
+  background-color: var(--green-dark);
+}
+.icon-btn-container-restore:hover {
+  background-color: var(--green-light);
+}
+.icon-btn-container-logout {
+  background-color: var(--primary-color);
+}
+.icon-btn-container-logout:hover {
+  background-color: var(--primary-hover);
+}
+/* floating action buttons */
+.floating-btn {
+  border-radius: 50%;
+  display: flex;
+  padding: 0.65rem 0.7rem;
+}
+.floating-btn-edit {
+  background-color: var(--blue-semi-dark);
+}
+.floating-btn-edit:hover {
+  background-color: var(--primary-hover);
+}
+.floating-btn-loc {
+  background-color: var(--orange-peel);
+}
+.floating-btn-loc:hover {
+  background-color: var(--yellow-dark);
+}
+/* buttons with link */
+.btn-link-one {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
+.btn-link-one:hover {
+  background-color: var(--secondary-hover);
+}
+.btn-link-two {
+  text-decoration: underline;
+}
+.btn-link-two:hover {
+  background-color: var(--primary-hover);
+}
