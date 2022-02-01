@@ -14,4 +14,8 @@
   --red-light: hsl(358, 100%, 83%);
   --yellow-dark:hsl(40, 96%, 53%);
   --yellow-light:hsl(55, 86%, 87%);
+  --purple-light: hsl(228, 96%, 89%);
+  --purple-dark:hsl(239, 84%, 67%);
+  --skyblue-light:hsl(201, 94%, 86%);
+  --skyblue-dark:hsl(199, 89%, 48%);
 }
