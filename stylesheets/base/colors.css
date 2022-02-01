@@ -6,6 +6,7 @@
   --text-color: hsl(225, 4%, 20%);
   --accent-color: hsl(55, 86%, 65%);
   --white-color: hsl(0, 0%, 100%);
+  --white-lilac:hsl(210, 25%, 97%);
   --blue-semi-dark: hsl(217, 92%, 61%);
   --blue-light :hsl(217, 75%, 85%);
   --lemon-green:hsl(78, 100%, 40%);
@@ -18,4 +19,5 @@
   --purple-dark:hsl(239, 84%, 67%);
   --skyblue-light:hsl(201, 94%, 86%);
   --skyblue-dark:hsl(199, 89%, 48%);
+  --pastel-grey:hsl(210, 25%, 97%);
 }
