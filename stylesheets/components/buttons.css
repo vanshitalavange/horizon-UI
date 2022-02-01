@@ -52,3 +52,38 @@
 .btn-warning-solid:hover {
   background-color: var(--orange-peel);
 }
+/* outline buttons */
+
+.btn-outline:hover {
+  color: white;
+}
+.btn-primary-outline {
+  border: 2px solid var(--primary-color);
+}
+.btn-primary-outline:hover {
+  background-color: var(--primary-color);
+}
+.btn-secondary-outline {
+  border: 2px solid var(--secondary-color);
+}
+.btn-secondary-outline:hover {
+  background-color: var(--secondary-color);
+}
+.btn-success-outline {
+  border: 2px solid var(--green-dark);
+}
+.btn-success-outline:hover {
+  background-color: var(--green-light);
+}
+.btn-danger-outline {
+  border: 2px solid var(--red-dark);
+}
+.btn-danger-outline:hover {
+  background-color: var(--red-light);
+}
+.btn-warning-outline {
+  border: 2px solid var(--orange-dark);
+}
+.btn-warning-outline:hover {
+  background-color: var(--orange-peel);
+}
