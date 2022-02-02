@@ -1,6 +1,6 @@
 .btn-wrapper {
   background-color: var(--white-lilac);
-  border-radius: 6px;
+  border-radius: var(--border-rd-6);
   border: 1px solid var(--pastel-grey);
   display: flex;
   flex-wrap: wrap;
@@ -9,7 +9,7 @@
 }
 /* general styles for all buttons */
 .btn {
-  border-radius: 6px;
+  border-radius: var(--border-rd-6);
   border: 2px solid transparent;
   cursor: pointer;
   padding: 0.7rem 1.2rem;
