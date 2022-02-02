@@ -8,8 +8,8 @@
 }
 .badge{
     position: relative;
-    /* padding-top: 0.2rem; */
 }
+/* icons with badge */
 .badge-icon{
     color:var(--blue-semi-dark);
     font-size:2.5rem !important;
@@ -33,4 +33,17 @@ z-index: 1;
   background-color: var(--red-light);
   padding:1px 0.4rem;
   border-radius: 50%;
+}
+/* avatar badge */
+.avatar-badge{
+    width:clamp(2rem,3.5rem,3.5rem);
+}
+.avatar-img{
+    border-radius: 50%;
+}
+.badge-counter-solid{
+    min-height:13.5px;
+    background-color:green;
+    right:0;
+    bottom:0.2rem;
 }
