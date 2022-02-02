@@ -10,10 +10,10 @@
 .badge {
   position: relative;
 }
-.badge-round{
-    position: absolute;
-    z-index: 1;
-    border-radius: 50%;
+.badge-round {
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
 }
 /* icons with badge */
 .badge-icon {
@@ -31,9 +31,7 @@
   top: 0;
   left: 0;
 }
-
-.badge-counter { 
-
+.badge-counter {
   color: var(--white-color);
   background-color: var(--red-light);
   padding: 1px 0.4rem;
@@ -45,7 +43,7 @@
 .avatar-img {
   border-radius: 50%;
 }
-.badge-status { 
+.badge-status {
   padding: 1px 0.4rem;
 }
 .badge-status-dot {
@@ -67,7 +65,6 @@
   color: var(--white-color);
   font-size: 1.2rem;
 }
-
 .badge-counter-lg {
   width: 1.9rem;
   height: 1.9rem;
