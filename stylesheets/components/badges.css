@@ -1,7 +1,7 @@
 .badge-wrapper {
   background-color: var(--baltic-sea-color);
   border: 1px solid var(--charcoal-grey);
-  border-radius: 6px;
+  border-radius: var(--border-rd-6);
   display: flex;
   min-width: 16rem;
   justify-content: space-around;
