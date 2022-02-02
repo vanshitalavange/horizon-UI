@@ -3,7 +3,7 @@
   border: 1px solid var(--charcoal-grey);
   border-radius: var(--border-rd-6);
   display: flex;
-  width: clamp(16rem,20rem,20rem);
+  width: clamp(16rem, 20rem, 20rem);
   justify-content: space-around;
   padding: 1rem 1.5rem;
 }
@@ -37,12 +37,6 @@
   padding: 1px 0.4rem;
 }
 /* avatar badge */
-.avatar-badge {
-  /* width: clamp(2rem, 3.5rem, 3.5rem); */
-}
-.avatar-img {
-  border-radius: 50%;
-}
 .badge-status {
   padding: 1px 0.4rem;
 }
@@ -73,7 +67,7 @@
   top: -6px;
 }
 /* buttons with badge */
-.badge > button{
+.badge > button {
   margin-top: 1rem;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
