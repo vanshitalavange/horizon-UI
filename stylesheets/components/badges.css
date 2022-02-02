@@ -2,7 +2,8 @@
     background-color: hsl(225, 10%, 18%);
     border:1px solid hsl(225,10%,26%);
     border-radius: 6px;
-    display:inline-flex;
+    display:flex;
+    width:18rem;
     gap:3rem;
     padding:1rem 1.5rem;
 }
@@ -87,4 +88,14 @@ z-index: 1;
      width:1.9rem; 
      height:1.9rem; 
      display: flex;
+}
+/* buttons with badge */
+.badge-btn{
+    margin-top:1rem;
+    margin-right:0.5rem;
+    margin-left: 0.5rem;
+    padding:0.5rem 1rem;
+    background-color: var(--primary-color);
+    color:white;
+    border-radius: 6px;
 }
