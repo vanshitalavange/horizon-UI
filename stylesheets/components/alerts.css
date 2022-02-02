@@ -3,24 +3,20 @@
   gap: 1rem;
   padding: 1rem;
   margin: 1rem;
-  border-radius: 6px;
+  border-radius: var(--border-rd-6);
 }
 .alert-icon {
   align-self: center;
 }
 .alert-primary {
   background-color: var(--blue-light);
-  border: 1.5px solid var(--blue-semi-dark);
 }
 .alert-success {
-  background-color: var(--lemon-green-light);
-  border: 1.5px solid var(--lemon-green);
+  background-color: var(--green-light);
 }
 .alert-danger {
   background-color: var(--red-light);
-  border: 1.5px solid var(--red-dark);
 }
 .alert-warning {
   background-color: var(--yellow-light);
-  border: 1.5px solid var(--yellow-dark);
 }
