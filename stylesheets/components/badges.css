@@ -3,7 +3,7 @@
   border: 1px solid var(--charcoal-grey);
   border-radius: var(--border-rd-6);
   display: flex;
-  min-width: 16rem;
+  width: clamp(16rem,20rem,20rem);
   justify-content: space-around;
   padding: 1rem 1.5rem;
 }
@@ -33,12 +33,12 @@
 }
 .badge-counter {
   color: var(--white-color);
-  background-color: var(--red-light);
+  background-color: var(--flame-pea);
   padding: 1px 0.4rem;
 }
 /* avatar badge */
 .avatar-badge {
-  width: clamp(2rem, 3.5rem, 3.5rem);
+  /* width: clamp(2rem, 3.5rem, 3.5rem); */
 }
 .avatar-img {
   border-radius: 50%;
@@ -47,7 +47,8 @@
   padding: 1px 0.4rem;
 }
 .badge-status-dot {
-  min-height: 13.5px;
+  min-height: 1.1rem;
+  min-width: 1.1rem;
   background-color: var(--forest-green);
   right: 0;
   bottom: 0.2rem;
@@ -60,8 +61,8 @@
 }
 /* text with badge */
 .badge-text-content {
-  padding-top: 0.8rem;
-  padding-right: 0.5rem;
+  margin-top: 0.9rem;
+  margin-right: 1.1rem;
   color: var(--white-color);
   font-size: 1.2rem;
 }
@@ -72,17 +73,8 @@
   top: -6px;
 }
 /* buttons with badge */
-.badge-btn {
+.badge > button{
   margin-top: 1rem;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
-  padding: 0.5rem 1rem;
-  color: var(--white-color);
-  border-radius: 6px;
-}
-.badge-btn-primary {
-  background-color: var(--primary-color);
-}
-.badge-btn-secondary {
-  background-color: var(--secondary-color);
 }
