@@ -1,4 +1,8 @@
-.flex-center{
-    justify-content: center;
-    align-items:center;
+:root {
+  --border-rd-6: 6px;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
 }
