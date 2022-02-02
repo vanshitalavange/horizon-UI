@@ -1,0 +1,150 @@
+.btn-wrapper {
+  background-color: var(--white-lilac);
+  border-radius: var(--border-rd-6);
+  border: 1px solid var(--pastel-grey);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+/* general styles for all buttons */
+.btn {
+  border-radius: var(--border-rd-6);
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 0.7rem 1.2rem;
+  font-weight: 700;
+}
+
+/* solid buttons */
+.btn-solid {
+  color: var(--white-color);
+}
+.btn-solid:hover {
+  box-shadow: 0px 1px 5px rgb(107, 106, 106);
+}
+.btn-primary-solid {
+  background-color: var(--primary-color);
+}
+.btn-primary-solid:hover {
+  background-color: var(--primary-hover);
+}
+.btn-secondary-solid {
+  background-color: var(--secondary-color);
+}
+.btn-secondary-solid:hover {
+  background-color: var(--secondary-hover);
+}
+.btn-success-solid {
+  background-color: var(--green-dark);
+}
+.btn-success-solid:hover {
+  background-color: var(--green-light);
+}
+.btn-danger-solid {
+  background-color: var(--red-dark);
+}
+.btn-danger-solid:hover {
+  background-color: var(--red-light);
+}
+.btn-warning-solid {
+  background-color: var(--orange-dark);
+}
+.btn-warning-solid:hover {
+  background-color: var(--orange-peel);
+}
+/* outline buttons */
+
+.btn-outline:hover {
+  color: white;
+}
+.btn-primary-outline {
+  border: 2px solid var(--primary-color);
+}
+.btn-primary-outline:hover {
+  background-color: var(--primary-color);
+}
+.btn-secondary-outline {
+  border: 2px solid var(--secondary-color);
+}
+.btn-secondary-outline:hover {
+  background-color: var(--secondary-color);
+}
+.btn-success-outline {
+  border: 2px solid var(--green-dark);
+}
+.btn-success-outline:hover {
+  background-color: var(--green-light);
+}
+.btn-danger-outline {
+  border: 2px solid var(--red-dark);
+}
+.btn-danger-outline:hover {
+  background-color: var(--red-light);
+}
+.btn-warning-outline {
+  border: 2px solid var(--orange-dark);
+}
+.btn-warning-outline:hover {
+  background-color: var(--orange-peel);
+}
+
+/* icon buttons */
+.icon-btn-container {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.8rem;
+}
+.icon-btn-logout {
+  order: -1;
+}
+.icon-btn,
+.btn-icon,
+.floating-btn-icon {
+  /* icon-btn --> button with the icon , btn-icon --> icon of the button */
+  color: white;
+}
+.icon-btn-container-restore {
+  background-color: var(--green-dark);
+}
+.icon-btn-container-restore:hover {
+  background-color: var(--green-light);
+}
+.icon-btn-container-logout {
+  background-color: var(--primary-color);
+}
+.icon-btn-container-logout:hover {
+  background-color: var(--primary-hover);
+}
+/* floating action buttons */
+.floating-btn {
+  border-radius: 50%;
+  display: flex;
+  padding: 0.65rem 0.7rem;
+}
+.floating-btn-edit {
+  background-color: var(--blue-semi-dark);
+}
+.floating-btn-edit:hover {
+  background-color: var(--primary-hover);
+}
+.floating-btn-loc {
+  background-color: var(--orange-peel);
+}
+.floating-btn-loc:hover {
+  background-color: var(--yellow-dark);
+}
+/* buttons with link */
+.btn-link-one {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
+.btn-link-one:hover {
+  background-color: var(--secondary-hover);
+}
+.btn-link-two {
+  text-decoration: underline;
+}
+.btn-link-two:hover {
+  background-color: var(--primary-hover);
+}
