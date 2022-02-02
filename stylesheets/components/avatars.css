@@ -1,6 +1,6 @@
 .avatar-wrapper {
   background-color:var(--white-lilac);
-  border-radius: 6px;
+  border-radius: var(--border-rd-6);
   border: 2px solid var(--pastel-grey);
   display: flex;
   flex-wrap: wrap;
