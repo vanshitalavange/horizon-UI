@@ -3,7 +3,7 @@
     border:1px solid var(--charcoal-grey);
     padding:1.5rem 1.5rem;
     border-radius: var(--border-rd-6);
-    /* width:20rem; */
+    width:20rem;
 }
 label,.title{
     color:var(--white-color);
@@ -11,7 +11,7 @@ label,.title{
 label{
     display: block;
 }
-input:focus{
+input:focus,textarea:focus{
     outline:2px solid transparent;
 }
 input{
@@ -25,12 +25,48 @@ input{
 .input-box{
     width: 16rem;
     height:2.5rem;
-    padding-left:0.5rem;
+    padding:0 0.5rem;
     border-radius: var(--border-rd-6);
 }
 .input-error + small{
     color:var(--red-dark);
 }
 .input-error{
-border:1.5px solid var(--red-dark);
+border:1.5px solid var(--grape-fruit);
 }
+.form-group-text-area{
+    height:11rem; 
+}
+.text-area{
+    padding:0.5rem;
+    width:100%;
+    height: 100%;
+}
+
+.form-group-radio{
+    display: flex;
+    flex-direction: row;
+    gap:0.5rem;
+}
+.input-control{
+    align-self: center;
+    width:1rem;
+    height:1rem;
+    accent-color:var(--primary-color);
+}
+.input-file{
+    color:white;
+    padding:0.6rem 0.3rem;
+    border:1px solid var(--charcoal-grey);
+    border-radius: var(--border-rd-6);
+}
+.input-file::file-selector-button {
+    border: 2px solid #6c5ce7;
+    padding:0.4rem;
+    border-radius: .2em;
+    background-color:var(--primary-color);
+    color:var(--white-color);
+  }
+  .options-list{
+      
+  }
