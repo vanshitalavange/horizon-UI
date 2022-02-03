@@ -1,0 +1,7 @@
+.img-container {
+border:2px solid var(--charcoal-grey);
+padding:2rem;
+}
+.responsive-img {
+  width: 100%;
+}
