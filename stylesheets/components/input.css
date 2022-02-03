@@ -1,0 +1,36 @@
+.form-group{
+    background-color:var(--baltic-sea-color);
+    border:1px solid var(--charcoal-grey);
+    padding:1.5rem 1.5rem;
+    border-radius: var(--border-rd-6);
+    /* width:20rem; */
+}
+label,.title{
+    color:var(--white-color);
+}
+label{
+    display: block;
+}
+input:focus{
+    outline:2px solid transparent;
+}
+input{
+    border:none;
+}
+.form-group{
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+.input-box{
+    width: 16rem;
+    height:2.5rem;
+    padding-left:0.5rem;
+    border-radius: var(--border-rd-6);
+}
+.input-error + small{
+    color:var(--red-dark);
+}
+.input-error{
+border:1.5px solid var(--red-dark);
+}
