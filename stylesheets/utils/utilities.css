@@ -13,6 +13,12 @@
   display: flex;
   flex-direction: column;
 }
+.align-center{
+  align-self:center;
+}
+.align-end{
+  align-self: end;
+}
 .cursor-disabled{
   cursor: not-allowed;
 }
