@@ -3,8 +3,8 @@ body{
 }
 .card-container {
   background-color: var(--white-color);
-  border: 1.3333px solid #a5d44e;
-  /* border: 1.3333px solid hsl(0, 0%, 80%); */
+  /* border: 1.3333px solid #a5d44e; */
+  border: 1.3333px solid hsl(0, 0%, 80%);
   border-radius: var(--border-rd-6);
   border-radius: 8px;
   width:18.5rem;
@@ -126,7 +126,7 @@ font-size: 2px;
 }
 /* overlay text */
 .card-container-overlay{
- height:24rem;
+ height:23.8rem;
 }
 .card-body-overlay{
 position: relative;
@@ -146,4 +146,13 @@ top:-4rem;
 .card-container-only-text .icon-top-right{
     top:1rem;
     right:var(--spacing-xs);
+}
+/* vertical card */
+.card-container-vertical .card-text,.card-container-vertical .card-title{
+margin-left:1rem;
+margin-right: 1rem;
+/* margin-top:1rem; */
+}
+.card-container-vertical .card-title{
+    margin-top:1rem;
 }
