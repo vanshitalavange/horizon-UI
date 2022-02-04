@@ -1,9 +1,9 @@
 .card-container {
   background-color: var(--white-color);
-  border: 1.33px solid #a3ce53;
+  border: 1.33px solid #a5d44e;
   border-radius: var(--border-rd-6);
   width:18.5rem;
-  /* overflow: hidden; */
+  /* overflow: */
   /* box-shadow: 0px 0px 15px hsl(0, 0%, 80%); */
 }
 .card{
@@ -12,18 +12,19 @@
 }
 .card-img-container{
     height:17rem;
+    overflow: hidden;
+    border-radius:var(--border-rd-6);
 }
 .card-img{
     width: 100%; 
     max-height: 100%; 
     /* margin: 0 auto; */
 }
-.wishlist-icon{
-    color:hsl(0, 0%, 75%);
+.icon-top-right{
+    color:hsl(0, 0%, 60%);
     position: absolute;
     top:4px;
     right:4px;
-    font-size: 0.2rem;
 }
 .badge{
     background-color: #075729;
@@ -66,6 +67,9 @@ font-size: 2px;
 .card-price-striked{
     text-decoration: line-through;
 }
+.card-rating{
+    gap:0.3rem;
+}
 .rating-icon-wrapper{
     gap:0.1rem;
 }
@@ -74,7 +78,7 @@ font-size: 2px;
     font-size:12px;
 }
 .rating-count{
-    font-size: 0.85rem;
+    font-size: 0.68rem;
 }
 .card-actions{
     margin-top:2rem;
@@ -89,11 +93,11 @@ font-size: 2px;
     padding:0.3rem 0.6rem;
 }
 .add-to-cart{
-    gap:var(--spacing-xs);
+    gap:0.3rem;
     background-color: #a3ce53;
     color: var(--white-color);
-    padding-left:0.4rem;
-    padding-right: 0.4rem;
+    padding-left:0.5rem;
+    padding-right: 0.5rem;
     border-radius:3px;
     font-size:0.9rem;
 }
