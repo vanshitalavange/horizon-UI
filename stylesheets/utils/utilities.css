@@ -1,8 +1,18 @@
 :root {
   --border-rd-6: 6px;
+  --spacing-xs: 0.5rem;
 }
-
 .flex-center {
   justify-content: center;
   align-items: center;
+}
+.flex-row{
+  display: flex;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.cursor-disabled{
+  cursor: not-allowed;
 }
