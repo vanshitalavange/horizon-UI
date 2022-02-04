@@ -3,7 +3,7 @@
   border: 1.33px solid #a3ce53;
   border-radius: var(--border-rd-6);
   width:18.5rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* box-shadow: 0px 0px 15px hsl(0, 0%, 80%); */
 }
 .card{
@@ -24,6 +24,20 @@
     top:4px;
     right:4px;
     font-size: 0.2rem;
+}
+.badge{
+    background-color: #075729;
+  /* background-color:var(--grape-fruit); */
+  color:white;
+  padding:0.3rem 0.65rem;
+  /* border-radius: var(--border-rd-6); */
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  position: absolute;
+  top:10px;
+  left:-3px;
+  font-size:0.8rem;
+  letter-spacing: 0.3px;
 }
 .rating-icon-wrapper{
 font-size: 2px;
@@ -84,7 +98,7 @@ font-size: 2px;
     font-size:0.9rem;
 }
 .add-to-cart:hover{
-    background-color: var(--forest-green);
+    background-color:#075729;
 }
 .btn-add-to-cart{
     font-weight: 600;
