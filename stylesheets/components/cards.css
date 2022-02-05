@@ -1,204 +1,151 @@
-body{
-    background-color: #202124; 
-}
-.card-container {
-  background-color: var(--white-color);
-  /* border: 1.3333px solid #a5d44e; */
-  border: 1.3333px solid hsl(0, 0%, 80%);
-  border-radius: var(--border-rd-6);
+.card {
+  border: 1.35px solid var(--dark-pastel-grey);
   border-radius: 8px;
-  /* overflow: */
-  /* box-shadow: 0px 0px 15px hsl(0, 0%, 80%); */
-
-width:18.5rem;
+  background-color: var(--white-color);
+  gap: 1rem;
+  max-width: 18.5rem;
+  position: relative;
 }
-.card{
- 
-    /* width:0rem; */
-
+.card:hover {
+  box-shadow: 4px 4px 15px var(--charcoal-grey);
+  transition: 0.4s ease-in;
 }
-.card-container:hover{
-    box-shadow: 4px 4px 15px var(--charcoal-grey);  
-     transition: 0.3s ease-in;
+.card-header {
+  max-height: 17rem;
 }
-.card{
-    gap:var(--spacing-xs);
-    position: relative;
+.card-img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
-.card-img-container{
-    height:17rem;
-    /* height: fit-content; */
-    /* overflow: hidden; */
-    /* border-radius:16px; */
+.icon-top-right {
+  color: var(--dark-pastel-grey);
+  position: absolute;
+  top: 10px;
+  right: var(--spacing-xs);
 }
-.card-img{
-    width: 100%; 
-    /* height:100%; */
-    /* max-height: 100%;  */
-    /* margin: 0 auto; */
+.icon-dismiss {
+  color: var(--charcoal-grey);
 }
-.icon-top-right{
-    color:hsl(0, 0%, 60%);
-    position: absolute;
-    top:10px;
-    right:var(--spacing-xs);
+.card-body {
+  margin: 0 1rem 1rem 1rem;
+  gap: 0.25rem;
 }
-.badge{
-    background-color: #075729;
-  /* background-color:var(--grape-fruit); */
-  color:white;
-  padding:0.3rem 0.65rem;
-  /* border-radius: var(--border-rd-6); */
+.card-title {
+  font-size: 1.4rem;
+}
+.card-text {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.card-section {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card-price {
+  gap: var(--spacing-xs);
+}
+.card-current-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.card-price-striked {
+  text-decoration: line-through var(--gravel-color);
+}
+.card-rating {
+  gap: 0.3rem;
+}
+.rating-icon-wrapper {
+  gap: 0.1rem;
+}
+.rating-icon {
+  color: var(--yellow-dark);
+  font-size: 0.7rem;
+}
+.rating-count {
+  font-size: 0.7rem;
+}
+.card-actions {
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+.quantity {
+  border: 1px solid var(--dark-pastel-grey);
+  border-radius: 3px;
+}
+.quantity p,
+.quantity button {
+  padding: 0.3rem 0.6rem;
+}
+.quantity button:hover {
+  background-color: var(--dark-pastel-grey);
+}
+.add-to-cart {
+  background-color: var(--avocado-green);
+  color: var(--white-color);
+  border-radius: 3px;
+  gap: 0.3rem;
+  padding: 0 0.5rem;
+  font-size: 0.9rem;
+}
+.add-to-cart:hover {
+  background-color: var(--spruce-color);
+}
+.btn-add-to-cart {
+  font-weight: 600;
+}
+.badge {
+  background-color: var(--spruce-color);
+  color: var(--white-color);
+  padding: 0.3rem 0.65rem;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   position: absolute;
-  top:10px;
-  left:-3px;
-  font-size:0.8rem;
+  top: 10px;
+  left: -3px;
+  font-size: 0.8rem;
   letter-spacing: 0.3px;
 }
-.rating-icon-wrapper{
-font-size: 2px;
+.card-overlay {
+  height: 25.1rem;
 }
-.card-body{
-    margin-top:0.3rem;
-  margin-left:1rem;
-  margin-right:1rem;
-  margin-bottom: 1rem;
-  gap:0.2rem;
-
+.card-body-overlay {
+  position: relative;
+  top: -3rem;
 }
-.card-title{
-    font-size:1.4rem;
+.overlay-text {
+  color: var(--text-color);
+  background-color: var(--grey-see-through);
 }
-.card-text{
-    color:var(--text-color);
-    font-size: 0.9rem;
-    font-weight: 300;
+.card-only-text {
+  height: 11rem;
 }
-.card-section{
-    justify-content: space-between;
+.card-content-top {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  order: -1;
 }
-.card-price{
-    gap:var(--spacing-xs);
+.card-vertical .card-title {
+  margin-top: 0.9rem;
 }
-.card-current-price{
-    font-size:1.2rem;
-    font-weight: 600;
+.card-horizontal {
+  height: 14.8rem;
+  max-width: 25rem;
 }
-.card-price-striked{
-    text-decoration: line-through;
+.card-horizontal .card-img {
+  width: 11rem;
+  height: 11rem;
 }
-.card-rating{
-    gap:0.3rem;
+.card-content-right {
+  margin-top: 1rem;
 }
-.rating-icon-wrapper{
-    gap:0.1rem;
+.card-horizontal {
+  gap: 0;
 }
-.rating-icon{
-    color:var(--yellow-dark);
-    font-size:12px;
+.card-horizontal .card-actions {
+  margin: 0 1rem 0 1rem;
+  align-self: flex-end;
 }
-.rating-count{
-    font-size: 0.68rem;
-}
-.card-actions{
-    margin-top:1.5rem;
-    gap:1rem;
-}
-.quantity{
-    border:1px solid hsl(0, 0%, 80%);
-    border-radius:3px;
-
-}
-.quantity p{
-    padding:0.3rem 0.6rem;
-}
-.add-to-cart{
-    gap:0.3rem;
-    background-color: #a3ce53;
-    color: var(--white-color);
-    padding-left:0.5rem;
-    padding-right: 0.5rem;
-    border-radius:3px;
-    font-size:0.9rem;
-}
-.add-to-cart:hover{
-    background-color:#075729;
-}
-.btn-add-to-cart{
-    font-weight: 600;
-}
-/* overlay text */
-.card-container-overlay{
- height:23.8rem;
-}
-.card-body-overlay{
-position: relative;
-top:-4rem;
-}
-.overlay-text{
-    color:var(--text-color);
-    background-color: hsl(0, 30%, 95%,0.35);
-}
-.card-body-overlay .card-price-striked{
-    margin-top:1px;
-}
-/* text only */
-.card-container-only-text{
-    height:11rem;
-}
-.card-container-only-text .icon-top-right{
-    top:1rem;
-    right:var(--spacing-xs);
-}
-/* vertical card */
-.card-container-vertical .card-text,.card-container-vertical .card-title{
-margin-left:1rem;
-margin-right: 1rem;
-/* margin-top:1rem; */
-}
-.card-container-vertical .card-title{
-    margin-top:1rem;
-}
-/* horizontal card */
-.card-container-horizontal{
-/* width:21rem; */
-width:20rem;
-}
-.card-container-horizontal .card{
-
-}
-.card-container-horizontal .card-section{
-    flex-wrap: wrap;
-}
-.card-container-horizontal .card-img-container{
-    width:10rem;
-    height: 6rem;
-}
-.card-container-horizontal img{
-    /* height: 100%; */
-    width: 100%;
-    /* height: 100%; */
-}
-.card-container-horizontal .card-actions{
-margin-top: 0;
-margin-left:1rem;
-margin-right:1rem;
-margin-bottom: 1rem;
-}
-.card-container-horizontal .card-body{
-    gap:0;
-    margin-top:1rem;
-}
-.card-container-horizontal .card-section{
-    margin-left:1rem;
-margin-right:1rem;
-/* margin-top: 0; */
-}
-.card-container-horizontal .card-title{
-    /* white-space:nowrap; */
-}
-.card-container-horizontal .cart-icon{
-    padding-top:0.2rem;
+.card-horizontal .card-section {
+  gap: 0.3rem;
 }
