@@ -1,5 +1,5 @@
 .card {
-  border: 1.35px solid var(--dark-pastel-grey);
+  border: 1.35px solid var(--dark-pastel-gray);
   border-radius: 8px;
   background-color: var(--white-color);
   gap: 1rem;
@@ -18,7 +18,7 @@
   border-top-right-radius: 8px;
 }
 .icon-top-right {
-  color: var(--dark-pastel-grey);
+  color: var(--dark-pastel-gray);
   position: absolute;
   top: 10px;
   right: var(--spacing-xs);
@@ -70,7 +70,7 @@
   gap: 1rem;
 }
 .quantity {
-  border: 1px solid var(--dark-pastel-grey);
+  border: 1px solid var(--dark-pastel-gray);
   border-radius: 3px;
 }
 .quantity p,
@@ -78,7 +78,7 @@
   padding: 0.3rem 0.6rem;
 }
 .quantity button:hover {
-  background-color: var(--dark-pastel-grey);
+  background-color: var(--dark-pastel-gray);
 }
 .add-to-cart {
   background-color: var(--avocado-green);
