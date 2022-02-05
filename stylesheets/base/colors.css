@@ -29,6 +29,10 @@
   --baltic-sea-color: hsl(220, 10%, 18%);
   --charcoal-grey: hsl(225, 10%, 26%);
   --forest-green: hsl(120, 100%, 25%);
-  --gunmental-color: #313235;
-  --gravel-color: #494b50;
+  --gunmental-color: hsl(225, 4%, 20%);
+  --gravel-color: hsl(223, 5%, 30%);
+  --dark-pastel-gray: hsl(0, 0%, 80%);
+  --avocado-green: hsl(81, 56%, 57%);
+  --spruce-color: hsl(146, 85%, 18%);
+  --grey-see-through: hsl(0, 30%, 95%, 0.3);
 }
