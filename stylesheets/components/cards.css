@@ -121,8 +121,7 @@
   height: 11rem;
 }
 .card-content-top {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 1rem;
   order: -1;
 }
 .card-vertical .card-title {
