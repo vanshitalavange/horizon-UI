@@ -94,7 +94,7 @@
 .btn-add-to-cart {
   font-weight: 600;
 }
-.badge {
+.card-badge {
   background-color: var(--spruce-color);
   color: var(--white-color);
   padding: 0.3rem 0.65rem;
