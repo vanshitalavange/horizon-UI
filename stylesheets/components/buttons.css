@@ -20,9 +20,6 @@
 .btn-solid {
   color: var(--white-color);
 }
-.btn-solid:hover {
-  box-shadow: 0px 1px 5px rgb(107, 106, 106);
-}
 .btn-primary-solid {
   background-color: var(--primary-color);
 }
