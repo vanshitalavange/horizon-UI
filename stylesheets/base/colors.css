@@ -3,7 +3,8 @@
   --primary-hover: hsl(235, 86%, 69%);
   --secondary-color: hsl(248, 10%, 30%);
   --secondary-hover: hsl(248, 10%, 40%);
-  --text-color: hsl(225, 4%, 20%);
+  --light-theme-text-color: hsl(225, 4%, 20%);
+  --dark-theme-bg:#202124;
   --accent-color: hsl(55, 86%, 65%);
   --white-color: hsl(0, 0%, 100%);
   --white-lilac: hsl(210, 25%, 97%);
