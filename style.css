@@ -1,0 +1,85 @@
+.page {
+  width: 92vw;
+  margin: 1.8rem auto 0 auto;
+}
+.header {
+  gap: 1rem;
+}
+.header-logo {
+  width: 10rem;
+}
+.navbar {
+  margin-left: auto;
+}
+.nav-list {
+  gap: 1rem;
+}
+.nav-link {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.nav-icon {
+  display: none;
+}
+.github,
+.docs {
+  font-size: 3.5rem;
+}
+.hero {
+  min-height: 70vh;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.hero-heading {
+  font-size: 3.5rem;
+  color: var(--primary-color);
+}
+.hero-sub-text-wrapper {
+  gap: var(--spacing-xs);
+}
+.hero-sub-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.brand-name {
+  font-weight: bold;
+  background-color: var(--secondary-color);
+  padding: 0.25rem 0.4rem;
+  border-radius: var(--border-rd-6);
+  color: var(--white-color);
+}
+.btn {
+  font-size: 1rem;
+  margin-top: var(--spacing-xs);
+  box-shadow: 0 0px 20px rgba(26, 25, 25, 0.9);
+}
+.btn:active {
+  transform: scale(0.95);
+}
+.page-footer {
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: var(--spacing-xs);
+  width: 92vw;
+}
+
+.page-footer a {
+  font-weight: bold;
+  background-color: var(--secondary-color);
+  padding: 0.15rem 0.4rem;
+  border-radius: var(--border-rd-6);
+  color: var(--white-color);
+}
+@media only screen and (max-width: 500px) {
+  .nav-icon {
+    display: block;
+  }
+  .nav-link {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  html {
+    font-size: 135%;
+  }
+}
