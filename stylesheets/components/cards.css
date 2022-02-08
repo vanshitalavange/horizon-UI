@@ -55,11 +55,10 @@
 .card-rating {
   gap: 0.3rem;
 }
-.rating-icon-wrapper {
+.card-rating .rating-icon-wrapper {
   gap: 0.1rem;
 }
-.rating-icon {
-  color: var(--yellow-dark);
+.card-rating .rating-icon {
   font-size: 0.7rem;
 }
 .rating-count {
