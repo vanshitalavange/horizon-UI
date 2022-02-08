@@ -12,7 +12,7 @@
 @import url("./components/cards.css");
 @import url("./components/image.css");
 @import url("./components/input.css");
-
+@import url("./components/text-utilities.css");
 /* CDN for icons */
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
