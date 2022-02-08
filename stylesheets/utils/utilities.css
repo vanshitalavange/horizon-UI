@@ -1,5 +1,6 @@
 :root {
   --border-rd-6: 6px;
+  --border-rd-3: 3px;
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
 }
@@ -14,6 +15,11 @@ body{
 .flex-row{
   display: flex;
 }
+.flex-row-center{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 .flex-column{
   display: flex;
   flex-direction: column;
@@ -26,6 +32,9 @@ body{
 }
 .align-end{
   align-self: end;
+}
+.justify-center{
+  justify-content: center;
 }
 .text-left{
   text-align: left;
@@ -49,4 +58,5 @@ body{
   padding:var(--spacing-sm);
   width:clamp(45rem,50rem,55rem);
   margin:var(--spacing-sm) auto;
+  gap:var(--spacing-sm);
 }
