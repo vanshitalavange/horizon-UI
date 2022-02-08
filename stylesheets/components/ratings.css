@@ -6,9 +6,9 @@
   padding: var(--spacing-xs) var(--spacing-xs);
   border-radius: var(--border-rd-3);
 }
-.bg-blue {
+.bg-grey {
   background-color: var(--secondary-color);
 }
-.bg-grey {
+.bg-spruce {
   background-color: var(--spruce-color);
 }
