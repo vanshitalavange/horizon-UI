@@ -1,6 +1,7 @@
 :root {
   --border-rd-6: 6px;
   --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
 }
 body{
   background-color:var(--dark-theme-bg);
@@ -26,9 +27,26 @@ body{
 .align-end{
   align-self: end;
 }
+.text-left{
+  text-align: left;
+}
 .text-centered{
   text-align:center;
 }
+.text-right{
+  text-align:right;
+}
+.text-cr-grey{
+  color:var(--grey-color);
+}
 .cursor-disabled{
   cursor: not-allowed;
+}
+.wrapper{
+  background-color: var(--baltic-sea-color);
+  border:1px solid var(--charcoal-grey);
+  border-radius: var(--border-rd-6);
+  padding:var(--spacing-sm);
+  width:clamp(45rem,50rem,55rem);
+  margin:var(--spacing-sm) auto;
 }
