@@ -26,8 +26,17 @@ body{
 .align-end{
   align-self: end;
 }
+.text-left{
+  text-align: left;
+}
 .text-centered{
   text-align:center;
+}
+.text-right{
+  text-align:right;
+}
+.text-cr-grey{
+  color:var(--grey-color);
 }
 .cursor-disabled{
   cursor: not-allowed;
