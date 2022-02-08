@@ -2,16 +2,16 @@
   display: grid;
 }
 .two-col-layout {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 }
 .three-col-layout {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 .auto-fill-col-layout {
   grid-template-columns: repeat(auto-fill, minmax(10rem, auto));
 }
-.grid-gap{
-    gap:var(--spacing-sm);
+.grid-gap {
+  gap: var(--spacing-sm);
 }
 .item {
   background-color: var(--primary-color);
