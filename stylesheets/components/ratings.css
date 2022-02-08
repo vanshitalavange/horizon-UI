@@ -1,0 +1,17 @@
+.rating-icon{
+    color:var(--yellow-dark);
+}
+.cr-yellow{
+    color:var(--yellow-light);
+}
+.rating-container{
+    width:fit-content;
+    padding:var(--spacing-xs) var(--spacing-xs);
+    border-radius:var(--border-rd-3);
+}
+.bg-blue{
+background-color: var(--secondary-color);
+}
+.bg-grey{
+    background-color: var(--spruce-color);
+}
