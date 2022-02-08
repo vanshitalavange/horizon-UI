@@ -44,7 +44,7 @@ body{
 }
 .wrapper{
   background-color: var(--baltic-sea-color);
-  border-bottom:1px solid var(--charcoal-grey);
+  border:1px solid var(--charcoal-grey);
   border-radius: var(--border-rd-6);
   padding:var(--spacing-sm);
   width:clamp(45rem,50rem,55rem);
