@@ -1,0 +1,14 @@
+.rating-icon {
+  color: var(--yellow-dark);
+}
+.rating-container {
+  width: fit-content;
+  padding: var(--spacing-xs) var(--spacing-xs);
+  border-radius: var(--border-rd-3);
+}
+.bg-grey {
+  background-color: var(--secondary-color);
+}
+.bg-spruce {
+  background-color: var(--spruce-color);
+}

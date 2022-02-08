@@ -1,52 +1,62 @@
 :root {
   --border-rd-6: 6px;
+  --border-rd-3: 3px;
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
 }
-body{
-  background-color:var(--dark-theme-bg);
+body {
+  background-color: var(--dark-theme-bg);
   color: var(--white-color);
 }
 .flex-center {
   justify-content: center;
   align-items: center;
 }
-.flex-row{
+.flex-row {
   display: flex;
 }
-.flex-column{
+.flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column {
   display: flex;
   flex-direction: column;
 }
-.flex-wrap{
+.flex-wrap {
   flex-wrap: wrap;
 }
-.align-center{
-  align-self:center;
+.align-center {
+  align-self: center;
 }
-.align-end{
+.align-end {
   align-self: end;
 }
-.text-left{
+.justify-center {
+  justify-content: center;
+}
+.text-left {
   text-align: left;
 }
-.text-centered{
-  text-align:center;
+.text-centered {
+  text-align: center;
 }
-.text-right{
-  text-align:right;
+.text-right {
+  text-align: right;
 }
-.text-cr-grey{
-  color:var(--grey-color);
+.text-cr-grey {
+  color: var(--grey-color);
 }
-.cursor-disabled{
+.cursor-disabled {
   cursor: not-allowed;
 }
-.wrapper{
+.wrapper {
   background-color: var(--baltic-sea-color);
-  border:1px solid var(--charcoal-grey);
+  border: 1px solid var(--charcoal-grey);
   border-radius: var(--border-rd-6);
-  padding:var(--spacing-sm);
-  width:clamp(45rem,50rem,55rem);
-  margin:var(--spacing-sm) auto;
+  padding: var(--spacing-sm);
+  width: clamp(45rem, 50rem, 55rem);
+  margin: var(--spacing-sm) auto;
+  gap: var(--spacing-sm);
 }
