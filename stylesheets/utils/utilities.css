@@ -1,6 +1,7 @@
 :root {
   --border-rd-6: 6px;
   --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
 }
 body{
   background-color:var(--dark-theme-bg);
@@ -40,4 +41,12 @@ body{
 }
 .cursor-disabled{
   cursor: not-allowed;
+}
+.wrapper{
+  background-color: var(--baltic-sea-color);
+  border-bottom:1px solid var(--charcoal-grey);
+  border-radius: var(--border-rd-6);
+  padding:var(--spacing-sm);
+  width:clamp(45rem,50rem,55rem);
+  margin:var(--spacing-sm) auto;
 }
