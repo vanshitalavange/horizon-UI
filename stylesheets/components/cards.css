@@ -5,6 +5,7 @@
   gap: 1rem;
   max-width: 18.5rem;
   position: relative;
+  color:black;
 }
 .card:hover {
   box-shadow: 4px 4px 15px var(--charcoal-grey);
@@ -55,11 +56,8 @@
 .card-rating {
   gap: 0.3rem;
 }
-.card-rating .rating-icon-wrapper {
-  gap: 0.1rem;
-}
-.card-rating .rating-icon {
-  font-size: 0.7rem;
+.fs-16{
+  font-size:1rem !important;
 }
 .rating-count {
   font-size: 0.7rem;
@@ -72,11 +70,10 @@
   border: 1px solid var(--dark-pastel-gray);
   border-radius: 3px;
 }
-.quantity p,
-.quantity button {
+.btn-minus,.btn-plus,.quantity-count{
   padding: 0.3rem 0.6rem;
 }
-.quantity button:hover {
+.btn-minus:hover,.btn-plus:hover {
   background-color: var(--dark-pastel-gray);
 }
 .add-to-cart {
