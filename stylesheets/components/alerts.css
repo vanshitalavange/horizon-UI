@@ -1,12 +1,14 @@
 .alert {
-  display: flex;
-  gap: 1rem;
-  padding: 1rem;
-  margin: 1rem;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  margin-top: var(--spacing-xs);
   border-radius: var(--border-rd-6);
+  color: var(--black-color);
+  width: 52%;
 }
-.alert-icon {
-  align-self: center;
+.alert-msg {
+  overflow: hidden;
+  word-wrap: break-word;
 }
 .alert-primary {
   background-color: var(--blue-light);
