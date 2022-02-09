@@ -4,7 +4,6 @@
   margin-top: var(--spacing-xs);
   border-radius: var(--border-rd-6);
   color: var(--black-color);
-  width: 52%;
 }
 .alert-msg {
   overflow: hidden;
