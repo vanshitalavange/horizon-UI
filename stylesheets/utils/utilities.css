@@ -20,6 +20,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -56,7 +62,9 @@ body {
   border: 1px solid var(--charcoal-grey);
   border-radius: var(--border-rd-6);
   padding: var(--spacing-sm);
-  width: clamp(45rem, 50rem, 55rem);
   margin: var(--spacing-sm) auto;
   gap: var(--spacing-sm);
+}
+.ml-auto {
+  margin-left: auto;
 }
