@@ -11,7 +11,7 @@
     />
     <link href="../codeblocks/codeblock.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
-    <link href="./docs.css" rel="stylesheet" />
+    <link href="../docs-layout/docs.css" rel="stylesheet" />
     <link href="../../stylesheets/main.css" rel="stylesheet" />
   </head>
   <body>
@@ -48,7 +48,9 @@
         </div>
         <ul class="sidebar-list flex-column">
           <li class="sidebar-item">
-            <a href="#" class="sidebar-link">Introduction</a>
+            <a href="../docs-layout/docs.html" class="sidebar-link"
+              >Introduction</a
+            >
           </li>
           <li class="sidebar-item">
             <a href="#" class="sidebar-link">Typography</a>
@@ -57,7 +59,7 @@
         <h6 class="sidebar-heading component-heading">Components</h6>
         <ul class="sidebar-list flex-column">
           <li class="sidebar-item">
-            <a href="../alerts/alerts.html" class="sidebar-link">Alerts</a>
+            <a href="./alerts.html" class="sidebar-link">Alerts</a>
           </li>
           <li class="sidebar-item">
             <a href="#" class="sidebar-link">Avatars</a>
@@ -88,24 +90,71 @@
 
       <main class="page-main">
         <div class="content flex-column">
-          <h1 class="content-title">Introduction</h1>
+          <h1 class="content-title">Alerts</h1>
           <p class="content-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui iste
-            fuga vitae earum praesentium? Cum, impedit beatae? Architecto
-            perferendis repellat
+            An alert displays a short, important message in a way that attracts
+            the user's attention without interrupting the user's task.
           </p>
         </div>
-        <div class="content flex-column">
-          <h2 class="content-title">Introduction</h2>
-          <p class="content-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui iste
-            fuga vitae earum praesentium? Cum, impedit beatae? Architecto
-            perferendis repellat
-          </p>
+        <div class="wrapper flex-col">
+          <!-- Primary alert -->
+          <div class="alert alert-primary flex-row flex-wrap">
+            <span class="material-icons-round info-icon"> info </span>
+            <p class="alert-msg">Informational Notes</p>
+            <span class="material-icons ml-auto"> close </span>
+          </div>
+
+          <!-- Success alert -->
+          <div class="alert alert-success flex-row flex-wrap">
+            <span class="material-icons-round check-icon"> check_circle </span>
+            <p class="alert-msg">Success</p>
+            <span class="material-icons ml-auto"> close </span>
+          </div>
+
+          <!-- Error alert -->
+          <div class="alert alert-danger flex-row flex-wrap">
+            <span class="material-icons-round danger-icon"> dangerous </span>
+            <p class="alert-msg">Error</p>
+            <span class="material-icons ml-auto"> close </span>
+          </div>
+
+          <!-- Warning alert -->
+          <div class="alert alert-warning flex-row flex-wrap">
+            <span class="material-icons-round warning-icon"> warning </span>
+            <p class="alert-msg">Warning</p>
+            <span class="material-icons ml-auto"> close </span>
+          </div>
         </div>
+
         <pre>
-          <code id="codeblock" class="css"> 
-            @import url("horizon-ui.netlify.app/stylesheets/style.css")
+          <code id="codeblock" class="language-html"> 
+            &lt;!-- Primary alert --&gt;
+            &lt;div class=&quot;alert alert-primary flex-row flex-wrap&quot;&gt;
+              &lt;span class=&quot;material-icons-round info-icon&quot;&gt; info &lt;/span&gt;
+              &lt;p class=&quot;alert-msg&quot;&gt;Informational Notes&lt;/p&gt;
+              &lt;span class=&quot;material-icons ml-auto&quot;&gt; close &lt;/span&gt;
+            &lt;/div&gt;
+  
+             &lt;!-- Success alert --&gt;
+            &lt;div class=&quot;alert alert-success flex-row flex-wrap&quot;&gt;
+              &lt;span class=&quot;material-icons-round check-icon&quot;&gt; check_circle &lt;/span&gt;
+              &lt;p class=&quot;alert-msg&quot;&gt;Success&lt;/p&gt;
+              &lt;span class=&quot;material-icons ml-auto&quot;&gt; close &lt;/span&gt;
+            &lt;/div&gt;
+  
+             &lt;!-- Error alert --&gt;
+            &lt;div class=&quot;alert alert-danger flex-row flex-wrap&quot;&gt;
+              &lt;span class=&quot;material-icons-round danger-icon&quot;&gt; dangerous &lt;/span&gt;
+              &lt;p class=&quot;alert-msg&quot;&gt;Error&lt;/p&gt;
+              &lt;span class=&quot;material-icons ml-auto&quot;&gt; close &lt;/span&gt;
+            &lt;/div&gt;
+  
+             &lt;!-- Warning alert --&gt;
+            &lt;div class=&quot;alert alert-warning flex-row flex-wrap&quot;&gt;
+              &lt;span class=&quot;material-icons-round warning-icon&quot;&gt; warning &lt;/span&gt;
+              &lt;p class=&quot;alert-msg&quot;&gt;Warning&lt;/p&gt;
+              &lt;span class=&quot;material-icons ml-auto&quot;&gt; close &lt;/span&gt;
+            &lt;/div&gt;
           </code>
           <i class="fas fa-copy copy"></i>
           <span class="copied-snackbar">Copied</span>
@@ -117,7 +166,7 @@
         <strong>@neogcamp</strong>
       </footer>
     </div>
-    <script src="./docs.js"></script>
+    <script src="../docs-layout/docs.js"></script>
     <!-- codeblocks js links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
