@@ -4,13 +4,14 @@
   --secondary-color: hsl(248, 10%, 30%);
   --secondary-hover: hsl(248, 10%, 40%);
   --light-theme-text-color: hsl(225, 4%, 20%);
-  --dark-theme-bg:#202124;
+  --dark-theme-bg: #202124;
   --accent-color: hsl(55, 86%, 65%);
   --white-color: hsl(0, 0%, 100%);
   --black-color: hsl(0, 0%, 0%);
   --grey-color: hsl(0, 0%, 50%);
   --white-lilac: hsl(210, 25%, 97%);
   --blue-semi-dark: hsl(217, 92%, 61%);
+  --bright-blue: hsl(217, 92%, 50%);
   --blue-light: hsl(217, 75%, 85%);
   --lemon-green: hsl(78, 100%, 40%);
   --lemon-green-light: hsl(78, 98%, 80%);
@@ -18,6 +19,7 @@
   --red-light: hsl(358, 100%, 83%);
   --yellow-dark: hsl(40, 96%, 53%);
   --yellow-light: hsl(55, 86%, 87%);
+  --yellowish-orange: hsl(40, 96%, 53%);
   --purple-light: hsl(228, 96%, 89%);
   --purple-dark: hsl(239, 84%, 67%);
   --skyblue-light: hsl(201, 94%, 86%);
@@ -25,8 +27,10 @@
   --pastel-grey: hsl(210, 25%, 97%);
   --green-dark: hsl(164, 100%, 32%);
   --green-light: hsl(164, 100%, 35%);
+  --sherwood-green: hsl(165, 100%, 13%);
   --grape-fruit: hsl(8, 69%, 50%);
-  --flame-pea: #db523d;
+  --flame-pea: hsl(8, 69%, 55%);
+  --blood-red: hsl(358, 100%, 30%);
   --orange-dark: hsl(36, 99%, 47%);
   --orange-peel: hsl(36, 99%, 53%);
   --baltic-sea-color: hsl(220, 10%, 18%);
