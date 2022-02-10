@@ -33,7 +33,7 @@ body {
 .flex-wrap {
   flex-wrap: wrap;
 }
-.wrap-reverse{
+.wrap-reverse {
   flex-wrap: wrap-reverse;
 }
 .align-center {
@@ -66,7 +66,7 @@ body {
   border-radius: var(--border-rd-6);
   padding: var(--spacing-sm);
   margin: var(--spacing-sm) auto;
-  gap: var(--spacing-sm);
+  gap: 1.5rem;
 }
 .ml-auto {
   margin-left: auto;
