@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
+      rel="stylesheet"
+    />
+    <link href="../codeblocks/codeblock.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
+    <link href="../docs-layout/docs.css" rel="stylesheet" />
+    <link href="../../stylesheets/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header flex-row flex-wrap">
+        <div class="header-left-wrapper flex-row">
+          <span class="material-icons-round hamburger-menu align-center">
+            menu
+          </span>
+          <div class="header-logo align-center">
+            <a href="../../index.html"><img src="../../assets/logo.png" /></a>
+          </div>
+          <h1 class="header-title align-center">Horizon</h1>
+        </div>
+        <nav class="navbar align-center ml-auto">
+          <ul class="nav-list flex-row">
+            <li class="align-center">
+              <a
+                href="https://github.com/vanshitalavange/horizon-UI"
+                class="nav-icon"
+                ><i class="fa fa-github github"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <aside class="sidebar">
+        <div class="sidebar-header flex-row wrap-reverse">
+          <h6 class="sidebar-heading">Getting Started</h6>
+          <span class="material-icons-round align-center ml-auto menu-close">
+            close
+          </span>
+        </div>
+        <ul class="sidebar-list flex-column">
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Introduction</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Typography</a>
+          </li>
+        </ul>
+        <h6 class="sidebar-heading component-heading">Components</h6>
+        <ul class="sidebar-list flex-column">
+          <li class="sidebar-item">
+            <a href="../alerts/alerts.html" class="sidebar-link">Alerts</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../avatars/avatar.html" class="sidebar-link">Avatars</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../badges/badges.html" class="sidebar-link">Badges</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="./buttons.html" class="sidebar-link">Buttons</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Cards</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Image</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Input</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Grid</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Ratings</a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="page-main">
+        <div class="content flex-column">
+          <h1 class="content-title">Buttons</h1>
+          <p class="content-text">
+            Button is a tapping target that provides the user a simple way to trigger events like searching, submitting,etc
+          </p>
+        </div>
+
+        <!-- <div class="content flex-column">
+          <h2 class="content-title">Solid Buttons</h2>
+           <p class="content-text">
+          </p>
+        </div> -->
+        <h2>Solid buttons</h2>
+        <div class="wrapper flex-row-center flex-wrap">
+            <!-- Primary button -->
+            <button class="btn btn-solid btn-primary-solid">Primary</button>
+            <!-- Secondary button -->
+            <button class="btn btn-solid btn-secondary-solid">Secondary</button>
+            <!-- Success button -->
+            <button class="btn btn-solid btn-success-solid">Success</button>
+            <!-- Danger button -->
+            <button class="btn btn-solid btn-danger-solid">Danger</button>
+            <!-- Warning button -->
+            <button class="btn btn-solid btn-warning-solid">Warning</button>
+        </div>
+        <pre>
+          <code id="codeblock" class="language-html"> 
+            &lt;!-- Primary button --&gt;
+            &lt;button class=&quot;btn btn-solid btn-primary-solid&quot;&gt;Primary&lt;/button&gt;
+            &lt;!-- Secondary button --&gt;
+            &lt;button class=&quot;btn btn-solid btn-secondary-solid&quot;&gt;Secondary&lt;/button&gt;
+            &lt;!-- Success button --&gt;
+            &lt;button class=&quot;btn btn-solid btn-success-solid&quot;&gt;Success&lt;/button&gt;
+            &lt;!-- Danger button --&gt;
+            &lt;button class=&quot;btn btn-solid btn-danger-solid&quot;&gt;Danger&lt;/button&gt;
+            &lt;!-- Warning button --&gt;
+            &lt;button class=&quot;btn btn-solid btn-warning-solid&quot;&gt;Warning&lt;/button&gt;
+          </code>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </pre>
+          <h2>Outline buttons</h2>
+          <div class="wrapper flex-row-center flex-wrap">
+            <!-- Primary button -->
+            <button class="btn btn-outline btn-primary-outline">Primary</button>
+            <!-- Secomdary button -->
+            <button class="btn btn-outline btn-secondary-outline">Secondary</button>
+            <!-- Success button -->
+            <button class="btn btn-outline btn-success-outline">Success</button>
+            <!-- Danger button -->
+            <button class="btn btn-outline btn-danger-outline">Danger</button>
+            <!-- Warning button -->
+            <button class="btn btn-outline btn-warning-outline">Warning</button>
+          </div>
+          <pre>
+            <code id="codeblock" class="language-html"> 
+                &lt;!-- Primary button --&gt;
+            &lt;button class=&quot;btn btn-outline btn-primary-outline&quot;&gt;Primary&lt;/button&gt;
+            &lt;!-- Secomdary button --&gt;
+            &lt;button class=&quot;btn btn-outline btn-secondary-outline&quot;&gt;Secondary&lt;/button&gt;
+            &lt;!-- Success button --&gt;
+            &lt;button class=&quot;btn btn-outline btn-success-outline&quot;&gt;Success&lt;/button&gt;
+            &lt;!-- Danger button --&gt;
+            &lt;button class=&quot;btn btn-outline btn-danger-outline&quot;&gt;Danger&lt;/button&gt;
+            &lt;!-- Warning button --&gt;
+            &lt;button class=&quot;btn btn-outline btn-warning-outline&quot;&gt;Warning&lt;/button&gt;
+            </code>
+            <i class="fas fa-copy copy"></i>
+            <span class="copied-snackbar">Copied</span>
+          </pre>
+           <h2>Icon buttons</h2>
+          <div class="wrapper flex-row-center flex-wrap">
+              <!-- button with icon on left -->
+            <div class="btn icon-btn-container icon-btn-container-restore">
+                <span class="material-icons btn-icon">
+                    restore
+                </span>
+            <button class="icon-btn icon-btn-restore">Restore</button>
+            </div>
+            <!-- button with icon on right -->
+            <div class="btn icon-btn-container icon-btn-container-logout">
+                <span class="material-icons btn-icon">
+                    logout
+                    </span>
+            <button class="icon-btn icon-btn-logout">Logout</button>
+            </div>
+          </div>
+          <pre>
+            <code id="codeblock" class="language-html"> 
+                &lt;!-- button with icon on left --&gt;
+                &lt;div class=&quot;btn icon-btn-container icon-btn-container-restore&quot;&gt;
+                    &lt;span class=&quot;material-icons btn-icon&quot;&gt;
+                        restore
+                    &lt;/span&gt;
+                &lt;button class=&quot;icon-btn icon-btn-restore&quot;&gt;Restore&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;!-- button with icon on right --&gt;
+                &lt;div class=&quot;btn icon-btn-container icon-btn-container-logout&quot;&gt;
+                    &lt;span class=&quot;material-icons btn-icon&quot;&gt;
+                        logout
+                        &lt;/span&gt;
+                &lt;button class=&quot;icon-btn icon-btn-logout&quot;&gt;Logout&lt;/button&gt;
+                &lt;/div&gt;
+            </code>
+            <i class="fas fa-copy copy"></i>
+            <span class="copied-snackbar">Copied</span>
+          </pre>
+          <h2>floating action buttons</h2>
+          <div class="wrapper flex-row-center flex-wrap">
+            <div class="btn floating-btn floating-btn-edit">
+                <span class="material-icons floating-btn-icon"> edit </span>
+              </div>
+              <div class="btn floating-btn floating-btn-loc">
+                <span class="material-icons floating-btn-icon"> location_on </span>
+              </div>
+          </div>
+          <pre>
+            <code id="codeblock" class="language-html"> 
+                &lt;div class=&quot;btn floating-btn floating-btn-edit&quot;&gt;
+                &lt;span class=&quot;material-icons floating-btn-icon&quot;&gt; edit &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;btn floating-btn floating-btn-loc&quot;&gt;
+                &lt;span class=&quot;material-icons floating-btn-icon&quot;&gt; location_on &lt;/span&gt;
+              &lt;/div&gt;
+            </code>
+            <i class="fas fa-copy copy"></i>
+            <span class="copied-snackbar">Copied</span>
+          </pre>
+         <h2>Linked buttons</h2>
+          <div class="wrapper flex-row-center flex-wrap">
+            <a href="https://github.com/vanshitalavange" class="btn btn-link-one">Link</a>
+            <a href="https://github.com/vanshitalavange" class="btn btn-link-two">Link</a>
+          </div>
+          <pre>
+            <code id="codeblock" class="language-html"> 
+                &lt;a href=&quot;https://github.com/vanshitalavange&quot; class=&quot;btn btn-link-one&quot;&gt;Link&lt;/a&gt;
+                &lt;a href=&quot;https://github.com/vanshitalavange&quot; class=&quot;btn btn-link-two&quot;&gt;Link&lt;/a&gt;
+            </code>
+            <i class="fas fa-copy copy"></i>
+            <span class="copied-snackbar">Copied</span>
+          </pre>
+      </main>
+      <footer class="page-footer text-centered">
+        created by
+        <a href="https://github.com/vanshitalavange">vanshitalavange</a> -
+        <strong>@neogcamp</strong>
+      </footer>
+    </div>
+    <script src="../docs-layout/docs.js"></script>
+    <!-- codeblocks js links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../codeblocks/codeblock.js"></script>
+  </body>
+</html>
