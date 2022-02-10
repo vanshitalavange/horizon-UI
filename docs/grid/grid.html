@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
+      rel="stylesheet"
+    />
+    <link href="../codeblocks/codeblock.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
+    <link href="../docs-layout/docs.css" rel="stylesheet" />
+    <link href="../../stylesheets/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header flex-row flex-wrap">
+        <div class="header-left-wrapper flex-row">
+          <span class="material-icons-round hamburger-menu align-center">
+            menu
+          </span>
+          <div class="header-logo align-center">
+            <a href="../../index.html"><img src="../../assets/logo.png" /></a>
+          </div>
+          <h1 class="header-title align-center">Horizon</h1>
+        </div>
+        <nav class="navbar align-center ml-auto">
+          <ul class="nav-list flex-row">
+            <li class="align-center">
+              <a
+                href="https://github.com/vanshitalavange/horizon-UI"
+                class="nav-icon"
+                ><i class="fa fa-github github"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <aside class="sidebar">
+        <div class="sidebar-header flex-row wrap-reverse">
+          <h6 class="sidebar-heading">Getting Started</h6>
+          <span class="material-icons-round align-center ml-auto menu-close">
+            close
+          </span>
+        </div>
+        <ul class="sidebar-list flex-column">
+          <li class="sidebar-item">
+            <a href="../docs-layout/docs.html" class="sidebar-link"
+              >Introduction</a
+            >
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Typography</a>
+          </li>
+        </ul>
+        <h6 class="sidebar-heading component-heading">Components</h6>
+        <ul class="sidebar-list flex-column">
+          <li class="sidebar-item">
+            <a href="./alerts.html" class="sidebar-link">Alerts</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../avatars/avatar.html" class="sidebar-link">Avatars</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../badges/badges.html" class="sidebar-link">Badges</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../buttons/buttons.html" class="sidebar-link">Buttons</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Cards</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Image</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Input</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="./grid.html" class="sidebar-link">Grid</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Ratings</a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="page-main">
+        <div class="content flex-column">
+          <h1 class="content-title">Grid</h1>
+          <p class="content-text">
+            Grid is a powerful tool that allows for two-dimensional layouts to be created on the web.
+          </p>
+        </div>
+
+        <h2>Two column layout</h2>
+        <div class="wrapper">
+            <div class="grid-wrapper two-col-layout grid-gap">
+                <div class="item">item one</div>
+                <div class="item">item two</div>
+                </div>
+        </div>
+
+        <pre>
+          <code id="codeblock" class="language-html"> 
+            &lt;div class=&quot;grid-wrapper two-col-layout grid-gap&quot;&gt;
+         &lt;div class=&quot;item&quot;&gt;item one&lt;/div&gt;
+         &lt;div class=&quot;item&quot;&gt;item two&lt;/div&gt;
+  &lt;/div&gt;
+          </code>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </pre>
+        <h2>Three column layout</h2>
+        <div class="wrapper">
+            <div class="grid-wrapper three-col-layout grid-gap">
+                <div class="item">item one</div>
+                <div class="item">item two</div>
+                <div class="item">item three</div>
+                </div>
+        </div>
+        <pre>
+            <code id="codeblock" class="language-html"> 
+                &lt;div class=&quot;grid-wrapper three-col-layout grid-gap&quot;&gt;
+                &lt;div class=&quot;item&quot;&gt;item one&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;item two&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;item three&lt;/div&gt;
+ &lt;/div&gt;
+            </code>
+            <i class="fas fa-copy copy"></i>
+            <span class="copied-snackbar">Copied</span>
+          </pre>
+          <h2>Grid auto-fill layout</h2>
+          <div class="wrapper">
+            <div class="grid-wrapper auto-fill-col-layout grid-gap">
+                <div class="item">item one</div>
+                <div class="item">item two</div>
+                <div class="item">item three</div>
+                <div class="item">item four</div>
+                <div class="item">item five</div>
+                <div class="item">item six</div>
+            </div>
+          </div>
+          <pre>
+            <code id="codeblock" class="language-html"> 
+                &lt;div class=&quot;grid-wrapper auto-fill-col-layout grid-gap&quot;&gt;
+                &lt;div class=&quot;item&quot;&gt;item one&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;item two&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;item three&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;item four&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;item five&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;item six&lt;/div&gt;
+        &lt;/div&gt;
+            </code>
+            <i class="fas fa-copy copy"></i>
+            <span class="copied-snackbar">Copied</span>
+          </pre>
+      </main>
+      <footer class="page-footer text-centered">
+        created by
+        <a href="https://github.com/vanshitalavange">vanshitalavange</a> -
+        <strong>@neogcamp</strong>
+      </footer>
+    </div>
+    <script src="../docs-layout/docs.js"></script>
+    <!-- codeblocks js links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../codeblocks/codeblock.js"></script>
+  </body>
+</html>
