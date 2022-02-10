@@ -21,3 +21,15 @@
 .alert-warning {
   background-color: var(--yellow-light);
 }
+.info-icon {
+  color: var(--bright-blue);
+}
+.check-icon {
+  color: var(--sherwood-green);
+}
+.danger-icon {
+  color: var(--blood-red);
+}
+.warning-icon {
+  color: var(--yellowish-orange);
+}
