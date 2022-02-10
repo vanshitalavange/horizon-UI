@@ -1,35 +1,28 @@
-.avatar-wrapper {
-  background-color:var(--white-lilac);
-  border-radius: var(--border-rd-6);
-  border: 2px solid var(--pastel-grey);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  margin: 2rem;
-  padding: 1rem;
-}
 .avatar-circular {
   border-radius: 50%;
+}
+.avatar-text {
+  color: var(--black-color);
 }
 .avatar-xs {
   width: clamp(2rem, 2.5rem, 3rem);
   height: clamp(2rem, 2.5rem, 3rem);
 }
 .avatar-sm {
-  width: clamp(4rem, 4.5rem, 5rem);
-  height: clamp(4rem, 4.5rem, 5rem);
+  width: clamp(3rem, 3.5rem, 4rem);
+  height: clamp(3rem, 3.5rem, 4rem);
 }
 .avatar-md {
-  width: clamp(6rem, 6.5rem, 7rem);
-  height: clamp(6rem, 6.5rem, 7rem);
+  width: clamp(4.5rem, 5rem, 5.5rem);
+  height: clamp(4.5rem, 5rem, 5.5rem);
 }
 .avatar-lg {
-  width: clamp(8rem, 8.5rem, 9rem);
-  height: clamp(8rem, 8.5rem, 9rem);
+  width: clamp(5.5rem, 6rem, 6.5rem);
+  height: clamp(5.5rem, 6rem, 6.5rem);
 }
 .avatar-xl {
-  width: clamp(9.5rem, 10.2rem, 10.5rem);
-  height: clamp(9.5rem, 10.2rem, 10.5rem);
+  width: clamp(6.5rem, 7rem, 7.5rem);
+  height: clamp(6.5rem, 7rem, 7.5rem);
 }
 .avatar-text {
   display: flex;
@@ -43,22 +36,22 @@
   border: 1px solid var(--purple-dark);
 }
 .avatar-text-sm {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   background-color: var(--red-light);
   border: 1px solid var(--red-dark);
 }
 .avatar-text-md {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   background-color: var(--yellow-light);
   border: 1px solid var(--yellow-dark);
 }
 .avatar-text-lg {
-  font-size: 3.8rem;
+  font-size: 2.9rem;
   background-color: var(--blue-light);
   border: 1px solid var(--blue-semi-dark);
 }
 .avatar-text-xl {
-  font-size: 4.8rem;
+  font-size: 3.8rem;
   background-color: var(--skyblue-light);
   border: 1px solid var(--skyblue-dark);
 }
