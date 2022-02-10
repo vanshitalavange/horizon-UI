@@ -33,6 +33,9 @@ body {
 .flex-wrap {
   flex-wrap: wrap;
 }
+.wrap-reverse{
+  flex-wrap: wrap-reverse;
+}
 .align-center {
   align-self: center;
 }
