@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
+      rel="stylesheet"
+    />
+    <link href="../codeblocks/codeblock.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
+    <link href="./docs.css" rel="stylesheet" />
+    <link href="../../stylesheets/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header flex-row flex-wrap">
+        <div class="header-left-wrapper flex-row">
+          <span class="material-icons-round hamburger-menu align-center">
+            menu
+          </span>
+          <div class="header-logo align-center">
+            <a href="../../index.html"><img src="../../assets/logo.png" /></a>
+          </div>
+          <h1 class="header-title align-center">Horizon</h1>
+        </div>
+        <nav class="navbar align-center ml-auto">
+          <ul class="nav-list flex-row">
+            <li class="align-center">
+              <a
+                href="https://github.com/vanshitalavange/horizon-UI"
+                class="nav-icon"
+                ><i class="fa fa-github github"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <aside class="sidebar">
+        <div class="sidebar-header flex-row wrap-reverse">
+          <h6 class="sidebar-heading">Getting Started</h6>
+          <span class="material-icons-round align-center ml-auto menu-close">
+            close
+          </span>
+        </div>
+        <ul class="sidebar-list flex-column">
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Introduction</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Typography</a>
+          </li>
+        </ul>
+        <h6 class="sidebar-heading component-heading">Components</h6>
+        <ul class="sidebar-list flex-column">
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Alerts</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Avatars</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Badges</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Buttons</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Cards</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Image</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Input</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Grid</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Ratings</a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="page-main">
+        <div class="content flex-column">
+          <h1 class="content-title">Introduction</h1>
+          <p class="content-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui iste
+            fuga vitae earum praesentium? Cum, impedit beatae? Architecto
+            perferendis repellat
+          </p>
+        </div>
+        <div class="content flex-column">
+          <h2 class="content-title">Introduction</h2>
+          <p class="content-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui iste
+            fuga vitae earum praesentium? Cum, impedit beatae? Architecto
+            perferendis repellat
+          </p>
+        </div>
+        <pre>
+          <code id="codeblock" class="css"> 
+            @import url("horizon-ui.netlify.app/stylesheets/style.css")
+          </code>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </pre>
+      </main>
+      <footer class="page-footer text-centered">
+        created by
+        <a href="https://github.com/vanshitalavange">vanshitalavange</a> -
+        <strong>@neogcamp</strong>
+      </footer>
+    </div>
+    <script src="./docs.js"></script>
+    <!-- codeblocks js links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../codeblocks/codeblock.js"></script>
+  </body>
+</html>
