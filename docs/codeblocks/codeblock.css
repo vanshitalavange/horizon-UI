@@ -8,6 +8,7 @@ pre {
   font-size: 1rem;
   max-height:19rem;
   overflow-y: auto;
+  margin-bottom: var(--spacing-sm);
 }
 
 .copy {
