@@ -11,7 +11,7 @@
     />
     <link href="../codeblocks/codeblock.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
-    <link href="./docs.css" rel="stylesheet" />
+    <link href="../docs-layout/docs.css" rel="stylesheet" />
     <link href="../../stylesheets/main.css" rel="stylesheet" />
   </head>
   <body>
@@ -48,7 +48,9 @@
         </div>
         <ul class="sidebar-list flex-column">
           <li class="sidebar-item">
-            <a href="#" class="sidebar-link">Introduction</a>
+            <a href="../docs-layout/docs.html" class="sidebar-link"
+              >Introduction</a
+            >
           </li>
           <li class="sidebar-item">
             <a href="#" class="sidebar-link">Typography</a>
@@ -57,7 +59,7 @@
         <h6 class="sidebar-heading component-heading">Components</h6>
         <ul class="sidebar-list flex-column">
           <li class="sidebar-item">
-            <a href="../alerts/alerts.html" class="sidebar-link">Alerts</a>
+            <a href="./alerts.html" class="sidebar-link">Alerts</a>
           </li>
           <li class="sidebar-item">
             <a href="../avatars/avatar.html" class="sidebar-link">Avatars</a>
@@ -78,7 +80,7 @@
             <a href="#" class="sidebar-link">Input</a>
           </li>
           <li class="sidebar-item">
-            <a href="../grid/grid.html" class="sidebar-link">Grid</a>
+            <a href="./grid.html" class="sidebar-link">Grid</a>
           </li>
           <li class="sidebar-item">
             <a href="#" class="sidebar-link">Ratings</a>
@@ -88,28 +90,74 @@
 
       <main class="page-main">
         <div class="content flex-column">
-          <h1 class="content-title">Introduction</h1>
+          <h1 class="content-title">Grid</h1>
           <p class="content-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui iste
-            fuga vitae earum praesentium? Cum, impedit beatae? Architecto
-            perferendis repellat
+            Grid is a powerful tool that allows for two-dimensional layouts to be created on the web.
           </p>
         </div>
-        <div class="content flex-column">
-          <h2 class="content-title">Introduction</h2>
-          <p class="content-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui iste
-            fuga vitae earum praesentium? Cum, impedit beatae? Architecto
-            perferendis repellat
-          </p>
+
+        <h2>Two column layout</h2>
+        <div class="wrapper">
+            <div class="grid-wrapper two-col-layout grid-gap">
+                <div class="item">item one</div>
+                <div class="item">item two</div>
+                </div>
         </div>
+
         <pre>
-          <code id="codeblock" class="css"> 
-            @import url("horizon-ui.netlify.app/stylesheets/style.css")
+          <code id="codeblock" class="language-html"> 
+            &lt;div class=&quot;grid-wrapper two-col-layout grid-gap&quot;&gt;
+         &lt;div class=&quot;item&quot;&gt;item one&lt;/div&gt;
+         &lt;div class=&quot;item&quot;&gt;item two&lt;/div&gt;
+  &lt;/div&gt;
           </code>
           <i class="fas fa-copy copy"></i>
           <span class="copied-snackbar">Copied</span>
         </pre>
+        <h2>Three column layout</h2>
+        <div class="wrapper">
+            <div class="grid-wrapper three-col-layout grid-gap">
+                <div class="item">item one</div>
+                <div class="item">item two</div>
+                <div class="item">item three</div>
+                </div>
+        </div>
+        <pre>
+            <code id="codeblock" class="language-html"> 
+                &lt;div class=&quot;grid-wrapper three-col-layout grid-gap&quot;&gt;
+                &lt;div class=&quot;item&quot;&gt;item one&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;item two&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;item three&lt;/div&gt;
+ &lt;/div&gt;
+            </code>
+            <i class="fas fa-copy copy"></i>
+            <span class="copied-snackbar">Copied</span>
+          </pre>
+          <h2>Grid auto-fill layout</h2>
+          <div class="wrapper">
+            <div class="grid-wrapper auto-fill-col-layout grid-gap">
+                <div class="item">item one</div>
+                <div class="item">item two</div>
+                <div class="item">item three</div>
+                <div class="item">item four</div>
+                <div class="item">item five</div>
+                <div class="item">item six</div>
+            </div>
+          </div>
+          <pre>
+            <code id="codeblock" class="language-html"> 
+                &lt;div class=&quot;grid-wrapper auto-fill-col-layout grid-gap&quot;&gt;
+                &lt;div class=&quot;item&quot;&gt;item one&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;item two&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;item three&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;item four&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;item five&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;item six&lt;/div&gt;
+        &lt;/div&gt;
+            </code>
+            <i class="fas fa-copy copy"></i>
+            <span class="copied-snackbar">Copied</span>
+          </pre>
       </main>
       <footer class="page-footer text-centered">
         created by
@@ -117,7 +165,7 @@
         <strong>@neogcamp</strong>
       </footer>
     </div>
-    <script src="./docs.js"></script>
+    <script src="../docs-layout/docs.js"></script>
     <!-- codeblocks js links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
