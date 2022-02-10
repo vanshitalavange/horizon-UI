@@ -1,0 +1,33 @@
+code {
+  line-height: 1.8;
+  padding: 2rem !important;
+}
+pre {
+  position: relative;
+  white-space: pre-line;
+  max-height: 19rem;
+  overflow-y: auto;
+}
+
+.copy {
+  font-size: 1.6rem;
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  cursor: pointer;
+  z-index:1;
+}
+.copy:active {
+  transform: scale(0.9);
+}
+.copied-snackbar{
+    display: none;
+    padding:var(--spacing-xs) var(--spacing-sm);
+    background-color: var(--blue-semi-dark);
+    width:fit-content;
+    border-radius: var(--border-rd-3);
+    position: absolute;
+    top: 0.8rem;
+    right: var(--spacing-sm);
+    z-index:2;
+}
