@@ -52,7 +52,7 @@
 }
 /* outline buttons */
 
-.btn-outline:hover {
+.btn-outline {
   color: white;
 }
 .btn-primary-outline {
@@ -77,7 +77,7 @@
   border: 2px solid var(--red-dark);
 }
 .btn-danger-outline:hover {
-  background-color: var(--red-light);
+  background-color: var(--red-dark);
 }
 .btn-warning-outline {
   border: 2px solid var(--orange-dark);
