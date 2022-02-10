@@ -1,12 +1,10 @@
 code {
   line-height: 1.8;
-  padding: 2rem !important;
 }
 pre {
   position: relative;
   white-space: pre-line;
-  max-height: 19rem;
-  overflow-y: auto;
+  font-size: 1rem;
 }
 
 .copy {
