@@ -1,9 +1,14 @@
-.img-container{
-  max-height:30rem;
-  width:50%;
-}
 .responsive-img {
   width: 100%;
-  height:auto;
+  height: auto;
   object-fit: cover;
+}
+.img-round {
+  border-radius: 100%;
+  width:220px;
+  height:220px;
+}
+.img-square{
+  width:220px;
+  height:220px
 }
