@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
+      rel="stylesheet"
+    />
+    <link href="../codeblocks/codeblock.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
+    <link href="../docs-layout/docs.css" rel="stylesheet" />
+    <link href="../../stylesheets/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header flex-row flex-wrap">
+        <div class="header-left-wrapper flex-row">
+          <span class="material-icons-round hamburger-menu align-center">
+            menu
+          </span>
+          <div class="header-logo align-center">
+            <a href="../../index.html"><img src="../../assets/logo.png" /></a>
+          </div>
+          <h1 class="header-title align-center">Horizon</h1>
+        </div>
+        <nav class="navbar align-center ml-auto">
+          <ul class="nav-list flex-row">
+            <li class="align-center">
+              <a
+                href="https://github.com/vanshitalavange/horizon-UI"
+                class="nav-icon"
+                ><i class="fa fa-github github"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <aside class="sidebar">
+        <div class="sidebar-header flex-row wrap-reverse">
+          <h6 class="sidebar-heading">Getting Started</h6>
+          <span class="material-icons-round align-center ml-auto menu-close">
+            close
+          </span>
+        </div>
+        <ul class="sidebar-list flex-column">
+          <li class="sidebar-item">
+            <a href="../docs-layout/docs.html" class="sidebar-link"
+              >Introduction</a
+            >
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Typography</a>
+          </li>
+        </ul>
+        <h6 class="sidebar-heading component-heading">Components</h6>
+        <ul class="sidebar-list flex-column">
+          <li class="sidebar-item">
+            <a href="./alerts.html" class="sidebar-link">Alerts</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../avatars/avatar.html" class="sidebar-link">Avatars</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../badges/badges.html" class="sidebar-link">Badges</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../buttons/buttons.html" class="sidebar-link">Buttons</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Cards</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Image</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Input</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../grid/grid.html" class="sidebar-link">Grid</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="./rating.html" class="sidebar-link">Ratings</a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="page-main">
+        <div class="content flex-column">
+          <h1 class="content-title">Ratings</h1>
+          <p class="content-text">
+           Ratings help to capture the user's feedback in the form of rating
+          </p>
+        </div>
+
+        <h2>Star rating</h2>
+         
+        <div class="wrapper flex-row-center">
+            <div class="flex-row">
+                <!-- filled star -->
+                <span class="material-icons rating-icon"> star </span>
+                <span class="material-icons rating-icon"> star </span>
+                <span class="material-icons rating-icon"> star </span>
+                <!-- half-filled star -->
+                <span class="material-icons rating-icon"> star_half </span>
+                <!-- empty star -->
+                <span class="material-icons rating-icon rating-unchecked"> star_border </span>
+            </div>
+        </div>
+
+        <pre>
+          <code id="codeblock" class="language-html"> 
+            &lt;div class=&quot;flex-row&quot;&gt;
+            &lt;!-- filled star --&gt;
+            &lt;span class=&quot;material-icons rating-icon&quot;&gt; star &lt;/span&gt;
+            &lt;span class=&quot;material-icons rating-icon&quot;&gt; star &lt;/span&gt;
+            &lt;span class=&quot;material-icons rating-icon&quot;&gt; star &lt;/span&gt;
+            &lt;!-- half-filled star --&gt;
+            &lt;span class=&quot;material-icons rating-icon&quot;&gt; star_half &lt;/span&gt;
+            &lt;!-- empty star --&gt;
+            &lt;span class=&quot;material-icons rating-icon rating-unchecked&quot;&gt; star_border &lt;/span&gt;
+        &lt;/div&gt;
+          </code>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </pre>
+
+        <h2>Numbered rating</h2>
+        <div class="wrapper flex-row-center flex-wrap">
+            <div class="flex-row-center rating-container bg-grey">
+                4.5 <span class="material-icons rating-icon fs-16"> star </span>
+              </div>
+              <div class="flex-row-center rating-container bg-spruce">
+                4.5 <span class="material-icons rating-icon fs-16"> star </span> | 10.1k
+              </div>
+        </div>
+        <pre>
+            <code id="codeblock" class="language-html"> 
+                &lt;div class=&quot;flex-row-center rating-container bg-grey&quot;&gt;
+                4.5 &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;flex-row-center rating-container bg-spruce&quot;&gt;
+                4.5 &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt; | 10.1k
+              &lt;/div&gt;
+            </code>
+            <i class="fas fa-copy copy"></i>
+            <span class="copied-snackbar">Copied</span>
+          </pre>
+      </main>
+      <footer class="page-footer text-centered">
+        created by
+        <a href="https://github.com/vanshitalavange">vanshitalavange</a> -
+        <strong>@neogcamp</strong>
+      </footer>
+    </div>
+    <script src="../docs-layout/docs.js"></script>
+    <!-- codeblocks js links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../codeblocks/codeblock.js"></script>
+  </body>
+</html>
