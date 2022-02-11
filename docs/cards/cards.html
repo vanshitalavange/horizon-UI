@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
+      rel="stylesheet"
+    />
+    <link href="../codeblocks/codeblock.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
+    <link href="../docs-layout/docs.css" rel="stylesheet" />
+    <link href="../../stylesheets/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header flex-row flex-wrap">
+        <div class="header-left-wrapper flex-row">
+          <span class="material-icons-round hamburger-menu align-center">
+            menu
+          </span>
+          <div class="header-logo align-center">
+            <a href="../../index.html"><img src="../../assets/logo.png" /></a>
+          </div>
+          <h1 class="header-title align-center">Horizon</h1>
+        </div>
+        <nav class="navbar align-center ml-auto">
+          <ul class="nav-list flex-row">
+            <li class="align-center">
+              <a
+                href="https://github.com/vanshitalavange/horizon-UI"
+                class="nav-icon"
+                ><i class="fa fa-github github"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <aside class="sidebar">
+        <div class="sidebar-header flex-row wrap-reverse">
+          <h6 class="sidebar-heading">Getting Started</h6>
+          <span class="material-icons-round align-center ml-auto menu-close">
+            close
+          </span>
+        </div>
+        <ul class="sidebar-list flex-column">
+          <li class="sidebar-item">
+            <a href="../docs-layout/docs.html" class="sidebar-link"
+              >Introduction</a
+            >
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Typography</a>
+          </li>
+        </ul>
+        <h6 class="sidebar-heading component-heading">Components</h6>
+        <ul class="sidebar-list flex-column">
+          <li class="sidebar-item">
+            <a href="../alerts/alerts.html" class="sidebar-link">Alerts</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../avatars/avatar.html" class="sidebar-link">Avatars</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../badges/badges.html" class="sidebar-link">Badges</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../buttons/buttons.html" class="sidebar-link">Buttons</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="./cards.html" class="sidebar-link">Cards</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../image/image.html" class="sidebar-link">Image</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../inputs/input.html" class="sidebar-link">Input</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../grid/grid.html" class="sidebar-link">Grid</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../ratings/rating.html" class="sidebar-link">Ratings</a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="page-main">
+        <div class="content flex-column">
+          <h1 class="content-title">Cards</h1>
+          <p class="content-text">
+            Cards are used to display components like products on a ecommerce
+            website and modules on classrooms
+          </p>
+        </div>
+
+        <h2>Basic card</h2>
+        <div class="wrapper flex-row-center">
+          <div class="card flex-column">
+            <div class="card-header">
+              <img
+                class="card-img"
+                src="../../assets/cards/product_image.jpg"
+                alt="product-image"
+              />
+              <button class="btn-wishlist">
+                <span class="material-icons-round icon-right icon-top">
+                  favorite
+                </span>
+              </button>
+            </div>
+            <div class="card-body flex-column">
+              <h2 class="card-title">A2 Desi Cow Ghee</h2>
+              <p class="card-text">Lab Tested | Natural & Organic</p>
+              <div class="card-section flex-row">
+                <div class="card-price flex-row">
+                  <p class="card-current-price">₹620</p>
+                  <p class="card-price-striked align-center">₹650</p>
+                </div>
+                <div class="card-rating flex-row">
+                  <div class="flex-row align-center">
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                  </div>
+                  <p class="rating-count align-center">246</p>
+                </div>
+              </div>
+              <div class="card-actions flex-row flex-wrap">
+                <div class="quantity flex-row">
+                  <button class="btn-minus">-</button>
+                  <p class="quantity-count align-center">1</p>
+                  <button class="btn-plus">+</button>
+                </div>
+                <div class="add-to-cart flex-row">
+                  <span class="material-icons-round cart-icon align-center">
+                    shopping_cart
+                  </span>
+                  <a href="#" class="btn-add-to-cart align-center"
+                    >ADD TO CART</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre>
+          <code id="codeblock" class="language-html"> 
+            &lt;div class=&quot;card flex-column&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+              &lt;img
+                class=&quot;card-img&quot;
+                src=&quot;replace with your url&quot;
+                alt=&quot;product-image&quot;
+              /&gt;
+              &lt;button class=&quot;btn-wishlist&quot;&gt;
+                &lt;span class=&quot;material-icons-round icon-right icon-top&quot;&gt;
+                  favorite
+                &lt;/span&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body flex-column&quot;&gt;
+              &lt;h2 class=&quot;card-title&quot;&gt;A2 Desi Cow Ghee&lt;/h2&gt;
+              &lt;p class=&quot;card-text&quot;&gt;Lab Tested | Natural &amp; Organic&lt;/p&gt;
+              &lt;div class=&quot;card-section flex-row&quot;&gt;
+                &lt;div class=&quot;card-price flex-row&quot;&gt;
+                  &lt;p class=&quot;card-current-price&quot;&gt;₹620&lt;/p&gt;
+                  &lt;p class=&quot;card-price-striked align-center&quot;&gt;₹650&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card-rating flex-row&quot;&gt;
+                  &lt;div class=&quot;flex-row align-center&quot;&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;p class=&quot;rating-count align-center&quot;&gt;246&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;card-actions flex-row flex-wrap&quot;&gt;
+                &lt;div class=&quot;quantity flex-row&quot;&gt;
+                  &lt;button class=&quot;btn-minus&quot;&gt;-&lt;/button&gt;
+                  &lt;p class=&quot;quantity-count align-center&quot;&gt;1&lt;/p&gt;
+                  &lt;button class=&quot;btn-plus&quot;&gt;+&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;add-to-cart flex-row&quot;&gt;
+                  &lt;span class=&quot;material-icons-round cart-icon align-center&quot;&gt;
+                    shopping_cart
+                  &lt;/span&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;btn-add-to-cart align-center&quot;
+                    &gt;ADD TO CART&lt;/a
+                  &gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          </code>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </pre>
+
+        <h2>Card with badge</h2>
+        <div class="wrapper flex-row-center">
+          <div class="card flex-column">
+            <div class="card-header">
+              <img
+                class="card-img"
+                src="../../assets/cards/product_image.jpg"
+                alt="product-image"
+              />
+              <button class="btn-wishlist">
+                <span class="material-icons-round icon-right icon-top">
+                  favorite
+                </span>
+              </button>
+              <span class="card-badge">Best seller</span>
+            </div>
+            <div class="card-body flex-column">
+              <h2 class="card-title">A2 Desi Cow Ghee</h2>
+              <p class="card-text">Lab Tested | Natural & Organic</p>
+              <div class="card-section flex-row">
+                <div class="card-price flex-row">
+                  <p class="card-current-price">₹620</p>
+                  <p class="card-price-striked align-center">₹650</p>
+                </div>
+                <div class="card-rating flex-row">
+                  <div class="flex-row align-center">
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                  </div>
+                  <p class="rating-count align-center">246</p>
+                </div>
+              </div>
+              <div class="card-actions flex-row">
+                <div class="quantity flex-row">
+                  <button class="btn-minus">-</button>
+                  <p class="quantity-count align-center">1</p>
+                  <button class="btn-plus">+</button>
+                </div>
+                <div class="add-to-cart flex-row">
+                  <span class="material-icons-round cart-icon align-center">
+                    shopping_cart
+                  </span>
+                  <a href="#" class="btn-add-to-cart align-center"
+                    >ADD TO CART</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre>
+          <code id="codeblock" class="language-html"> 
+            &lt;div class=&quot;card flex-column&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+              &lt;img
+                class=&quot;card-img&quot;
+                src=&quot;replace with your url&quot;
+                alt=&quot;product-image&quot;
+              /&gt;
+              &lt;button class=&quot;btn-wishlist&quot;&gt;
+                &lt;span class=&quot;material-icons-round icon-right icon-top&quot;&gt;
+                  favorite
+                &lt;/span&gt;
+              &lt;/button&gt;
+              &lt;span class=&quot;card-badge&quot;&gt;Best seller&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body flex-column&quot;&gt;
+              &lt;h2 class=&quot;card-title&quot;&gt;A2 Desi Cow Ghee&lt;/h2&gt;
+              &lt;p class=&quot;card-text&quot;&gt;Lab Tested | Natural &amp; Organic&lt;/p&gt;
+              &lt;div class=&quot;card-section flex-row&quot;&gt;
+                &lt;div class=&quot;card-price flex-row&quot;&gt;
+                  &lt;p class=&quot;card-current-price&quot;&gt;₹620&lt;/p&gt;
+                  &lt;p class=&quot;card-price-striked align-center&quot;&gt;₹650&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card-rating flex-row&quot;&gt;
+                  &lt;div class=&quot;flex-row align-center&quot;&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;p class=&quot;rating-count align-center&quot;&gt;246&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;card-actions flex-row&quot;&gt;
+                &lt;div class=&quot;quantity flex-row&quot;&gt;
+                  &lt;button class=&quot;btn-minus&quot;&gt;-&lt;/button&gt;
+                  &lt;p class=&quot;quantity-count align-center&quot;&gt;1&lt;/p&gt;
+                  &lt;button class=&quot;btn-plus&quot;&gt;+&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;add-to-cart flex-row&quot;&gt;
+                  &lt;span class=&quot;material-icons-round cart-icon align-center&quot;&gt;
+                    shopping_cart
+                  &lt;/span&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;btn-add-to-cart align-center&quot;
+                    &gt;ADD TO CART&lt;/a
+                  &gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          </code>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </pre>
+
+        <h2>Card with dismiss</h2>
+        <div class="wrapper flex-row-center">
+          <div class="card flex-column">
+            <div class="card-header">
+              <img
+                class="card-img"
+                src="../../assets/cards/product_image.jpg"
+                alt="product-image"
+              />
+              <button class="btn-dismiss">
+                <span class="material-icons icon-right icon-top icon-dismiss">
+                  highlight_off
+                </span>
+              </button>
+              <button class="btn-wishlist">
+                <span
+                  class="material-icons-round icon-right icon-wishlist-dismiss-card"
+                >
+                  favorite
+                </span>
+              </button>
+            </div>
+            <div class="card-body flex-column">
+              <h2 class="card-title">A2 Desi Cow Ghee</h2>
+              <p class="card-text">Lab Tested | Natural & Organic</p>
+              <div class="card-section flex-row">
+                <div class="card-price flex-row">
+                  <p class="card-current-price">₹620</p>
+                  <p class="card-price-striked align-center">₹650</p>
+                </div>
+                <div class="card-rating flex-row">
+                  <div class="flex-row align-center">
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                  </div>
+                  <p class="rating-count align-center">246</p>
+                </div>
+              </div>
+              <div class="card-actions flex-row">
+                <div class="quantity flex-row">
+                  <button class="btn-minus">-</button>
+                  <p class="quantity-count align-center">1</p>
+                  <button class="btn-plus">+</button>
+                </div>
+                <div class="add-to-cart flex-row">
+                  <span class="material-icons-round cart-icon align-center">
+                    shopping_cart
+                  </span>
+                  <a href="#" class="btn-add-to-cart align-center"
+                    >ADD TO CART</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre>
+          <code id="codeblock" class="language-html"> 
+            &lt;div class=&quot;card flex-column&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+              &lt;img
+                class=&quot;card-img&quot;
+                src=&quot;replace with your url&quot;
+                alt=&quot;product-image&quot;
+              /&gt;
+              &lt;button class=&quot;btn-dismiss&quot;&gt;
+                &lt;span class=&quot;material-icons icon-right icon-top icon-dismiss&quot;&gt;
+                  highlight_off
+                &lt;/span&gt;
+              &lt;/button&gt;
+              &lt;button class=&quot;btn-wishlist&quot;&gt;
+                &lt;span
+                  class=&quot;material-icons-round icon-right icon-wishlist-dismiss-card&quot;
+                &gt;
+                  favorite
+                &lt;/span&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body flex-column&quot;&gt;
+              &lt;h2 class=&quot;card-title&quot;&gt;A2 Desi Cow Ghee&lt;/h2&gt;
+              &lt;p class=&quot;card-text&quot;&gt;Lab Tested | Natural &amp; Organic&lt;/p&gt;
+              &lt;div class=&quot;card-section flex-row&quot;&gt;
+                &lt;div class=&quot;card-price flex-row&quot;&gt;
+                  &lt;p class=&quot;card-current-price&quot;&gt;₹620&lt;/p&gt;
+                  &lt;p class=&quot;card-price-striked align-center&quot;&gt;₹650&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card-rating flex-row&quot;&gt;
+                  &lt;div class=&quot;flex-row align-center&quot;&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;p class=&quot;rating-count align-center&quot;&gt;246&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;card-actions flex-row&quot;&gt;
+                &lt;div class=&quot;quantity flex-row&quot;&gt;
+                  &lt;button class=&quot;btn-minus&quot;&gt;-&lt;/button&gt;
+                  &lt;p class=&quot;quantity-count align-center&quot;&gt;1&lt;/p&gt;
+                  &lt;button class=&quot;btn-plus&quot;&gt;+&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;add-to-cart flex-row&quot;&gt;
+                  &lt;span class=&quot;material-icons-round cart-icon align-center&quot;&gt;
+                    shopping_cart
+                  &lt;/span&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;btn-add-to-cart align-center&quot;
+                    &gt;ADD TO CART&lt;/a
+                  &gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          </code>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </pre>
+
+        <h2>Text overlay card</h2>
+        <div class="wrapper flex-row-center">
+          <div class="card flex-column card-overlay">
+            <div class="card-header">
+              <img
+                class="card-img"
+                src="../../assets/cards/product_image.jpg"
+                alt="product-image"
+              />
+              <button class="btn-wishlist">
+                <span class="material-icons-round icon-right icon-top">
+                  favorite
+                </span>
+              </button>
+            </div>
+            <div class="card-body flex-column card-body-overlay">
+              <div class="overlay-text">
+                <h2 class="card-title">A2 Desi Cow Ghee</h2>
+                <p class="card-text">Lab Tested | Natural & Organic</p>
+              </div>
+              <div class="card-section flex-row">
+                <div class="card-price flex-row">
+                  <p class="card-current-price">₹620</p>
+                  <p class="card-price-striked align-center">₹650</p>
+                </div>
+                <div class="card-rating flex-row">
+                  <div class="flex-row align-center">
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                  </div>
+                  <p class="rating-count align-center">246</p>
+                </div>
+              </div>
+              <div class="card-actions flex-row">
+                <div class="quantity flex-row">
+                  <button class="btn-minus">-</button>
+                  <p class="quantity-count align-center">1</p>
+                  <button class="btn-plus">+</button>
+                </div>
+                <div class="add-to-cart flex-row">
+                  <span class="material-icons-round cart-icon align-center">
+                    shopping_cart
+                  </span>
+                  <a href="#" class="btn-add-to-cart align-center"
+                    >ADD TO CART</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre>
+          <code id="codeblock" class="language-html"> 
+            &lt;div class=&quot;card flex-column card-overlay&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+              &lt;img
+                class=&quot;card-img&quot;
+                src=&quot;replace with your url&quot;
+                alt=&quot;product-image&quot;
+              /&gt;
+              &lt;button class=&quot;btn-wishlist&quot;&gt;
+                &lt;span class=&quot;material-icons-round icon-right icon-top&quot;&gt;
+                  favorite
+                &lt;/span&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body flex-column card-body-overlay&quot;&gt;
+              &lt;div class=&quot;overlay-text&quot;&gt;
+                &lt;h2 class=&quot;card-title&quot;&gt;A2 Desi Cow Ghee&lt;/h2&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Lab Tested | Natural &amp; Organic&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;card-section flex-row&quot;&gt;
+                &lt;div class=&quot;card-price flex-row&quot;&gt;
+                  &lt;p class=&quot;card-current-price&quot;&gt;₹620&lt;/p&gt;
+                  &lt;p class=&quot;card-price-striked align-center&quot;&gt;₹650&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card-rating flex-row&quot;&gt;
+                  &lt;div class=&quot;flex-row align-center&quot;&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;p class=&quot;rating-count align-center&quot;&gt;246&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;card-actions flex-row&quot;&gt;
+                &lt;div class=&quot;quantity flex-row&quot;&gt;
+                  &lt;button class=&quot;btn-minus&quot;&gt;-&lt;/button&gt;
+                  &lt;p class=&quot;quantity-count align-center&quot;&gt;1&lt;/p&gt;
+                  &lt;button class=&quot;btn-plus&quot;&gt;+&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;add-to-cart flex-row&quot;&gt;
+                  &lt;span class=&quot;material-icons-round cart-icon align-center&quot;&gt;
+                    shopping_cart
+                  &lt;/span&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;btn-add-to-cart align-center&quot;
+                    &gt;ADD TO CART&lt;/a
+                  &gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          </code>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </pre>
+
+        <h2>Text only card</h2>
+        <div class="wrapper flex-row-center">
+          <div class="card card-only-text flex-column">
+            <button class="btn-wishlist">
+              <span class="material-icons-round icon-right icon-top">
+                favorite
+              </span>
+            </button>
+            <div class="card-body flex-column">
+              <h2 class="card-title">A2 Desi Cow Ghee</h2>
+              <p class="card-text">Lab Tested | Natural & Organic</p>
+              <div class="card-section flex-row">
+                <div class="card-price flex-row">
+                  <p class="card-current-price">₹620</p>
+                  <p class="card-price-striked align-center">₹650</p>
+                </div>
+                <div class="card-rating flex-row">
+                  <div class="flex-row align-center">
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                  </div>
+                  <p class="rating-count align-center">246</p>
+                </div>
+              </div>
+              <div class="card-actions flex-row">
+                <div class="quantity flex-row">
+                  <button class="btn-minus">-</button>
+                  <p class="quantity-count align-center">1</p>
+                  <button class="btn-plus">+</button>
+                </div>
+                <div class="add-to-cart flex-row">
+                  <span class="material-icons-round cart-icon align-center">
+                    shopping_cart
+                  </span>
+                  <a href="#" class="btn-add-to-cart align-center"
+                    >ADD TO CART</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre>
+          <code id="codeblock" class="language-html"> 
+            &lt;div class=&quot;card card-only-text flex-column&quot;&gt;
+            &lt;button class=&quot;btn-wishlist&quot;&gt;
+              &lt;span class=&quot;material-icons-round icon-right icon-top&quot;&gt;
+                favorite
+              &lt;/span&gt;
+            &lt;/button&gt;
+            &lt;div class=&quot;card-body flex-column&quot;&gt;
+              &lt;h2 class=&quot;card-title&quot;&gt;A2 Desi Cow Ghee&lt;/h2&gt;
+              &lt;p class=&quot;card-text&quot;&gt;Lab Tested | Natural &amp; Organic&lt;/p&gt;
+              &lt;div class=&quot;card-section flex-row&quot;&gt;
+                &lt;div class=&quot;card-price flex-row&quot;&gt;
+                  &lt;p class=&quot;card-current-price&quot;&gt;₹620&lt;/p&gt;
+                  &lt;p class=&quot;card-price-striked align-center&quot;&gt;₹650&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card-rating flex-row&quot;&gt;
+                  &lt;div class=&quot;flex-row align-center&quot;&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;p class=&quot;rating-count align-center&quot;&gt;246&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;card-actions flex-row&quot;&gt;
+                &lt;div class=&quot;quantity flex-row&quot;&gt;
+                  &lt;button class=&quot;btn-minus&quot;&gt;-&lt;/button&gt;
+                  &lt;p class=&quot;quantity-count align-center&quot;&gt;1&lt;/p&gt;
+                  &lt;button class=&quot;btn-plus&quot;&gt;+&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;add-to-cart flex-row&quot;&gt;
+                  &lt;span class=&quot;material-icons-round cart-icon align-center&quot;&gt;
+                    shopping_cart
+                  &lt;/span&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;btn-add-to-cart align-center&quot;
+                    &gt;ADD TO CART&lt;/a
+                  &gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          </code>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </pre>
+
+        <h2>Vertical card</h2>
+        <div class="wrapper flex-row-center">
+          <div class="card card-vertical flex-column">
+            <div class="card-header">
+              <img
+                class="card-img"
+                src="../../assets/cards/product_image.jpg"
+                alt="product-image"
+              />
+              <button class="btn-wishlist">
+                <span class="material-icons-round icon-right icon-top">
+                  favorite
+                </span>
+              </button>
+            </div>
+            <div class="card-content-top">
+              <h2 class="card-title">A2 Desi Cow Ghee</h2>
+              <p class="card-text">Lab Tested | Natural & Organic</p>
+            </div>
+            <div class="card-body flex-column card-body-vertical">
+              <div class="card-section flex-row">
+                <div class="card-price flex-row">
+                  <p class="card-current-price">₹620</p>
+                  <p class="card-price-striked align-center">₹650</p>
+                </div>
+                <div class="card-rating flex-row">
+                  <div class="flex-row align-center">
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                  </div>
+                  <p class="rating-count align-center">246</p>
+                </div>
+              </div>
+              <div class="card-actions flex-row">
+                <div class="quantity flex-row">
+                  <button class="btn-minus">-</button>
+                  <p class="quantity-count align-center">1</p>
+                  <button class="btn-plus">+</button>
+                </div>
+                <div class="add-to-cart flex-row">
+                  <span class="material-icons-round cart-icon align-center">
+                    shopping_cart
+                  </span>
+                  <a href="#" class="btn-add-to-cart align-center"
+                    >ADD TO CART</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre>
+          <code id="codeblock" class="language-html"> 
+            &lt;div class=&quot;card card-vertical flex-column&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+              &lt;img
+                class=&quot;card-img&quot;
+                src=&quot;replace with your url&quot;
+                alt=&quot;product-image&quot;
+              /&gt;
+              &lt;button class=&quot;btn-wishlist&quot;&gt;
+                &lt;span class=&quot;material-icons-round icon-right icon-top&quot;&gt;
+                  favorite
+                &lt;/span&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-content-top&quot;&gt;
+              &lt;h2 class=&quot;card-title&quot;&gt;A2 Desi Cow Ghee&lt;/h2&gt;
+              &lt;p class=&quot;card-text&quot;&gt;Lab Tested | Natural &amp; Organic&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body flex-column card-body-vertical&quot;&gt;
+              &lt;div class=&quot;card-section flex-row&quot;&gt;
+                &lt;div class=&quot;card-price flex-row&quot;&gt;
+                  &lt;p class=&quot;card-current-price&quot;&gt;₹620&lt;/p&gt;
+                  &lt;p class=&quot;card-price-striked align-center&quot;&gt;₹650&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card-rating flex-row&quot;&gt;
+                  &lt;div class=&quot;flex-row align-center&quot;&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;p class=&quot;rating-count align-center&quot;&gt;246&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;card-actions flex-row&quot;&gt;
+                &lt;div class=&quot;quantity flex-row&quot;&gt;
+                  &lt;button class=&quot;btn-minus&quot;&gt;-&lt;/button&gt;
+                  &lt;p class=&quot;quantity-count align-center&quot;&gt;1&lt;/p&gt;
+                  &lt;button class=&quot;btn-plus&quot;&gt;+&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;add-to-cart flex-row&quot;&gt;
+                  &lt;span class=&quot;material-icons-round cart-icon align-center&quot;&gt;
+                    shopping_cart
+                  &lt;/span&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;btn-add-to-cart align-center&quot;
+                    &gt;ADD TO CART&lt;/a
+                  &gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          </code>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </pre>
+
+        <h2>Horizontal card</h2>
+        <div class="wrapper flex-row-center">
+          <div class="card flex-row card-horizontal">
+            <div class="card-horizontal-left">
+              <img
+                class="card-img"
+                src="../../assets/cards/product_image.jpg"
+                alt="product-image"
+              />
+              <button class="btn-wishlist">
+                <span class="material-icons-round icon-right icon-top">
+                  favorite
+                </span>
+              </button>
+            </div>
+            <div class="card-body flex-column card-horizontal-body">
+              <h2 class="card-title">A2 Desi Cow Ghee</h2>
+              <p class="card-text">Lab Tested | Natural & Organic</p>
+              <div class="card-section flex-row">
+                <div class="card-price flex-row">
+                  <p class="card-current-price">₹620</p>
+                  <p class="card-price-striked align-end">₹650</p>
+                </div>
+                <div class="card-rating flex-row">
+                  <div class="flex-row align-center">
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                    <span class="material-icons rating-icon fs-16"> star </span>
+                  </div>
+                  <p class="rating-count align-center">246</p>
+                </div>
+              </div>
+              <div class="card-actions flex-row flex-wrap">
+                <div class="quantity flex-row">
+                  <button class="btn-minus">-</button>
+                  <p class="quantity-count align-center">1</p>
+                  <button class="btn-plus">+</button>
+                </div>
+                <div class="add-to-cart flex-row">
+                  <span class="material-icons-round cart-icon align-center">
+                    shopping_cart
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre>
+          <code id="codeblock" class="language-html"> 
+            &lt;div class=&quot;card flex-row card-horizontal&quot;&gt;
+            &lt;div class=&quot;card-horizontal-left&quot;&gt;
+              &lt;img
+                class=&quot;card-img&quot;
+                src=&quot;replace with your url&quot;
+                alt=&quot;product-image&quot;
+              /&gt;
+              &lt;button class=&quot;btn-wishlist&quot;&gt;
+                &lt;span class=&quot;material-icons-round icon-right icon-top&quot;&gt;
+                  favorite
+                &lt;/span&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body flex-column card-horizontal-body&quot;&gt;
+              &lt;h2 class=&quot;card-title&quot;&gt;A2 Desi Cow Ghee&lt;/h2&gt;
+              &lt;p class=&quot;card-text&quot;&gt;Lab Tested | Natural &amp; Organic&lt;/p&gt;
+              &lt;div class=&quot;card-section flex-row&quot;&gt;
+                &lt;div class=&quot;card-price flex-row&quot;&gt;
+                  &lt;p class=&quot;card-current-price&quot;&gt;₹620&lt;/p&gt;
+                  &lt;p class=&quot;card-price-striked align-end&quot;&gt;₹650&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card-rating flex-row&quot;&gt;
+                  &lt;div class=&quot;flex-row align-center&quot;&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                    &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;p class=&quot;rating-count align-center&quot;&gt;246&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;card-actions flex-row flex-wrap&quot;&gt;
+                &lt;div class=&quot;quantity flex-row&quot;&gt;
+                  &lt;button class=&quot;btn-minus&quot;&gt;-&lt;/button&gt;
+                  &lt;p class=&quot;quantity-count align-center&quot;&gt;1&lt;/p&gt;
+                  &lt;button class=&quot;btn-plus&quot;&gt;+&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;add-to-cart flex-row&quot;&gt;
+                  &lt;span class=&quot;material-icons-round cart-icon align-center&quot;&gt;
+                    shopping_cart
+                  &lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          </code>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </pre>
+      </main>
+      <footer class="page-footer text-centered">
+        created by
+        <a href="https://github.com/vanshitalavange">vanshitalavange</a> -
+        <strong>@neogcamp</strong>
+      </footer>
+    </div>
+    <script src="../docs-layout/docs.js"></script>
+    <!-- codeblocks js links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../codeblocks/codeblock.js"></script>
+  </body>
+</html>
