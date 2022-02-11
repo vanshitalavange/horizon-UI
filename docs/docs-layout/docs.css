@@ -108,7 +108,11 @@ border-top: 1px solid var(--charcoal-grey);
 .menu-close:hover{
   background-color:var(--charcoal-grey);
 }
-
+.input-wrapper{
+  background-color: var(--baltic-sea-color-dark);
+  padding-top:2rem;
+  padding-bottom:2rem;
+}
 @media only screen and (max-width: 800px) {
   .page {
     width: 85vw;
