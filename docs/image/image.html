@@ -74,7 +74,7 @@
             <a href="#" class="sidebar-link">Cards</a>
           </li>
           <li class="sidebar-item">
-            <a href="../image/image.html" class="sidebar-link">Image</a>
+            <a href="./image.html" class="sidebar-link">Image</a>
           </li>
           <li class="sidebar-item">
             <a href="#" class="sidebar-link">Input</a>
@@ -83,68 +83,54 @@
             <a href="../grid/grid.html" class="sidebar-link">Grid</a>
           </li>
           <li class="sidebar-item">
-            <a href="./rating.html" class="sidebar-link">Ratings</a>
+            <a href="../ratings/rating.html" class="sidebar-link">Ratings</a>
           </li>
         </ul>
       </aside>
 
       <main class="page-main">
         <div class="content flex-column">
-          <h1 class="content-title">Ratings</h1>
+          <h1 class="content-title">Image</h1>
           <p class="content-text">
-           Ratings help to capture the user's feedback in the form of rating
+            The image component includes round image, square image and
+            responsive image which adjusts itself to the screen size
           </p>
         </div>
+        <h2>Responsive image</h2>
 
-        <h2>Star rating</h2>
-         
-        <div class="wrapper flex-row-center">
-            <div class="flex-row">
-                <!-- filled star -->
-                <span class="material-icons rating-icon"> star </span>
-                <span class="material-icons rating-icon"> star </span>
-                <span class="material-icons rating-icon"> star </span>
-                <!-- half-filled star -->
-                <span class="material-icons rating-icon"> star_half </span>
-                <!-- empty star -->
-                <span class="material-icons rating-icon rating-unchecked"> star_border </span>
-            </div>
+        <div class="wrapper">
+                <img src="../../assets/image/boat.png" alt="square-img" class="responsive-img">
         </div>
 
         <pre>
           <code id="codeblock" class="language-html"> 
-            &lt;div class=&quot;flex-row&quot;&gt;
-            &lt;!-- filled star --&gt;
-            &lt;span class=&quot;material-icons rating-icon&quot;&gt; star &lt;/span&gt;
-            &lt;span class=&quot;material-icons rating-icon&quot;&gt; star &lt;/span&gt;
-            &lt;span class=&quot;material-icons rating-icon&quot;&gt; star &lt;/span&gt;
-            &lt;!-- half-filled star --&gt;
-            &lt;span class=&quot;material-icons rating-icon&quot;&gt; star_half &lt;/span&gt;
-            &lt;!-- empty star --&gt;
-            &lt;span class=&quot;material-icons rating-icon rating-unchecked&quot;&gt; star_border &lt;/span&gt;
-        &lt;/div&gt;
+            &lt;img class=&quot;responsive-img&quot; src=&quot;replace with your url&quot; alt=&quot;square-img&quot; /&gt;
           </code>
           <i class="fas fa-copy copy"></i>
           <span class="copied-snackbar">Copied</span>
         </pre>
 
-        <h2>Numbered rating</h2>
+        <h2>Round image</h2>
+
         <div class="wrapper flex-row-center flex-wrap">
-            <div class="flex-row-center rating-container bg-grey">
-                4.5 <span class="material-icons rating-icon fs-16"> star </span>
-              </div>
-              <div class="flex-row-center rating-container bg-spruce">
-                4.5 <span class="material-icons rating-icon fs-16"> star </span> | 10.1k
-              </div>
+                <img class="img-round responsive-img" src="../../assets/image/boat.png" alt="round-img"/>
+        </div>
+
+        <pre>
+          <code id="codeblock" class="language-html"> 
+            &lt;img class=&quot;img-round responsive-img&quot; src=&quot;replace with your url&quot; alt=&quot;round-img&quot;/&gt;
+          </code>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </pre>
+
+        <h2>Square image</h2>
+        <div class="wrapper flex-row-center flex-wrap">
+                <img class="img-square responsive-img" src="../../assets/image/boat.png" alt="square-img"/>
         </div>
         <pre>
             <code id="codeblock" class="language-html"> 
-                &lt;div class=&quot;flex-row-center rating-container bg-grey&quot;&gt;
-                4.5 &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;flex-row-center rating-container bg-spruce&quot;&gt;
-                4.5 &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt; | 10.1k
-              &lt;/div&gt;
+                &lt;img class=&quot;img-square responsive-img&quot; src=&quot;replace with your url&quot; alt=&quot;square-img&quot;/&gt;
             </code>
             <i class="fas fa-copy copy"></i>
             <span class="copied-snackbar">Copied</span>
