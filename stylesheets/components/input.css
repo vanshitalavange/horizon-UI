@@ -1,6 +1,5 @@
 .form-group {
   background-color: var(--gunmental-color);
-  border: 1px solid var(--gravel-color);
   padding: 1.5rem;
   border-radius: var(--border-rd-6);
   width: 20rem;
@@ -21,7 +20,7 @@ input {
   border: none;
 }
 .input-field {
-  width: 16rem;
+  width:100%;
   height: 2.5rem;
   padding: 0 var(--spacing-xs);
   border-radius: var(--border-rd-6);
@@ -58,6 +57,7 @@ input {
   padding: 0.6rem 0.3rem;
   border: 1px solid var(--charcoal-grey);
   border-radius: var(--border-rd-6);
+  width:100%;
 }
 .input-field-file::file-selector-button {
   border: 2px solid #6c5ce7;
