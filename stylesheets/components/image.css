@@ -1,7 +1,14 @@
-.img-container {
-border:2px solid var(--charcoal-grey);
-padding:2rem;
-}
 .responsive-img {
   width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.img-round {
+  border-radius: 100%;
+  width:220px;
+  height:220px;
+}
+.img-square{
+  width:220px;
+  height:220px
 }

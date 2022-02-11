@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
+      rel="stylesheet"
+    />
+    <link href="../codeblocks/codeblock.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
+    <link href="../docs-layout/docs.css" rel="stylesheet" />
+    <link href="../../stylesheets/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header flex-row flex-wrap">
+        <div class="header-left-wrapper flex-row">
+          <span class="material-icons-round hamburger-menu align-center">
+            menu
+          </span>
+          <div class="header-logo align-center">
+            <a href="../../index.html"><img src="../../assets/logo.png" /></a>
+          </div>
+          <h1 class="header-title align-center">Horizon</h1>
+        </div>
+        <nav class="navbar align-center ml-auto">
+          <ul class="nav-list flex-row">
+            <li class="align-center">
+              <a
+                href="https://github.com/vanshitalavange/horizon-UI"
+                class="nav-icon"
+                ><i class="fa fa-github github"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <aside class="sidebar">
+        <div class="sidebar-header flex-row wrap-reverse">
+          <h6 class="sidebar-heading">Getting Started</h6>
+          <span class="material-icons-round align-center ml-auto menu-close">
+            close
+          </span>
+        </div>
+        <ul class="sidebar-list flex-column">
+          <li class="sidebar-item">
+            <a href="../docs-layout/docs.html" class="sidebar-link"
+              >Introduction</a
+            >
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Typography</a>
+          </li>
+        </ul>
+        <h6 class="sidebar-heading component-heading">Components</h6>
+        <ul class="sidebar-list flex-column">
+          <li class="sidebar-item">
+            <a href="../alerts/alerts.html" class="sidebar-link">Alerts</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../avatars/avatar.html" class="sidebar-link">Avatars</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../badges/badges.html" class="sidebar-link">Badges</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../buttons/buttons.html" class="sidebar-link">Buttons</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Cards</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="./image.html" class="sidebar-link">Image</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Input</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../grid/grid.html" class="sidebar-link">Grid</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../ratings/rating.html" class="sidebar-link">Ratings</a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="page-main">
+        <div class="content flex-column">
+          <h1 class="content-title">Image</h1>
+          <p class="content-text">
+            The image component includes round image, square image and
+            responsive image which adjusts itself to the screen size
+          </p>
+        </div>
+        <h2>Responsive image</h2>
+
+        <div class="wrapper">
+                <img src="../../assets/image/boat.png" alt="square-img" class="responsive-img">
+        </div>
+
+        <pre>
+          <code id="codeblock" class="language-html"> 
+            &lt;img class=&quot;responsive-img&quot; src=&quot;replace with your url&quot; alt=&quot;square-img&quot; /&gt;
+          </code>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </pre>
+
+        <h2>Round image</h2>
+
+        <div class="wrapper flex-row-center flex-wrap">
+                <img class="img-round responsive-img" src="../../assets/image/boat.png" alt="round-img"/>
+        </div>
+
+        <pre>
+          <code id="codeblock" class="language-html"> 
+            &lt;img class=&quot;img-round responsive-img&quot; src=&quot;replace with your url&quot; alt=&quot;round-img&quot;/&gt;
+          </code>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </pre>
+
+        <h2>Square image</h2>
+        <div class="wrapper flex-row-center flex-wrap">
+                <img class="img-square responsive-img" src="../../assets/image/boat.png" alt="square-img"/>
+        </div>
+        <pre>
+            <code id="codeblock" class="language-html"> 
+                &lt;img class=&quot;img-square responsive-img&quot; src=&quot;replace with your url&quot; alt=&quot;square-img&quot;/&gt;
+            </code>
+            <i class="fas fa-copy copy"></i>
+            <span class="copied-snackbar">Copied</span>
+          </pre>
+      </main>
+      <footer class="page-footer text-centered">
+        created by
+        <a href="https://github.com/vanshitalavange">vanshitalavange</a> -
+        <strong>@neogcamp</strong>
+      </footer>
+    </div>
+    <script src="../docs-layout/docs.js"></script>
+    <!-- codeblocks js links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../codeblocks/codeblock.js"></script>
+  </body>
+</html>
