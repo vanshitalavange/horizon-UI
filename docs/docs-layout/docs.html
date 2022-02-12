@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Documentation</title>
+    <title>Horizon | Documentation</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
       rel="stylesheet"
@@ -24,7 +24,9 @@
           <div class="header-logo align-center">
             <a href="../../index.html"><img src="../../assets/logo.png" /></a>
           </div>
-          <h1 class="header-title align-center">Horizon</h1>
+          <h1 class="header-title align-center">
+            <a href="../../index.html">Horizon</a>
+          </h1>
         </div>
         <nav class="navbar align-center ml-auto">
           <ul class="nav-list flex-row">
@@ -38,20 +40,24 @@
           </ul>
         </nav>
       </header>
-
       <aside class="sidebar">
         <div class="sidebar-header flex-row wrap-reverse">
-          <h6 class="sidebar-heading">Getting Started</h6>
+          <h1 class="sidebar-title align-center">
+            <a href="../../index.html">Horizon</a>
+          </h1>
           <span class="material-icons-round align-center ml-auto menu-close">
             close
           </span>
         </div>
+        <h6 class="sidebar-heading">Get Started</h6>
         <ul class="sidebar-list flex-column">
-          <li class="sidebar-item">
+          <li class="sidebar-item active">
             <a href="./docs.html" class="sidebar-link">Introduction</a>
           </li>
           <li class="sidebar-item">
-            <a href="../typography/text-utilities.html" class="sidebar-link">Typography</a>
+            <a href="../typography/text-utilities.html" class="sidebar-link"
+              >Typography</a
+            >
           </li>
         </ul>
         <h6 class="sidebar-heading component-heading">Components</h6>
@@ -90,26 +96,40 @@
         <div class="content flex-column">
           <h1 class="content-title">Introduction</h1>
           <p class="content-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui iste
-            fuga vitae earum praesentium? Cum, impedit beatae? Architecto
-            perferendis repellat
+            <a href="../../index.html"
+              ><span class="highlighted-text">Horizon</span></a
+            >
+            is a component library that helps in making the process of building
+            websites faster. It is completely responsive and has multiple
+            features that allow the user to rapidly build functionality-focused
+            websites with a beautiful appearance.
           </p>
         </div>
         <div class="content flex-column">
-          <h2 class="content-title">Introduction</h2>
+          <h2 class="content-title">How to use ?</h2>
           <p class="content-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui iste
-            fuga vitae earum praesentium? Cum, impedit beatae? Architecto
-            perferendis repellat
+            It's super easy, just add the import statement given below in your
+            CSS file and you are all set to use
+            <a href="../../index.html"
+              ><span class="highlighted-text">Horizon</span></a
+            >
           </p>
         </div>
+        <div class="codeblock-container">
         <pre>
-          <code id="codeblock" class="css"> 
-            @import url("horizon-ui.netlify.app/stylesheets/style.css")
+          <code class="codeblock" class="css"> 
+            @import url("horizon-ui.netlify.app/stylesheets/main.css")
           </code>
-          <i class="fas fa-copy copy"></i>
-          <span class="copied-snackbar">Copied</span>
-        </pre>
+          </pre>
+        <i class="fas fa-copy copy"></i>
+        <span class="copied-snackbar">Copied</span>
+        </div>
+        <div class="flex-row justify-flex-end">
+          <div class="page-link flex-row-center">
+         <span class="material-icons"> chevron_right </span>
+          <a href="../typography/text-utilities.html">Typography</a>
+        </div>
+        </div>
       </main>
       <footer class="page-footer text-centered">
         created by

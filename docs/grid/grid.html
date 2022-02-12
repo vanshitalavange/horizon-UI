@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Documentation</title>
+    <title>Horizon | Grid</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
       rel="stylesheet"
@@ -24,8 +24,9 @@
           <div class="header-logo align-center">
             <a href="../../index.html"><img src="../../assets/logo.png" /></a>
           </div>
-          <h1 class="header-title align-center">Horizon</h1>
-        </div>
+<h1 class="header-title align-center">
+            <a href="../../index.html">Horizon</a>
+          </h1>        </div>
         <nav class="navbar align-center ml-auto">
           <ul class="nav-list flex-row">
             <li class="align-center">
@@ -41,11 +42,12 @@
 
       <aside class="sidebar">
         <div class="sidebar-header flex-row wrap-reverse">
-          <h6 class="sidebar-heading">Getting Started</h6>
+         <h1 class="sidebar-title align-center"><a href="../../index.html">Horizon</a></h1>
           <span class="material-icons-round align-center ml-auto menu-close">
             close
           </span>
         </div>
+        <h6 class="sidebar-heading">Get Started</h6>
         <ul class="sidebar-list flex-column">
           <li class="sidebar-item">
             <a href="../docs-layout/docs.html" class="sidebar-link"
@@ -79,7 +81,7 @@
           <li class="sidebar-item">
             <a href="../inputs/input.html" class="sidebar-link">Input</a>
           </li>
-          <li class="sidebar-item">
+          <li class="sidebar-item active">
             <a href="./grid.html" class="sidebar-link">Grid</a>
           </li>
           <li class="sidebar-item">
@@ -100,31 +102,34 @@
         <h2>Two column layout</h2>
         <div class="wrapper">
           <div class="grid-wrapper two-col-layout grid-gap">
-            <div class="item">item one</div>
-            <div class="item">item two</div>
+            <div class="item"></div>
+            <div class="item"></div>
           </div>
         </div>
 
+        <div class="codeblock-container">
         <pre>
-          <code id="codeblock" class="language-html"> 
+          <code class="codeblock" class="language-html"> 
             &lt;div class=&quot;grid-wrapper two-col-layout grid-gap&quot;&gt;
          &lt;div class=&quot;item&quot;&gt;item one&lt;/div&gt;
          &lt;div class=&quot;item&quot;&gt;item two&lt;/div&gt;
          &lt;/div&gt;
           </code>
-          <i class="fas fa-copy copy"></i>
-          <span class="copied-snackbar">Copied</span>
-        </pre>
+          </pre>
+        <i class="fas fa-copy copy"></i>
+        <span class="copied-snackbar">Copied</span>
+        </div>
         <h2>Three column layout</h2>
         <div class="wrapper">
           <div class="grid-wrapper three-col-layout grid-gap">
-            <div class="item">item one</div>
-            <div class="item">item two</div>
-            <div class="item">item three</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
           </div>
         </div>
+        <div class="codeblock-container">
         <pre>
-            <code id="codeblock" class="language-html"> 
+            <code class="codeblock" class="language-html"> 
                 &lt;div class=&quot;grid-wrapper three-col-layout grid-gap&quot;&gt;
                 &lt;div class=&quot;item&quot;&gt;item one&lt;/div&gt;
                 &lt;div class=&quot;item&quot;&gt;item two&lt;/div&gt;
@@ -137,16 +142,17 @@
         <h2>Grid auto-fill layout</h2>
         <div class="wrapper">
           <div class="grid-wrapper auto-fill-col-layout grid-gap">
-            <div class="item">item one</div>
-            <div class="item">item two</div>
-            <div class="item">item three</div>
-            <div class="item">item four</div>
-            <div class="item">item five</div>
-            <div class="item">item six</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
           </div>
         </div>
+        <div class="codeblock-container">
         <pre>
-            <code id="codeblock" class="language-html"> 
+            <code class="codeblock" class="language-html"> 
                 &lt;div class=&quot;grid-wrapper auto-fill-col-layout grid-gap&quot;&gt;
                 &lt;div class=&quot;item&quot;&gt;item one&lt;/div&gt;
                 &lt;div class=&quot;item&quot;&gt;item two&lt;/div&gt;
@@ -159,6 +165,16 @@
             <i class="fas fa-copy copy"></i>
             <span class="copied-snackbar">Copied</span>
           </pre>
+          <div class="flex-row justify-space-between">
+            <div class="page-link flex-row-center">
+           <span class="material-icons"> chevron_left </span>
+            <a href="../inputs/input.html">Input</a>
+          </div>
+            <div class="page-link flex-row-center">
+           <span class="material-icons"> chevron_right </span>
+            <a href="../ratings/rating.html">Ratings</a>
+          </div>
+          </div>
       </main>
       <footer class="page-footer text-centered">
         created by

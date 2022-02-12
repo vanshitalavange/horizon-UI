@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Documentation</title>
+    <title>Horizon | Ratings</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
       rel="stylesheet"
@@ -24,8 +24,9 @@
           <div class="header-logo align-center">
             <a href="../../index.html"><img src="../../assets/logo.png" /></a>
           </div>
-          <h1 class="header-title align-center">Horizon</h1>
-        </div>
+<h1 class="header-title align-center">
+            <a href="../../index.html">Horizon</a>
+          </h1>        </div>
         <nav class="navbar align-center ml-auto">
           <ul class="nav-list flex-row">
             <li class="align-center">
@@ -41,11 +42,12 @@
 
       <aside class="sidebar">
         <div class="sidebar-header flex-row wrap-reverse">
-          <h6 class="sidebar-heading">Getting Started</h6>
+         <h1 class="sidebar-title align-center"><a href="../../index.html">Horizon</a></h1>
           <span class="material-icons-round align-center ml-auto menu-close">
             close
           </span>
         </div>
+        <h6 class="sidebar-heading">Get Started</h6>
         <ul class="sidebar-list flex-column">
           <li class="sidebar-item">
             <a href="../docs-layout/docs.html" class="sidebar-link"
@@ -82,7 +84,7 @@
           <li class="sidebar-item">
             <a href="../grid/grid.html" class="sidebar-link">Grid</a>
           </li>
-          <li class="sidebar-item">
+          <li class="sidebar-item active">
             <a href="./rating.html" class="sidebar-link">Ratings</a>
           </li>
         </ul>
@@ -111,8 +113,9 @@
             </div>
         </div>
 
+        <div class="codeblock-container">
         <pre>
-          <code id="codeblock" class="language-html"> 
+          <code class="codeblock" class="language-html"> 
             &lt;div class=&quot;flex-row&quot;&gt;
             &lt;!-- filled star --&gt;
             &lt;span class=&quot;material-icons rating-icon&quot;&gt; star &lt;/span&gt;
@@ -124,9 +127,10 @@
             &lt;span class=&quot;material-icons rating-icon rating-unchecked&quot;&gt; star_border &lt;/span&gt;
         &lt;/div&gt;
           </code>
-          <i class="fas fa-copy copy"></i>
-          <span class="copied-snackbar">Copied</span>
-        </pre>
+          </pre>
+        <i class="fas fa-copy copy"></i>
+        <span class="copied-snackbar">Copied</span>
+        </div>
 
         <h2>Numbered rating</h2>
         <div class="wrapper flex-row-center flex-wrap">
@@ -137,8 +141,9 @@
                 4.5 <span class="material-icons rating-icon fs-16"> star </span> | 10.1k
               </div>
         </div>
+        <div class="codeblock-container">
         <pre>
-            <code id="codeblock" class="language-html"> 
+            <code class="codeblock" class="language-html"> 
                 &lt;div class=&quot;flex-row-center rating-container bg-grey&quot;&gt;
                 4.5 &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
               &lt;/div&gt;
@@ -149,6 +154,12 @@
             <i class="fas fa-copy copy"></i>
             <span class="copied-snackbar">Copied</span>
           </pre>
+          <div class="flex-row">
+            <div class="page-link flex-row-center">
+           <span class="material-icons"> chevron_left </span>
+            <a href="../grid/grid.html">Grid</a>
+          </div>
+          </div>
       </main>
       <footer class="page-footer text-centered">
         created by

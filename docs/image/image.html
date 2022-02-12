@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Documentation</title>
+    <title>Horizon | Image</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
       rel="stylesheet"
@@ -24,8 +24,9 @@
           <div class="header-logo align-center">
             <a href="../../index.html"><img src="../../assets/logo.png" /></a>
           </div>
-          <h1 class="header-title align-center">Horizon</h1>
-        </div>
+<h1 class="header-title align-center">
+            <a href="../../index.html">Horizon</a>
+          </h1>        </div>
         <nav class="navbar align-center ml-auto">
           <ul class="nav-list flex-row">
             <li class="align-center">
@@ -41,11 +42,12 @@
 
       <aside class="sidebar">
         <div class="sidebar-header flex-row wrap-reverse">
-          <h6 class="sidebar-heading">Getting Started</h6>
+         <h1 class="sidebar-title align-center"><a href="../../index.html">Horizon</a></h1>
           <span class="material-icons-round align-center ml-auto menu-close">
             close
           </span>
         </div>
+        <h6 class="sidebar-heading">Get Started</h6>
         <ul class="sidebar-list flex-column">
           <li class="sidebar-item">
             <a href="../docs-layout/docs.html" class="sidebar-link"
@@ -73,7 +75,7 @@
           <li class="sidebar-item">
             <a href="../cards/cards.html" class="sidebar-link">Cards</a>
           </li>
-          <li class="sidebar-item">
+          <li class="sidebar-item active">
             <a href="./image.html" class="sidebar-link">Image</a>
           </li>
           <li class="sidebar-item">
@@ -102,13 +104,15 @@
                 <img src="../../assets/image/boat.png" alt="square-img" class="responsive-img">
         </div>
 
+        <div class="codeblock-container">
         <pre>
-          <code id="codeblock" class="language-html"> 
+          <code class="codeblock" class="language-html"> 
             &lt;img class=&quot;responsive-img&quot; src=&quot;replace with your url&quot; alt=&quot;square-img&quot; /&gt;
           </code>
-          <i class="fas fa-copy copy"></i>
-          <span class="copied-snackbar">Copied</span>
-        </pre>
+          </pre>
+        <i class="fas fa-copy copy"></i>
+        <span class="copied-snackbar">Copied</span>
+        </div>
 
         <h2>Round image</h2>
 
@@ -116,25 +120,38 @@
                 <img class="img-round responsive-img" src="../../assets/image/boat.png" alt="round-img"/>
         </div>
 
+        <div class="codeblock-container">
         <pre>
-          <code id="codeblock" class="language-html"> 
+          <code class="codeblock" class="language-html"> 
             &lt;img class=&quot;img-round responsive-img&quot; src=&quot;replace with your url&quot; alt=&quot;round-img&quot;/&gt;
           </code>
-          <i class="fas fa-copy copy"></i>
-          <span class="copied-snackbar">Copied</span>
-        </pre>
+          </pre>
+        <i class="fas fa-copy copy"></i>
+        <span class="copied-snackbar">Copied</span>
+        </div>
 
         <h2>Square image</h2>
         <div class="wrapper flex-row-center flex-wrap">
                 <img class="img-square responsive-img" src="../../assets/image/boat.png" alt="square-img"/>
         </div>
+        <div class="codeblock-container">
         <pre>
-            <code id="codeblock" class="language-html"> 
+            <code class="codeblock" class="language-html"> 
                 &lt;img class=&quot;img-square responsive-img&quot; src=&quot;replace with your url&quot; alt=&quot;square-img&quot;/&gt;
             </code>
             <i class="fas fa-copy copy"></i>
             <span class="copied-snackbar">Copied</span>
           </pre>
+          <div class="flex-row justify-space-between">
+            <div class="page-link flex-row-center">
+           <span class="material-icons"> chevron_left </span>
+            <a href="../cards/cards.html">Cards</a>
+          </div>
+            <div class="page-link flex-row-center">
+           <span class="material-icons"> chevron_right </span>
+            <a href="../inputs/input.html">Input</a>
+          </div>
+          </div>
       </main>
       <footer class="page-footer text-centered">
         created by

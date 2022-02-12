@@ -13,7 +13,7 @@
   background-color: var(--blue-light);
 }
 .alert-success {
-  background-color: var(--green-light);
+  background-color: var(--avocado-green);
 }
 .alert-danger {
   background-color: var(--red-light);
@@ -25,7 +25,7 @@
   color: var(--bright-blue);
 }
 .check-icon {
-  color: var(--sherwood-green);
+  color: var(--spruce-color);
 }
 .danger-icon {
   color: var(--blood-red);

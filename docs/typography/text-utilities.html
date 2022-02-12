@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Documentation</title>
+    <title>Horizon | Typography</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
       rel="stylesheet"
@@ -24,8 +24,9 @@
           <div class="header-logo align-center">
             <a href="../../index.html"><img src="../../assets/logo.png" /></a>
           </div>
-          <h1 class="header-title align-center">Horizon</h1>
-        </div>
+<h1 class="header-title align-center">
+            <a href="../../index.html">Horizon</a>
+          </h1>        </div>
         <nav class="navbar align-center ml-auto">
           <ul class="nav-list flex-row">
             <li class="align-center">
@@ -41,18 +42,19 @@
 
       <aside class="sidebar">
         <div class="sidebar-header flex-row wrap-reverse">
-          <h6 class="sidebar-heading">Getting Started</h6>
+         <h1 class="sidebar-title align-center"><a href="../../index.html">Horizon</a></h1>
           <span class="material-icons-round align-center ml-auto menu-close">
             close
           </span>
         </div>
+        <h6 class="sidebar-heading">Get Started</h6>
         <ul class="sidebar-list flex-column">
           <li class="sidebar-item">
             <a href="../docs-layout/docs.html" class="sidebar-link"
               >Introduction</a
             >
           </li>
-          <li class="sidebar-item">
+          <li class="sidebar-item active">
             <a href="./text-utilities.html" class="sidebar-link">Typography</a>
           </li>
         </ul>
@@ -92,31 +94,34 @@
         <div class="content flex-column">
           <h1 class="content-title">Typography</h1>
           <p class="content-text">
-           Typography for Horizon includes headings, gray text, center aligned, left aligned and right aligned text
+            Typography for Horizon includes headings, gray text, center aligned text,
+            left aligned text and right aligned text
           </p>
         </div>
-        
+
         <div class="content flex-column">
-            <h2 class="content-title">Font Family</h2>
-            <p class="content-text">
-                Horizon uses the font-family <span class="highlighted-text">Open Sans</span> for headings and  
-                <span class="highlighted-text">Nunito Sans</span> is the primary font-family
-            </p>
-          </div>
-        
-        
-        <h2>Headings</h2>
-        <div class="wrapper">
-            <h1>h1. Heading</h1>
-            <h2>h2. Heading</h2>
-            <h3>h3. Heading</h3>
-            <h4>h4. Heading</h4>
-            <h5>h5. Heading</h5>
-            <h6>h6. Heading</h6>
+          <h2 class="content-title">Font Family</h2>
+          <p class="content-text">
+            Horizon uses the font-family
+            <span class="highlighted-text">Open Sans</span> for headings and
+            <span class="highlighted-text">Nunito Sans</span> as it's primary
+            font-family
+          </p>
         </div>
 
+        <h2>Headings</h2>
+        <div class="wrapper">
+          <h1>h1. Heading</h1>
+          <h2>h2. Heading</h2>
+          <h3>h3. Heading</h3>
+          <h4>h4. Heading</h4>
+          <h5>h5. Heading</h5>
+          <h6>h6. Heading</h6>
+        </div>
+
+        <div class="codeblock-container">
         <pre>
-          <code id="codeblock" class="language-html"> 
+          <code class="codeblock" class="language-html"> 
             &lt;h1&gt;h1. Heading&lt;/h1&gt;
             &lt;h2&gt;h2. Heading&lt;/h2&gt;
             &lt;h3&gt;h3. Heading&lt;/h3&gt;
@@ -124,68 +129,92 @@
             &lt;h5&gt;h5. Heading&lt;/h5&gt;
             &lt;h6&gt;h6. Heading&lt;/h6&gt;
           </code>
-          <i class="fas fa-copy copy"></i>
-          <span class="copied-snackbar">Copied</span>
-        </pre>
+          </pre>
+        <i class="fas fa-copy copy"></i>
+        <span class="copied-snackbar">Copied</span>
+        </div>
 
         <h2>Left aligned text</h2>
         <div class="wrapper">
-            <p class="text-left">Almost before we knew it, we had left the ground.</p>
+          <p class="text-left">
+            Almost before we knew it, we had left the ground.
+          </p>
         </div>
+        <div class="codeblock-container">
         <pre>
-            <code id="codeblock" class="language-html"> 
+            <code class="codeblock" class="language-html"> 
                 &lt;p class=&quot;text-left&quot;&gt;Almost before we knew it, we had left the ground.&lt;/p&gt;
             </code>
             <i class="fas fa-copy copy"></i>
             <span class="copied-snackbar">Copied</span>
           </pre>
 
-          <h2>Center aligned text</h2>
+        <h2>Center aligned text</h2>
         <div class="wrapper">
-            <p class="text-centered">Almost before we knew it, we had left the ground.</p>
+          <p class="text-centered">
+            Almost before we knew it, we had left the ground.
+          </p>
         </div>
+        <div class="codeblock-container">
         <pre>
-            <code id="codeblock" class="language-html"> 
+            <code class="codeblock" class="language-html"> 
                 &lt;p class=&quot;text-centered&quot;&gt;Almost before we knew it, we had left the ground.&lt;/p&gt;
             </code>
             <i class="fas fa-copy copy"></i>
             <span class="copied-snackbar">Copied</span>
           </pre>
 
-          <h2>Right aligned text</h2>
+        <h2>Right aligned text</h2>
         <div class="wrapper">
-            <p class="text-right">Almost before we knew it, we had left the ground.</p>
+          <p class="text-right">
+            Almost before we knew it, we had left the ground.
+          </p>
         </div>
+        <div class="codeblock-container">
         <pre>
-            <code id="codeblock" class="language-html"> 
+            <code class="codeblock" class="language-html"> 
                 &lt;p class=&quot;text-right&quot;&gt;Almost before we knew it, we had left the ground.&lt;/p&gt;
             </code>
             <i class="fas fa-copy copy"></i>
             <span class="copied-snackbar">Copied</span>
           </pre>
-                           
-          <h2>Small text</h2>
-          <div class="wrapper">
-            <small>Almost before we knew it, we had left the ground.</small>
-          </div>
-          <pre>
-            <code id="codeblock" class="language-html"> 
+
+        <h2>Small text</h2>
+        <div class="wrapper">
+          <small>Almost before we knew it, we had left the ground.</small>
+        </div>
+        <div class="codeblock-container">
+        <pre>
+            <code class="codeblock" class="language-html"> 
                 &lt;small&gt;Almost before we knew it, we had left the ground.&lt;/small&gt;
             </code>
             <i class="fas fa-copy copy"></i>
             <span class="copied-snackbar">Copied</span>
           </pre>
-          <h2>Gray text</h2>
-          <div class="wrapper">
-            <p class="text-cr-grey">Almost before we knew it, we had left the ground.</p>
-          </div>
-          <pre>
-            <code id="codeblock" class="language-html"> 
+        <h2>Gray text</h2>
+        <div class="wrapper">
+          <p class="text-cr-grey">
+            Almost before we knew it, we had left the ground.
+          </p>
+        </div>
+        <div class="codeblock-container">
+        <pre>
+            <code class="codeblock" class="language-html"> 
                 &lt;p class=&quot;text-cr-grey&quot;&gt;Almost before we knew it, we had left the ground.&lt;/p&gt;
             </code>
             <i class="fas fa-copy copy"></i>
             <span class="copied-snackbar">Copied</span>
           </pre>
+          <div class="flex-row justify-space-between">
+            <div class="page-link flex-row-center">
+           <span class="material-icons"> chevron_left </span>
+            <a href="../docs-layout/docs.html">Introduction</a>
+          </div>
+            <div class="page-link flex-row-center">
+           <span class="material-icons"> chevron_right </span>
+            <a href="../alerts/alerts.html">Alerts</a>
+          </div>
+          </div>
       </main>
       <footer class="page-footer text-centered">
         created by

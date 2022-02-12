@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Documentation</title>
+    <title>Horizon | Inputs</title>
     <link href="../../stylesheets/main.css" rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
@@ -24,8 +24,9 @@
           <div class="header-logo align-center">
             <a href="../../index.html"><img src="../../assets/logo.png" /></a>
           </div>
-          <h1 class="header-title align-center">Horizon</h1>
-        </div>
+<h1 class="header-title align-center">
+            <a href="../../index.html">Horizon</a>
+          </h1>        </div>
         <nav class="navbar align-center ml-auto">
           <ul class="nav-list flex-row">
             <li class="align-center">
@@ -41,11 +42,12 @@
 
       <aside class="sidebar">
         <div class="sidebar-header flex-row wrap-reverse">
-          <h6 class="sidebar-heading">Getting Started</h6>
+         <h1 class="sidebar-title align-center"><a href="../../index.html">Horizon</a></h1>
           <span class="material-icons-round align-center ml-auto menu-close">
             close
           </span>
         </div>
+        <h6 class="sidebar-heading">Get Started</h6>
         <ul class="sidebar-list flex-column">
           <li class="sidebar-item">
             <a href="../docs-layout/docs.html" class="sidebar-link"
@@ -76,7 +78,7 @@
           <li class="sidebar-item">
             <a href="../image/image.html" class="sidebar-link">Image</a>
           </li>
-          <li class="sidebar-item">
+          <li class="sidebar-item active">
             <a href="./input.html" class="sidebar-link">Input</a>
           </li>
           <li class="sidebar-item">
@@ -103,16 +105,18 @@
             <input type="email" name="email" id="email" class="input-field" placeholder="user@example.com">
         </div>
         </div>
+        <div class="codeblock-container">
         <pre>
-          <code id="codeblock" class="language-html"> 
+          <code class="codeblock" class="language-html"> 
             &lt;div class=&quot;form-group flex-column&quot;&gt;
             &lt;label for=&quot;email&quot;&gt;Email*&lt;/label&gt;
             &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot; class=&quot;input-field&quot; placeholder=&quot;user@example.com&quot;&gt;
         &lt;/div&gt;
           </code>
-          <i class="fas fa-copy copy"></i>
-          <span class="copied-snackbar">Copied</span>
-        </pre>
+          </pre>
+        <i class="fas fa-copy copy"></i>
+        <span class="copied-snackbar">Copied</span>
+        </div>
 
         <h2>Input with helper message</h2>
         <div class="wrapper flex-row-center input-wrapper">
@@ -122,8 +126,9 @@
             <small class="helper-msg">password should be minimum 8 characters</small>
         </div>
         </div>
+        <div class="codeblock-container">
         <pre>
-            <code id="codeblock" class="language-html"> 
+            <code class="codeblock" class="language-html"> 
               &lt;div class=&quot;form-group flex-column&quot;&gt;
               &lt;label for=&quot;password&quot;&gt;Password*&lt;/label&gt;
               &lt;input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; class=&quot;input-field input-field-error&quot; placeholder=&quot;&quot;&gt;
@@ -141,8 +146,9 @@
             <input type="number" name="phone" class="input-field" placeholder="0">
           </div>
         </div>
+        <div class="codeblock-container">
         <pre>
-            <code id="codeblock" class="language-html"> 
+            <code class="codeblock" class="language-html"> 
               &lt;div class=&quot;form-group flex-column&quot;&gt;
               &lt;label for=&quot;phone&quot;&gt;Mobile*&lt;/label&gt;
               &lt;input type=&quot;number&quot; name=&quot;phone&quot; class=&quot;input-field&quot; placeholder=&quot;0&quot;&gt;
@@ -159,8 +165,9 @@
             <textarea class="input-field text-area" placeholder="write a feedback"></textarea>
         </div>
         </div>
+        <div class="codeblock-container">
         <pre>
-            <code id="codeblock" class="language-html"> 
+            <code class="codeblock" class="language-html"> 
               &lt;div class=&quot;form-group form-group-text-area flex-column&quot;&gt;
               &lt;label for=&quot;feedback&quot;&gt;Feedback&lt;/label&gt;
               &lt;textarea class=&quot;input-field text-area&quot; placeholder=&quot;write a feedback&quot;&gt;&lt;/textarea&gt;
@@ -187,8 +194,9 @@
             </div>
         </div>
         </div>
+        <div class="codeblock-container">
         <pre>
-            <code id="codeblock" class="language-html"> 
+            <code class="codeblock" class="language-html"> 
               &lt;div class=&quot;form-group flex-column&quot;&gt;
               &lt;div class=&quot;form-group-input-control flex-row&quot;&gt;
               &lt;input type=&quot;radio&quot; name=&quot;radio&quot; class=&quot;input-control&quot;&gt;
@@ -225,8 +233,9 @@
             </div>
         </div>
         </div>
+        <div class="codeblock-container">
         <pre>
-            <code id="codeblock" class="language-html"> 
+            <code class="codeblock" class="language-html"> 
               &lt;div class=&quot;form-group flex-column&quot;&gt;
               &lt;div class=&quot;form-group-input-control flex-row&quot;&gt;
                   &lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot; class=&quot;input-control&quot;&gt;
@@ -252,8 +261,9 @@
             <input type="file" name="file-input" class="input-field-file">
         </div>
         </div>
+        <div class="codeblock-container">
         <pre>
-            <code id="codeblock" class="language-html"> 
+            <code class="codeblock" class="language-html"> 
               &lt;div class=&quot;form-group flex-column&quot;&gt;
               &lt;label for=&quot;file-input&quot;&gt;Upload file&lt;/label&gt;
               &lt;input type=&quot;file&quot; name=&quot;file-input&quot; class=&quot;input-field-file&quot;&gt;
@@ -273,8 +283,9 @@
             </select>
         </div>
         </div>
+        <div class="codeblock-container">
         <pre>
-            <code id="codeblock" class="language-html"> 
+            <code class="codeblock" class="language-html"> 
               &lt;div class=&quot;form-group flex-column&quot;&gt;
               &lt;label for=&quot;location&quot;&gt;Choose location&lt;/label&gt;
               &lt;select class=&quot;input-field&quot;&gt;
@@ -294,8 +305,9 @@
             <input type="date" name="date-input" class="input-field" placeholder="dd-mm-yy">
         </div>
         </div>
+        <div class="codeblock-container">
         <pre>
-            <code id="codeblock" class="language-html"> 
+            <code class="codeblock" class="language-html"> 
               &lt;div class=&quot;form-group flex-column&quot;&gt;
               &lt;label for=&quot;date&quot;&gt;Date&lt;/label&gt;
               &lt;input type=&quot;date&quot; name=&quot;date-input&quot; class=&quot;input-field&quot; placeholder=&quot;dd-mm-yy&quot;&gt;
@@ -316,8 +328,9 @@
             </div>
         </div>
         </div>
+        <div class="codeblock-container">
         <pre>
-            <code id="codeblock" class="language-html"> 
+            <code class="codeblock" class="language-html"> 
               &lt;div class=&quot;form-group flex-column&quot;&gt;
             &lt;label for=&quot;phone&quot;&gt;Address&lt;/label&gt;
             &lt;div class=&quot;icon-input-field flex-row&quot;&gt;
@@ -338,8 +351,9 @@
               <input type="text" name="instructions" class="input-field" placeholder="text is read only" readonly>
             </div>
           </div>
-          <pre>
-            <code id="codeblock" class="language-html"> 
+          <div class="codeblock-container">
+        <pre>
+            <code class="codeblock" class="language-html"> 
               &lt;div class=&quot;form-group flex-column&quot;&gt;
               &lt;label for=&quot;Instructions&quot;&gt;Instructions&lt;/label&gt;
               &lt;input type=&quot;text&quot; name=&quot;instructions&quot; class=&quot;input-field&quot; placeholder=&quot;text is read only&quot; readonly&gt;
@@ -348,7 +362,16 @@
             <i class="fas fa-copy copy"></i>
             <span class="copied-snackbar">Copied</span>
           </pre>
-
+          <div class="flex-row justify-space-between">
+            <div class="page-link flex-row-center">
+           <span class="material-icons"> chevron_left </span>
+            <a href="../image/image.html">Image</a>
+          </div>
+            <div class="page-link flex-row-center">
+           <span class="material-icons"> chevron_right </span>
+            <a href="../grid/grid.html">Grid</a>
+          </div>
+          </div>
 
       </main>
       <footer class="page-footer text-centered">
