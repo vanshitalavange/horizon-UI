@@ -5,6 +5,12 @@ let root = document.querySelector(":root");
 const checkDeviceWidth = () => {
   if (document.body.clientWidth <= 800) {
     hideSidebar();
+    if (
+      document.body.clientWidth <= 385 &&
+      location.pathname === "/docs/cards/cards.html"
+    ) {
+      changeRootFontSizeOfCards();
+    } 
   } else {
     showSidebar();
   }
@@ -30,14 +36,6 @@ const changeRootFontSizeOfCards = () => {
 
 window.addEventListener("resize", () => {
   checkDeviceWidth();
-  if (
-    document.body.clientWidth <= 370 &&
-    location.pathname === "/docs/cards/cards.html"
-  ) {
-    changeRootFontSizeOfCards();
-  } else {
-    root.style.fontSize = "100%";
-  }
 });
 
 checkDeviceWidth();
