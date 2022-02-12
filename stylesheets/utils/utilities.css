@@ -45,6 +45,12 @@ body {
 .justify-center {
   justify-content: center;
 }
+.justify-flex-end{
+  justify-content: flex-end;
+}
+.justify-space-between{
+  justify-content: space-between;
+}
 .text-left {
   text-align: left;
 }

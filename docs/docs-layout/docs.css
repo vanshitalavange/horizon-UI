@@ -127,6 +127,9 @@
    font-weight:600;
    line-height: 1.5;
 }
+.page-link:hover{
+color:var(--blue-semi-dark);
+}
 @media only screen and (min-width:1350px){
 html{
   font-size: 120%;
