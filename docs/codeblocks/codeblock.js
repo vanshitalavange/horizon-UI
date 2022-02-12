@@ -1,4 +1,4 @@
-let btnCopy = document.querySelector(".copy");
+let btnCopy = document.querySelectorAll(".copy");
 let copiedSnackbar = document.querySelector(".copied-snackbar");
 const copyText = () => {
   const textArea = document.createElement("textarea");
@@ -17,4 +17,12 @@ const displayCopiedMsg = () => {
     btnCopy.style.display = "block";
     },1500);
 }
-btnCopy.addEventListener("click", copyText);
+// btnCopy.addEventListener("click",copyText);
+for(let i=0;i<btnCopy.length;i++){
+  btnCopy[i].addEventListener("click",()=>{
+    copyText(i);
+  })
+}
+// document.querySelectorAll(".copy").forEach(item => item.addEventListener("click",(event)=>{
+//   console.log();
+// }));
