@@ -18,6 +18,9 @@
   font-size: 1.4rem;
   font-weight: 600;
 }
+.nav-link:hover{
+  color:var(--primary-color);
+}
 .nav-icon {
   display: none;
 }
@@ -36,6 +39,7 @@
 }
 .hero-sub-text-wrapper {
   gap: var(--spacing-xs);
+  line-height: 1.5;
 }
 .hero-sub-text {
   font-size: 1.5rem;
@@ -49,7 +53,7 @@
   color: var(--white-color);
 }
 .btn {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: var(--spacing-xs);
   box-shadow: 0 0px 20px rgba(26, 25, 25, 0.9);
 }
@@ -59,7 +63,7 @@
 .page-footer {
   font-size: 1rem;
   position: absolute;
-  bottom: var(--spacing-sm);
+  bottom: 0.6rem;
   width: 92vw;
 }
 
@@ -78,8 +82,13 @@
     display: none;
   }
 }
-@media only screen and (min-width: 1500px) {
-  html {
-    font-size: 135%;
+@media only screen and (min-width:1350px){
+  html{
+    font-size: 120%;
   }
-}
+  }
+  @media only screen and (min-width:1650px){
+    html{
+      font-size: 140%;
+    }
+  }
