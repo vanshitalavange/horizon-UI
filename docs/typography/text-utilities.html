@@ -53,7 +53,7 @@
             >
           </li>
           <li class="sidebar-item">
-            <a href="../typography/text-utilities.html" class="sidebar-link">Typography</a>
+            <a href="./text-utilities.html" class="sidebar-link">Typography</a>
           </li>
         </ul>
         <h6 class="sidebar-heading component-heading">Components</h6>
@@ -80,81 +80,108 @@
             <a href="../inputs/input.html" class="sidebar-link">Input</a>
           </li>
           <li class="sidebar-item">
-            <a href="./grid.html" class="sidebar-link">Grid</a>
+            <a href="../grid/grid.html" class="sidebar-link">Grid</a>
           </li>
           <li class="sidebar-item">
-            <a href="../ratings/rating.html" class="sidebar-link">Ratings</a>
+            <a href="./rating.html" class="sidebar-link">Ratings</a>
           </li>
         </ul>
       </aside>
 
       <main class="page-main">
         <div class="content flex-column">
-          <h1 class="content-title">Grid</h1>
+          <h1 class="content-title">Typography</h1>
           <p class="content-text">
-            Grid is a powerful tool that allows for two-dimensional layouts to
-            be created on the web.
+           Typography for Horizon includes headings, gray text, center aligned, left aligned and right aligned text
           </p>
         </div>
-
-        <h2>Two column layout</h2>
-        <div class="wrapper">
-          <div class="grid-wrapper two-col-layout grid-gap">
-            <div class="item">item one</div>
-            <div class="item">item two</div>
+        
+        <div class="content flex-column">
+            <h2 class="content-title">Font Family</h2>
+            <p class="content-text">
+                Horizon uses the font-family <span class="highlighted-text">Open Sans</span> for headings and  
+                <span class="highlighted-text">Nunito Sans</span> is the primary font-family
+            </p>
           </div>
+        
+        
+        <h2>Headings</h2>
+        <div class="wrapper">
+            <h1>h1. Heading</h1>
+            <h2>h2. Heading</h2>
+            <h3>h3. Heading</h3>
+            <h4>h4. Heading</h4>
+            <h5>h5. Heading</h5>
+            <h6>h6. Heading</h6>
         </div>
 
         <pre>
           <code id="codeblock" class="language-html"> 
-            &lt;div class=&quot;grid-wrapper two-col-layout grid-gap&quot;&gt;
-         &lt;div class=&quot;item&quot;&gt;item one&lt;/div&gt;
-         &lt;div class=&quot;item&quot;&gt;item two&lt;/div&gt;
-         &lt;/div&gt;
+            &lt;h1&gt;h1. Heading&lt;/h1&gt;
+            &lt;h2&gt;h2. Heading&lt;/h2&gt;
+            &lt;h3&gt;h3. Heading&lt;/h3&gt;
+            &lt;h4&gt;h4. Heading&lt;/h4&gt;
+            &lt;h5&gt;h5. Heading&lt;/h5&gt;
+            &lt;h6&gt;h6. Heading&lt;/h6&gt;
           </code>
           <i class="fas fa-copy copy"></i>
           <span class="copied-snackbar">Copied</span>
         </pre>
-        <h2>Three column layout</h2>
+
+        <h2>Left aligned text</h2>
         <div class="wrapper">
-          <div class="grid-wrapper three-col-layout grid-gap">
-            <div class="item">item one</div>
-            <div class="item">item two</div>
-            <div class="item">item three</div>
-          </div>
+            <p class="text-left">Almost before we knew it, we had left the ground.</p>
         </div>
         <pre>
             <code id="codeblock" class="language-html"> 
-                &lt;div class=&quot;grid-wrapper three-col-layout grid-gap&quot;&gt;
-                &lt;div class=&quot;item&quot;&gt;item one&lt;/div&gt;
-                &lt;div class=&quot;item&quot;&gt;item two&lt;/div&gt;
-                &lt;div class=&quot;item&quot;&gt;item three&lt;/div&gt;
- &lt;/div&gt;
+                &lt;p class=&quot;text-left&quot;&gt;Almost before we knew it, we had left the ground.&lt;/p&gt;
             </code>
             <i class="fas fa-copy copy"></i>
             <span class="copied-snackbar">Copied</span>
           </pre>
-        <h2>Grid auto-fill layout</h2>
+
+          <h2>Center aligned text</h2>
         <div class="wrapper">
-          <div class="grid-wrapper auto-fill-col-layout grid-gap">
-            <div class="item">item one</div>
-            <div class="item">item two</div>
-            <div class="item">item three</div>
-            <div class="item">item four</div>
-            <div class="item">item five</div>
-            <div class="item">item six</div>
-          </div>
+            <p class="text-centered">Almost before we knew it, we had left the ground.</p>
         </div>
         <pre>
             <code id="codeblock" class="language-html"> 
-                &lt;div class=&quot;grid-wrapper auto-fill-col-layout grid-gap&quot;&gt;
-                &lt;div class=&quot;item&quot;&gt;item one&lt;/div&gt;
-                &lt;div class=&quot;item&quot;&gt;item two&lt;/div&gt;
-                &lt;div class=&quot;item&quot;&gt;item three&lt;/div&gt;
-                &lt;div class=&quot;item&quot;&gt;item four&lt;/div&gt;
-                &lt;div class=&quot;item&quot;&gt;item five&lt;/div&gt;
-                &lt;div class=&quot;item&quot;&gt;item six&lt;/div&gt;
-        &lt;/div&gt;
+                &lt;p class=&quot;text-centered&quot;&gt;Almost before we knew it, we had left the ground.&lt;/p&gt;
+            </code>
+            <i class="fas fa-copy copy"></i>
+            <span class="copied-snackbar">Copied</span>
+          </pre>
+
+          <h2>Right aligned text</h2>
+        <div class="wrapper">
+            <p class="text-right">Almost before we knew it, we had left the ground.</p>
+        </div>
+        <pre>
+            <code id="codeblock" class="language-html"> 
+                &lt;p class=&quot;text-right&quot;&gt;Almost before we knew it, we had left the ground.&lt;/p&gt;
+            </code>
+            <i class="fas fa-copy copy"></i>
+            <span class="copied-snackbar">Copied</span>
+          </pre>
+                           
+          <h2>Small text</h2>
+          <div class="wrapper">
+            <small>Almost before we knew it, we had left the ground.</small>
+          </div>
+          <pre>
+            <code id="codeblock" class="language-html"> 
+                &lt;small&gt;Almost before we knew it, we had left the ground.&lt;/small&gt;
+            </code>
+            <i class="fas fa-copy copy"></i>
+            <span class="copied-snackbar">Copied</span>
+          </pre>
+          <h2>Gray text</h2>
+          <div class="wrapper">
+            <p class="text-cr-grey">Almost before we knew it, we had left the ground.</p>
+          </div>
+          <pre>
+            <code id="codeblock" class="language-html"> 
+                &lt;p class=&quot;text-cr-grey&quot;&gt;Almost before we knew it, we had left the ground.&lt;/p&gt;
             </code>
             <i class="fas fa-copy copy"></i>
             <span class="copied-snackbar">Copied</span>

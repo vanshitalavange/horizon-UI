@@ -113,6 +113,15 @@ border-top: 1px solid var(--charcoal-grey);
   padding-top:2rem;
   padding-bottom:2rem;
 }
+.highlighted-text{
+   padding:0 var(--spacing-xs);
+   background-color: var(--yellow-light);
+   color:var(--black-color);
+   border-radius: var(--border-rd-3);
+   margin:0 0.2rem;
+   font-weight:600;
+   line-height: 1.5;
+}
 @media only screen and (max-width: 800px) {
   .page {
     width: 85vw;
