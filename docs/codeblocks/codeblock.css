@@ -3,12 +3,15 @@
   padding-left:2rem;
 }
 pre {
-  position: relative;
   white-space: pre-line;
   font-size: 1rem;
-  max-height:19rem;
+  max-height:18rem;
   overflow-y: auto;
   margin-bottom: var(--spacing-sm);
+
+}
+.codeblock-container{
+  position: relative;
 }
 
 .copy {

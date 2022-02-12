@@ -81,6 +81,7 @@
 .page-main {
   grid-area: main;
 }
+
 .page-footer {
   grid-area: footer;
 }
@@ -130,6 +131,7 @@
 .page-link:hover{
 color:var(--blue-semi-dark);
 }
+
 @media only screen and (min-width:1350px){
 html{
   font-size: 120%;
