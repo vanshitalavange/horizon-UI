@@ -1,3 +1,7 @@
+body {
+  background-color: var(--dark-theme-bg);
+  color: var(--white-color);
+}
 .page {
   width: 80vw;
   margin: 1.8rem auto 0 auto;
