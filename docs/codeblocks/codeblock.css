@@ -17,7 +17,7 @@
 pre {
   white-space: pre-line;
   font-size: 1rem;
-  height:18rem; 
+  max-height:18rem; 
   overflow-y: auto;
   margin-bottom: var(--spacing-sm);
 
