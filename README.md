@@ -34,13 +34,13 @@ OR
  ### Components
  Horizon has the following components:
  
- - Avatar
- - Alert
- - Badge
- - Button
- - Card
- - Image
- - Input
- - Text Utilities
- - Rating
- - Grid
+ - [Avatar](https://horizon-ui.netlify.app/docs/avatars/avatar.html)
+ - [Alerts](https://horizon-ui.netlify.app/docs/alerts/alerts.html)
+ - [Badge](https://horizon-ui.netlify.app/docs/badges/badges.html)
+ - [Button](https://horizon-ui.netlify.app/docs/buttons/buttons.html)
+ - [Card](https://horizon-ui.netlify.app/docs/cards/cards.html)
+ - [Image](https://horizon-ui.netlify.app/docs/image/image.html)
+ - [Input](https://horizon-ui.netlify.app/docs/inputs/input.html)
+ - [Text Utilities](https://horizon-ui.netlify.app/docs/typography/text-utilities.html)
+ - [Rating](https://horizon-ui.netlify.app/docs/ratings/rating.html)
+ - [Grid](https://horizon-ui.netlify.app/docs/grid/grid.html)
