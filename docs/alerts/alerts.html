@@ -24,9 +24,10 @@
           <div class="header-logo align-center">
             <a href="../../index.html"><img src="../../assets/logo.png" alt="horizon-logo"/></a>
           </div>
-<h1 class="header-title align-center">
+          <h1 class="header-title align-center">
             <a href="../../index.html">Horizon</a>
-          </h1>        </div>
+          </h1>
+        </div>
         <nav class="navbar align-center ml-auto">
           <ul class="nav-list flex-row">
             <li class="align-center">
@@ -36,13 +37,19 @@
                 ><i class="fa fa-github github"></i
               ></a>
             </li>
+            <li class="align-center">
+              <button class="btn-light-mode"><span class="material-icons"> light_mode </span></button>
+              <button class="btn-dark-mode"><span class="material-icons"> dark_mode </span></button>
+            </li>
           </ul>
         </nav>
       </header>
 
       <aside class="sidebar">
         <div class="sidebar-header flex-row wrap-reverse">
-         <h1 class="sidebar-title align-center"><a href="../../index.html">Horizon</a></h1>
+          <h1 class="sidebar-title align-center">
+            <a href="../../index.html">Horizon</a>
+          </h1>
           <span class="material-icons-round align-center ml-auto menu-close">
             close
           </span>
@@ -55,7 +62,9 @@
             >
           </li>
           <li class="sidebar-item">
-            <a href="../typography/text-utilities.html" class="sidebar-link">Typography</a>
+            <a href="../typography/text-utilities.html" class="sidebar-link"
+              >Typography</a
+            >
           </li>
         </ul>
         <h6 class="sidebar-heading component-heading">Components</h6>
@@ -101,77 +110,77 @@
         <div class="wrapper flex-col">
           <!-- Primary alert -->
           <div class="alert alert-primary flex-row flex-wrap">
-            <span class="material-icons-round info-icon"> info </span>
+            <span class="material-icons-round alert-icon info-icon"> info </span>
             <p class="alert-msg">Informational Notes</p>
             <span class="material-icons ml-auto"> close </span>
           </div>
 
           <!-- Success alert -->
           <div class="alert alert-success flex-row flex-wrap">
-            <span class="material-icons-round check-icon"> check_circle </span>
+            <span class="material-icons-round alert-icon check-icon"> check_circle </span>
             <p class="alert-msg">Success</p>
             <span class="material-icons ml-auto"> close </span>
           </div>
 
           <!-- Error alert -->
           <div class="alert alert-danger flex-row flex-wrap">
-            <span class="material-icons-round danger-icon"> dangerous </span>
+            <span class="material-icons-round alert-icon danger-icon"> dangerous </span>
             <p class="alert-msg">Error</p>
             <span class="material-icons ml-auto"> close </span>
           </div>
 
           <!-- Warning alert -->
           <div class="alert alert-warning flex-row flex-wrap">
-            <span class="material-icons-round warning-icon"> warning </span>
+            <span class="material-icons-round alert-icon warning-icon"> warning </span>
             <p class="alert-msg">Warning</p>
             <span class="material-icons ml-auto"> close </span>
           </div>
         </div>
 
         <div class="codeblock-container">
-        <pre>
+          <pre>
           <code class="codeblock" class="language-html"> 
             &lt;!-- Primary alert --&gt;
             &lt;div class=&quot;alert alert-primary flex-row flex-wrap&quot;&gt;
-              &lt;span class=&quot;material-icons-round info-icon&quot;&gt; info &lt;/span&gt;
+              &lt;span class=&quot;material-icons-round alert-icon info-icon&quot;&gt; info &lt;/span&gt;
               &lt;p class=&quot;alert-msg&quot;&gt;Informational Notes&lt;/p&gt;
               &lt;span class=&quot;material-icons ml-auto&quot;&gt; close &lt;/span&gt;
             &lt;/div&gt;
   
-             &lt;!-- Success alert --&gt;
+            &lt;!-- Success alert --&gt;
             &lt;div class=&quot;alert alert-success flex-row flex-wrap&quot;&gt;
-              &lt;span class=&quot;material-icons-round check-icon&quot;&gt; check_circle &lt;/span&gt;
+              &lt;span class=&quot;material-icons-round alert-icon check-icon&quot;&gt; check_circle &lt;/span&gt;
               &lt;p class=&quot;alert-msg&quot;&gt;Success&lt;/p&gt;
               &lt;span class=&quot;material-icons ml-auto&quot;&gt; close &lt;/span&gt;
             &lt;/div&gt;
   
-             &lt;!-- Error alert --&gt;
+            &lt;!-- Error alert --&gt;
             &lt;div class=&quot;alert alert-danger flex-row flex-wrap&quot;&gt;
-              &lt;span class=&quot;material-icons-round danger-icon&quot;&gt; dangerous &lt;/span&gt;
+              &lt;span class=&quot;material-icons-round alert-icon danger-icon&quot;&gt; dangerous &lt;/span&gt;
               &lt;p class=&quot;alert-msg&quot;&gt;Error&lt;/p&gt;
               &lt;span class=&quot;material-icons ml-auto&quot;&gt; close &lt;/span&gt;
             &lt;/div&gt;
   
-             &lt;!-- Warning alert --&gt;
+            &lt;!-- Warning alert --&gt;
             &lt;div class=&quot;alert alert-warning flex-row flex-wrap&quot;&gt;
-              &lt;span class=&quot;material-icons-round warning-icon&quot;&gt; warning &lt;/span&gt;
+              &lt;span class=&quot;material-icons-round alert-icon warning-icon&quot;&gt; warning &lt;/span&gt;
               &lt;p class=&quot;alert-msg&quot;&gt;Warning&lt;/p&gt;
               &lt;span class=&quot;material-icons ml-auto&quot;&gt; close &lt;/span&gt;
             &lt;/div&gt;
           </code>
           </pre>
-        <i class="fas fa-copy copy"></i>
-        <span class="copied-snackbar">Copied</span>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
         </div>
         <div class="flex-row justify-space-between">
           <div class="page-link flex-row-center">
-         <span class="material-icons"> chevron_left </span>
-          <a href="../typography/text-utilities.html">Typography</a>
-        </div>
+            <span class="material-icons"> chevron_left </span>
+            <a href="../typography/text-utilities.html">Typography</a>
+          </div>
           <div class="page-link flex-row-center">
-         <span class="material-icons"> chevron_right </span>
-          <a href="../avatars/avatar.html">Avatars</a>
-        </div>
+            <span class="material-icons"> chevron_right </span>
+            <a href="../avatars/avatar.html">Avatars</a>
+          </div>
         </div>
       </main>
       <footer class="page-footer text-centered">
@@ -187,5 +196,6 @@
       hljs.highlightAll();
     </script>
     <script src="../codeblocks/codeblock.js"></script>
+    <script src="../../JS/light-dark-mode.js"></script>
   </body>
 </html>

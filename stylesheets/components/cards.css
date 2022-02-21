@@ -1,12 +1,11 @@
 .card {
-  border: 1.35px solid var(--dark-pastel-gray);
+  border: 1.35px solid var(--avocado-green);
   border-radius: 8px;
   background-color: var(--white-color);
   gap: var(--spacing-sm);
   width: 18.5rem;
   position: relative;
   color: var(--black-color);
-  box-shadow: 0 0px 20px rgba(26, 25, 25, 1);
 }
 .card-header {
   max-height: 17rem;
@@ -15,22 +14,25 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-.icon-right {
+span.icon-right {
   color: var(--dark-pastel-gray);
   position: absolute;
   right: var(--spacing-xs);
+  font-size: 1.5rem;
 }
-.icon-top {
+span.icon-top {
   top: 10px;
+  font-size: 1.5rem;
 }
-.icon-dismiss {
+span.icon-dismiss {
   color: var(--charcoal-grey);
+  font-size: 1.5rem;
 }
-.icon-wishlist-dismiss-card {
+span.icon-wishlist-dismiss-card {
   top: 18.6rem;
 }
 
-.icon-center-right {
+span.icon-center-right {
   top: 10px;
   color: var(--dark-pastel-gray);
 }
@@ -63,8 +65,8 @@
 .card-rating {
   gap: 0.3rem;
 }
-.fs-16 {
-  font-size: 1rem !important;
+span.rating-icon{
+  font-size: 1rem;
 }
 .rating-count {
   font-size: 0.7rem;

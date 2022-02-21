@@ -52,8 +52,8 @@
 }
 /* outline buttons */
 
-.btn-outline {
-  color: white;
+.btn-outline{
+  color:var(--white-color);
 }
 .btn-primary-outline {
   border: 2px solid var(--primary-color);
@@ -99,7 +99,10 @@
 .btn-icon,
 .floating-btn-icon {
   /* icon-btn --> button with the icon , btn-icon --> icon of the button */
-  color: white;
+  color: var(--white-color);
+}
+span.btn-icon{
+  font-size: 1.2rem;
 }
 .icon-btn-container-restore {
   background-color: var(--green-dark);

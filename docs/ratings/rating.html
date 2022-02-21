@@ -36,6 +36,10 @@
                 ><i class="fa fa-github github"></i
               ></a>
             </li>
+            <li class="align-center">
+              <button class="btn-light-mode"><span class="material-icons"> light_mode </span></button>
+              <button class="btn-dark-mode"><span class="material-icons"> dark_mode </span></button>
+            </li>
           </ul>
         </nav>
       </header>
@@ -117,15 +121,15 @@
         <pre>
           <code class="codeblock" class="language-html"> 
             &lt;div class=&quot;flex-row&quot;&gt;
-            &lt;!-- filled star --&gt;
-            &lt;span class=&quot;material-icons rating-icon&quot;&gt; star &lt;/span&gt;
-            &lt;span class=&quot;material-icons rating-icon&quot;&gt; star &lt;/span&gt;
-            &lt;span class=&quot;material-icons rating-icon&quot;&gt; star &lt;/span&gt;
-            &lt;!-- half-filled star --&gt;
-            &lt;span class=&quot;material-icons rating-icon&quot;&gt; star_half &lt;/span&gt;
-            &lt;!-- empty star --&gt;
-            &lt;span class=&quot;material-icons rating-icon rating-unchecked&quot;&gt; star_border &lt;/span&gt;
-        &lt;/div&gt;
+                &lt;!-- filled star --&gt;
+                &lt;span class=&quot;material-icons rating-icon&quot;&gt; star &lt;/span&gt;
+                &lt;span class=&quot;material-icons rating-icon&quot;&gt; star &lt;/span&gt;
+                &lt;span class=&quot;material-icons rating-icon&quot;&gt; star &lt;/span&gt;
+                &lt;!-- half-filled star --&gt;
+                &lt;span class=&quot;material-icons rating-icon&quot;&gt; star_half &lt;/span&gt;
+                &lt;!-- empty star --&gt;
+                &lt;span class=&quot;material-icons rating-icon rating-unchecked&quot;&gt; star_border &lt;/span&gt;
+            &lt;/div&gt;
           </code>
           </pre>
         <i class="fas fa-copy copy"></i>
@@ -135,21 +139,21 @@
         <h2>Numbered rating</h2>
         <div class="wrapper flex-row-center flex-wrap">
             <div class="flex-row-center rating-container bg-grey">
-                4.5 <span class="material-icons rating-icon fs-16"> star </span>
+                4.5 <span class="material-icons rating-icon"> star </span>
               </div>
               <div class="flex-row-center rating-container bg-spruce">
-                4.5 <span class="material-icons rating-icon fs-16"> star </span> | 10.1k
+                4.5 <span class="material-icons rating-icon"> star </span> | 10.1k
               </div>
         </div>
         <div class="codeblock-container">
         <pre>
             <code class="codeblock" class="language-html"> 
-                &lt;div class=&quot;flex-row-center rating-container bg-grey&quot;&gt;
-                4.5 &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;flex-row-center rating-container bg-spruce&quot;&gt;
-                4.5 &lt;span class=&quot;material-icons rating-icon fs-16&quot;&gt; star &lt;/span&gt; | 10.1k
-              &lt;/div&gt;
+              &lt;div class=&quot;flex-row-center rating-container bg-grey&quot;&gt;
+              4.5 &lt;span class=&quot;material-icons rating-icon&quot;&gt; star &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex-row-center rating-container bg-spruce&quot;&gt;
+              4.5 &lt;span class=&quot;material-icons rating-icon&quot;&gt; star &lt;/span&gt; | 10.1k
+            &lt;/div&gt;
             </code>
             <i class="fas fa-copy copy"></i>
             <span class="copied-snackbar">Copied</span>
@@ -174,5 +178,6 @@
       hljs.highlightAll();
     </script>
     <script src="../codeblocks/codeblock.js"></script>
+    <script src="../../JS/light-dark-mode.js"></script>
   </body>
 </html>

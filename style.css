@@ -12,9 +12,6 @@ body {
 .header-logo {
   width: 7.5rem;
 }
-.navbar {
-  margin-left: auto;
-}
 .nav-list {
   gap: 1rem;
 }
@@ -22,8 +19,8 @@ body {
   font-size: 1.4rem;
   font-weight: 600;
 }
-.nav-link:hover{
-  color:var(--primary-color);
+.nav-link:hover {
+  color: var(--primary-color);
 }
 .nav-icon {
   display: none;
@@ -32,7 +29,22 @@ body {
 .docs {
   font-size: 3.5rem;
 }
+.btn-light-mode,.btn-dark-mode{
+  margin-top:0.3rem;
+  color:var(--blue-semi-dark);
+}
+.btn-light-mode span, .btn-dark-mode span{
+  font-size: 1.8rem;
+}
+.btn-light-mode:hover,.btn-dark-mode:hover{
+  color:var(--yellow-dark);
+  cursor:pointer;
+}
+.btn-dark-mode{
+  display: none;
+}
 .hero {
+  margin-top:2rem;
   min-height: 70vh;
   justify-content: center;
   gap: 1.5rem;
@@ -60,6 +72,7 @@ body {
   font-size: 1.2rem;
   margin-top: var(--spacing-xs);
   box-shadow: 0 0px 20px rgba(26, 25, 25, 0.9);
+  margin-bottom: 4rem;
 }
 .btn:active {
   transform: scale(0.95);
@@ -86,13 +99,13 @@ body {
     display: none;
   }
 }
-@media only screen and (min-width:1350px){
-  html{
+@media only screen and (min-width: 1350px) {
+  html {
     font-size: 120%;
   }
+}
+@media only screen and (min-width: 1650px) {
+  html {
+    font-size: 140%;
   }
-  @media only screen and (min-width:1650px){
-    html{
-      font-size: 140%;
-    }
-  }
+}

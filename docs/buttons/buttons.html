@@ -36,6 +36,10 @@
                 ><i class="fa fa-github github"></i
               ></a>
             </li>
+            <li class="align-center">
+              <button class="btn-light-mode"><span class="material-icons"> light_mode </span></button>
+              <button class="btn-dark-mode"><span class="material-icons"> dark_mode </span></button>
+            </li>
           </ul>
         </nav>
       </header>
@@ -145,6 +149,7 @@
             <!-- Warning button -->
             <button class="btn btn-outline btn-warning-outline">Warning</button>
           </div>
+
           <div class="codeblock-container">
         <pre>
             <code class="codeblock" class="language-html"> 
@@ -166,14 +171,14 @@
           <div class="wrapper flex-row-center flex-wrap">
               <!-- button with icon on left -->
             <div class="btn icon-btn-container icon-btn-container-restore">
-                <span class="material-icons btn-icon">
+                <span class="material-icons btn-icon align-center">
                     restore
                 </span>
             <button class="icon-btn icon-btn-restore">Restore</button>
             </div>
             <!-- button with icon on right -->
             <div class="btn icon-btn-container icon-btn-container-logout">
-                <span class="material-icons btn-icon">
+                <span class="material-icons btn-icon align-center">
                     logout
                     </span>
             <button class="icon-btn icon-btn-logout">Logout</button>
@@ -260,5 +265,6 @@
       hljs.highlightAll();
     </script>
     <script src="../codeblocks/codeblock.js"></script>
+    <script src="../../JS/light-dark-mode.js"></script>
   </body>
 </html>
