@@ -21,6 +21,9 @@
 .alert-warning {
   background-color: var(--yellow-light);
 }
+span.alert-icon{
+  font-size: 1.3rem;
+}
 .info-icon {
   color: var(--bright-blue);
 }

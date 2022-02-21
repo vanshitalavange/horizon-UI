@@ -1,46 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Horizon UI</title>
-    <link href="./stylesheets/main.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="./stylesheets/main.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="page flex-column">
-        <header class="header flex-row flex-wrap">
-            <div class="header-logo align-center">
-                <img src="assets/logo.png">
-            </div>
-            <nav class="navbar align-center">
-                <ul class="nav-list flex-row">
-                    <li class="align-center">
-                        <a href="./docs/docs-layout/docs.html" class="nav-link">Docs</a>
-                        <a href="./docs/docs-layout/docs.html" class="nav-icon"><span class="material-icons docs">
-                            description
-                            </span></a>
-                    </li>
-                    <li class="align-center">
-                        <a href="https://github.com/vanshitalavange/horizon-UI" class="nav-link">Github</a>
-                        <a href="https://github.com/vanshitalavange/horizon-UI" class="nav-icon"><i class="fa fa-github github"></i></a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main class="hero flex-column text-centered">
-            <h1 class="hero-heading">Horizon UI</h1>
-            <div class="hero-sub-text-wrapper flex-column">
-            <p class="hero-sub-text text-centered"><span class="brand-name">Horizon UI</span> will help you design beautiful, creative and modern websites.</p>
-            <p class="hero-sub-text text-centered">Start creating with <span class="brand-name">Horizon UI</span></p>
-            </div>
-             <a href="./docs/docs-layout/docs.html" class="btn btn-solid btn-primary-solid align-center">Get Started</a>
-        </main>
-        <footer class="page-footer text-centered">
-            created by <a href="https://github.com/vanshitalavange">vanshitalavange</a> - <strong>@neogcamp</strong>
-        </footer>
+      <header class="header flex-row flex-wrap">
+        <div class="header-logo align-center">
+          <img src="assets/logo.png" />
+        </div>
+        <nav class="navbar align-center ml-auto">
+          <ul class="nav-list flex-row">
+            <li class="align-center">
+              <a href="./docs/docs-layout/docs.html" class="nav-link">Docs</a>
+              <a href="./docs/docs-layout/docs.html" class="nav-icon"
+                ><span class="material-icons docs"> description </span></a
+              >
+            </li>
+            <li class="align-center">
+              <a
+                href="https://github.com/vanshitalavange/horizon-UI"
+                class="nav-link"
+                >Github</a
+              >
+              <a
+                href="https://github.com/vanshitalavange/horizon-UI"
+                class="nav-icon"
+                ><i class="fa fa-github github"></i
+              ></a>
+            </li>
+            <li class="align-center">
+              <button class="btn-light-mode"><span class="material-icons"> light_mode </span></button>
+              <button class="btn-dark-mode"><span class="material-icons"> dark_mode </span></button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="hero flex-column text-centered">
+        <h1 class="hero-heading">Horizon UI</h1>
+        <div class="hero-sub-text-wrapper flex-column">
+          <p class="hero-sub-text text-centered">
+            <span class="brand-name">Horizon UI</span> will help you design
+            beautiful, creative and modern websites.
+          </p>
+          <p class="hero-sub-text text-centered">
+            Start creating with <span class="brand-name">Horizon UI</span>
+          </p>
+        </div>
+        <a
+          href="./docs/docs-layout/docs.html"
+          class="btn btn-solid btn-primary-solid align-center"
+          >Get Started</a
+        >
+      </main>
+      <footer class="page-footer text-centered">
+        created by
+        <a href="https://github.com/vanshitalavange">vanshitalavange</a> -
+        <strong>@neogcamp</strong>
+      </footer>
     </div>
-</body>
+    <script src="./JS/light-dark-mode.js"></script>
+  </body>
 </html>

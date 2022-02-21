@@ -2,10 +2,22 @@
   line-height: 1.2;
   padding-left:2rem;
 }
+::-webkit-scrollbar{
+  width:12px;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--baltic-sea-color);
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--charcoal-grey);
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--grey-color);
+}
 pre {
   white-space: pre-line;
   font-size: 1rem;
-  max-height:18rem;
+  height:18rem; 
   overflow-y: auto;
   margin-bottom: var(--spacing-sm);
 
@@ -21,6 +33,7 @@ pre {
   right: var(--spacing-sm);
   cursor: pointer;
   z-index:1;
+  color:var(--white-color);
 }
 .copy:active {
   transform: scale(0.9);
@@ -35,4 +48,5 @@ pre {
     top: 0.8rem;
     right: var(--spacing-sm);
     z-index:2;
+    color:var(--white-color);
 }
