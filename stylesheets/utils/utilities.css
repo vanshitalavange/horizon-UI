@@ -4,10 +4,6 @@
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
 }
-body {
-  background-color: var(--dark-theme-bg);
-   color: var(--white-color);
-}
 .flex-center {
   justify-content: center;
   align-items: center;
