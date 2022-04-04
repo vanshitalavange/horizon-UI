@@ -1,0 +1,62 @@
+.modal {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border-radius: var(--border-rd-6);
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+}
+.modal-simple {
+  min-width: 13rem;
+}
+.modal-item {
+  padding: var(--spacing-sm);
+  gap: var(--spacing-xs);
+  border-radius: var(--border-rd-3);
+}
+.modal-item:hover {
+  background-color: var(--purple-light);
+}
+.modal-alert {
+  gap: 2rem;
+  padding: var(--spacing-sm);
+  min-width: 16rem;
+}
+.modal-alert-content {
+  gap: var(--spacing-sm);
+}
+.modal-alert-buttons {
+  gap: var(--spacing-xs);
+}
+.btn-alert {
+  padding: var(--spacing-xs);
+  color: var(--white-color);
+  border-radius: var(--border-rd-3);
+}
+.decline {
+  background-color: var(--flame-pea);
+}
+.accept {
+  background-color: var(--green-light);
+}
+.modal-confirmation-items {
+  gap: var(--spacing-xs);
+  height: 8rem;
+  overflow-y: auto;
+}
+.modal-confirmation-item {
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs);
+  border-radius: var(--border-rd-3);
+}
+.modal-confirmation-item:hover {
+  background-color: var(--purple-light);
+}
+.confirmation-buttons {
+  gap: var(--spacing-xs);
+}
+.btn-confirm {
+  background-color: var(--purple-dark);
+  padding: var(--spacing-xs);
+  color: var(--white-color);
+  border-radius: var(--border-rd-3);
+}
