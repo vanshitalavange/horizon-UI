@@ -18,7 +18,8 @@ const docsPagesLocation = [
   "/docs/image/image.html",
   "/docs/inputs/input.html",
   "/docs/ratings/rating.html",
-  '/docs/lists/lists.html'
+  "/docs/lists/lists.html",
+  "/docs/snackbar/snackbar.html"
 ];
 const changeBtnOutlineColor = (mode) => {
   let btnOutline = document.querySelectorAll(".btn-outline");
