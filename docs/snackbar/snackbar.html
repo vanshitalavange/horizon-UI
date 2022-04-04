@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizon | Snackbar</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
+      rel="stylesheet"
+    />
+    <link href="../codeblocks/codeblock.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
+    <link href="../docs-layout/docs.css" rel="stylesheet" />
+    <link href="../../stylesheets/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header flex-row flex-wrap">
+        <div class="header-left-wrapper flex-row">
+          <span class="material-icons-round hamburger-menu align-center">
+            menu
+          </span>
+          <div class="header-logo align-center">
+            <a href="../../index.html"
+              ><img src="../../assets/logo.png" alt="horizon-logo"
+            /></a>
+          </div>
+          <h1 class="header-title align-center">
+            <a href="../../index.html">Horizon</a>
+          </h1>
+        </div>
+        <nav class="navbar align-center ml-auto">
+          <ul class="nav-list flex-row">
+            <li class="align-center">
+              <a
+                href="https://github.com/vanshitalavange/horizon-UI"
+                class="nav-icon"
+                ><i class="fa fa-github github"></i
+              ></a>
+            </li>
+            <li class="align-center">
+              <button class="btn-light-mode">
+                <span class="material-icons"> light_mode </span>
+              </button>
+              <button class="btn-dark-mode">
+                <span class="material-icons"> dark_mode </span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <aside class="sidebar">
+        <div class="sidebar-header flex-row wrap-reverse">
+          <h1 class="sidebar-title align-center">
+            <a href="../../index.html">Horizon</a>
+          </h1>
+          <span class="material-icons-round align-center ml-auto menu-close">
+            close
+          </span>
+        </div>
+        <h6 class="sidebar-heading">Get Started</h6>
+        <ul class="sidebar-list flex-column">
+          <li class="sidebar-item">
+            <a href="../docs-layout/docs.html" class="sidebar-link"
+              >Introduction</a
+            >
+          </li>
+          <li class="sidebar-item">
+            <a href="../typography/text-utilities.html" class="sidebar-link"
+              >Typography</a
+            >
+          </li>
+        </ul>
+        <h6 class="sidebar-heading component-heading">Components</h6>
+        <ul class="sidebar-list flex-column">
+          <li class="sidebar-item">
+            <a href="../alerts/alerts.html" class="sidebar-link">Alerts</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../avatars/avatar.html" class="sidebar-link">Avatars</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../badges/badges.html" class="sidebar-link">Badges</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../buttons/buttons.html" class="sidebar-link">Buttons</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../cards/cards.html" class="sidebar-link">Cards</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../image/image.html" class="sidebar-link">Image</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../inputs/input.html" class="sidebar-link">Input</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../grid/grid.html" class="sidebar-link">Grid</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../ratings/rating.html" class="sidebar-link">Ratings</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../lists/lists.html" class="sidebar-link">Lists</a>
+          </li>
+          <li class="sidebar-item active">
+            <a href="./snackbar.html" class="sidebar-link">Snackbar</a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="page-main">
+        <div class="content flex-column">
+          <h1 class="content-title">Snackbar</h1>
+          <p class="content-text">
+            Snackbar provide feedbacks to the users based on their actions. They
+            are usually displayed at the bottom of the screen
+          </p>
+        </div>
+
+        <h2>Baseline</h2>
+
+        <div class="wrapper flex-row-center">
+          <button class="btn-snackbar-type baseline">SHOW BASELINE</button>
+        </div>
+        <div
+          class="snackbar snackbar-baseline flex-row justify-space-between flex-wrap"
+        >
+          <p>Can't send photo. Retry in 5 seconds.</p>
+          <div class="snackbar-actions flex-row flex-wrap">
+            <button class="snackbar-btn">RETRY</button>
+            <span class="material-icons close-snackbar"> close </span>
+          </div>
+        </div>
+
+        <div class="codeblock-container">
+          <pre>
+          <code class="codeblock" class="language-html"> 
+            &lt;div class=&quot;snackbar snackbar-baseline flex-row justify-space-between flex-wrap&quot;&gt;
+            &lt;p&gt;Can&apos;t send photo. Retry in 5 seconds.&lt;/p&gt;
+            &lt;div class=&quot;snackbar-actions flex-row flex-wrap&quot;&gt;
+              &lt;button class=&quot;snackbar-btn&quot;&gt;RETRY&lt;/button&gt;
+              &lt;span class=&quot;material-icons close-snackbar&quot;&gt; close &lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          </code>
+          </pre>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </div>
+
+        <h2>Leading</h2>
+
+        <div class="wrapper flex-row-center">
+          <button class="btn-snackbar-type leading">SHOW LEADING</button>
+        </div>
+        <div
+          class="snackbar snackbar-leading flex-row justify-space-between flex-wrap"
+        >
+          <p>Can't send photo. Retry in 5 seconds.</p>
+          <div class="snackbar-actions flex-row flex-wrap">
+            <button class="snackbar-btn">RETRY</button>
+            <span class="material-icons close-snackbar"> close </span>
+          </div>
+        </div>
+
+        <div class="codeblock-container">
+          <pre>
+          <code class="codeblock" class="language-html"> 
+            &lt;div class=&quot;snackbar snackbar-leading flex-row justify-space-between flex-wrap&quot;&gt;
+            &lt;p&gt;Can&apos;t send photo. Retry in 5 seconds.&lt;/p&gt;
+            &lt;div class=&quot;snackbar-actions flex-row flex-wrap&quot;&gt;
+              &lt;button class=&quot;snackbar-btn&quot;&gt;RETRY&lt;/button&gt;
+              &lt;span class=&quot;material-icons close-snackbar&quot;&gt; close &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+          </code>
+          </pre>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </div>
+
+        <h2>Stacked</h2>
+        <div class="wrapper flex-row-center flex-wrap">
+          <button class="btn-snackbar-type stacked">SHOW STACKED</button>
+        </div>
+        <div
+          class="snackbar snackbar-stacked flex-column justify-space-between"
+        >
+          <p>Item already has the lable travel. You can add a new label</p>
+          <div class="snackbar-actions flex-row flex-wrap align-end">
+            <button class="snackbar-btn">ADD NEW LABEL</button>
+            <span class="material-icons close-snackbar"> close </span>
+          </div>
+        </div>
+        <div class="codeblock-container">
+          <pre>
+            <code class="codeblock" class="language-html"> 
+                &lt;div class=&quot;snackbar snackbar-stacked flex-column justify-space-between&quot;&gt;
+                &lt;p&gt;Item already has the lable travel. You can add a new label&lt;/p&gt;
+                &lt;div class=&quot;snackbar-actions flex-row flex-wrap align-end&quot;&gt;
+                  &lt;button class=&quot;snackbar-btn&quot;&gt;ADD NEW LABEL&lt;/button&gt;
+                  &lt;span class=&quot;material-icons close-snackbar&quot;&gt; close &lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+            <i class="fas fa-copy copy"></i>
+            <span class="copied-snackbar">Copied</span>
+          </pre>
+          <div class="flex-row">
+            <div class="page-link flex-row-center">
+              <span class="material-icons"> chevron_left </span>
+              <a class="prev-link" href="../lists/lists.html">Lists</a>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="page-footer text-centered">
+        created by
+        <a class="footer-link" href="https://github.com/vanshitalavange"
+          >vanshitalavange</a
+        >
+        -
+        <strong>@neogcamp</strong>
+      </footer>
+    </div>
+    <script src="../docs-layout/docs.js"></script>
+    <!-- codeblocks js links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../codeblocks/codeblock.js"></script>
+    <script src="../../JS/light-dark-mode.js"></script>
+    <script src="./snackbar.js"></script>
+  </body>
+</html>
