@@ -1,3 +1,8 @@
+
+if (localStorage.getItem('theme') === null && location.pathname === "/index.html") {
+  console.log('yes null')
+  localStorage.setItem('theme', 'dark')
+}
 let btnLightMode = document.querySelector(".btn-light-mode");
 let btnDarkMode = document.querySelector(".btn-dark-mode");
 let body = document.querySelector("body");
@@ -13,6 +18,7 @@ const docsPagesLocation = [
   "/docs/image/image.html",
   "/docs/inputs/input.html",
   "/docs/ratings/rating.html",
+  '/docs/lists/lists.html'
 ];
 const changeBtnOutlineColor = (mode) => {
   let btnOutline = document.querySelectorAll(".btn-outline");
@@ -24,23 +30,23 @@ const changeBtnOutlineColor = (mode) => {
 };
 const changeBadgeTextColor = (mode) => {
   let textBadge = document.querySelectorAll(".badge-text-content");
-  if(mode === "light"){
+  if (mode === "light") {
     textBadge.forEach(text => text.style.color = "var(--black-color)");
-  }else if(mode === "dark"){
+  } else if (mode === "dark") {
     textBadge.forEach(text => text.style.color = "var(--white-color)");
   }
 }
-btnLightMode.addEventListener("click", () => {
-  localStorage.mode = "light";
-  checkSelectedMode(localStorage.mode);
-});
 
-btnDarkMode.addEventListener("click", () => {
-  localStorage.mode = "dark";
-  checkSelectedMode(localStorage.mode);
-});
 
 const changeToLightMode = () => {
+  let footerLink = document.querySelector("a.footer-link")
+  let navIcon = document.querySelectorAll("a.nav-icon")
+  let navLink = document.querySelectorAll("a.nav-link")
+
+  footerLink.style.color = "var(--white-color)"
+  navIcon.forEach(icon => icon.style.color = "var(--secondary-color)")
+  navLink.forEach(link => link.style.color = "var(--light-theme-text-color)")
+
   body.style.backgroundColor = "var(--white-color)";
   body.style.color = "var(--light-theme-text-color)";
   if (location.pathname === "/index.html") {
@@ -51,8 +57,11 @@ const changeToLightMode = () => {
     let activeComponent = document.querySelector(".active");
     let componentWrapper = document.querySelectorAll(".wrapper");
     let sidebar = document.querySelector(".sidebar");
+    let sidebarLink = document.querySelectorAll("a.sidebar-link")
     let sidebarHeading = document.querySelectorAll(".sidebar-heading");
     let content = document.querySelectorAll(".content");
+    let prevLink = document.querySelectorAll("a.prev-link")
+    let nextLink = document.querySelectorAll("a.next-link")
     sidebarHeading.forEach(item => item.style.borderBottom = "1px solid var(--dark-pastel-gray)");
     content.forEach(item => item.style.borderBottom = "1px solid var(--dark-pastel-gray)");
     activeComponent.style.backgroundColor = "var(--white-lilac)";
@@ -65,16 +74,26 @@ const changeToLightMode = () => {
     );
     sidebar.style.backgroundColor = "var(--white-color)";
     sidebar.style.color = "var(--light-theme-text-color)";
+    sidebarLink.forEach(item => item.style.color = "var(--light-theme-text-color)");
+    prevLink.forEach(link => link.style.color = "var(--light-theme-text-color)")
+    nextLink.forEach(link => link.style.color = "var(--light-theme-text-color)")
     if (location.pathname === "/docs/buttons/buttons.html") {
       changeBtnOutlineColor("light");
     }
-    if(location.pathname === '/docs/badges/badges.html'){
+    if (location.pathname === '/docs/badges/badges.html') {
       changeBadgeTextColor("light");
     }
   }
 };
 
 const changeToDarkMode = () => {
+
+  let footerLink = document.querySelector("a.footer-link")
+  let navIcon = document.querySelectorAll("a.nav-icon")
+  let navLink = document.querySelectorAll("a.nav-link")
+  footerLink.style.color = "var(--white-color)"
+  navIcon.forEach(icon => icon.style.color = "var(--white-color)")
+  navLink.forEach(link => link.style.color = "var(--white-color)")
   body.style.backgroundColor = "var(--dark-theme-bg)";
   body.style.color = "var(--white-color)";
   if (location.pathname === "/index.html") {
@@ -85,8 +104,11 @@ const changeToDarkMode = () => {
     let activeComponent = document.querySelector(".active");
     let componentWrapper = document.querySelectorAll(".wrapper");
     let sidebar = document.querySelector(".sidebar");
+    let sidebarLink = document.querySelectorAll("a.sidebar-link")
     let sidebarHeading = document.querySelectorAll(".sidebar-heading");
     let content = document.querySelectorAll(".content");
+    let prevLink = document.querySelectorAll("a.prev-link")
+    let nextLink = document.querySelectorAll("a.next-link")
     sidebarHeading.forEach(item => item.style.borderBottom = "1px solid var(--baltic-sea-color)");
     content.forEach(item => item.style.borderBottom = "1px solid var(--baltic-sea-color)");
     activeComponent.style.backgroundColor = "var(--baltic-sea-color)";
@@ -97,18 +119,25 @@ const changeToDarkMode = () => {
     componentWrapper.forEach(
       (component) => (component.style.border = "1px solid var(--charcoal-grey)")
     );
+
+
+    sidebarLink.forEach(item => item.style.color = "var(--white-color)");
     sidebar.style.backgroundColor = "var(--dark-theme-bg)";
     sidebar.style.color = "var(--white-color)";
+    prevLink.forEach(link => link.style.color = "var(--white-color)")
+    nextLink.forEach(link => link.style.color = "var(--white-color)")
+
     if (location.pathname === "/docs/buttons/buttons.html") {
       changeBtnOutlineColor("dark");
     }
-    if(location.pathname === '/docs/badges/badges.html'){
+    if (location.pathname === '/docs/badges/badges.html') {
       changeBadgeTextColor("dark");
     }
   }
 };
 
-const checkSelectedMode = (mode) => {
+const changeTheme = (mode) => {
+  console.log(mode)
   if (mode === "light") {
     changeToLightMode();
     btnDarkMode.style.display = "block";
@@ -117,10 +146,15 @@ const checkSelectedMode = (mode) => {
     changeToDarkMode();
     btnDarkMode.style.display = "none";
     btnLightMode.style.display = "block";
-  } else {
-    changeToDarkMode();
-    btnDarkMode.style.display = "none";
-    btnLightMode.style.display = "block";
   }
-};
-checkSelectedMode(localStorage.mode);
+}
+btnLightMode.addEventListener("click", () => {
+  localStorage.setItem('theme', 'light')
+  changeTheme(localStorage.getItem('theme'))
+});
+
+btnDarkMode.addEventListener("click", () => {
+  localStorage.setItem('theme', 'dark')
+  changeTheme(localStorage.getItem('theme'))
+});
+changeTheme(localStorage.getItem('theme'))
