@@ -20,7 +20,8 @@ const docsPagesLocation = [
   "/docs/ratings/rating.html",
   "/docs/lists/lists.html",
   "/docs/snackbar/snackbar.html",
-  "/docs/navigation/navigation.html"
+  "/docs/navigation/navigation.html",
+  "/docs/modal/modal.html"
 ];
 const changeBtnOutlineColor = (mode) => {
   let btnOutline = document.querySelectorAll(".btn-outline");
