@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizon | Lists</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
+      rel="stylesheet"
+    />
+    <link href="../codeblocks/codeblock.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
+    <link href="../docs-layout/docs.css" rel="stylesheet" />
+    <link href="../../stylesheets/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header flex-row flex-wrap">
+        <div class="header-left-wrapper flex-row">
+          <span class="material-icons-round hamburger-menu align-center">
+            menu
+          </span>
+          <div class="header-logo align-center">
+            <a href="../../index.html"
+              ><img src="../../assets/logo.png" alt="horizon-logo"
+            /></a>
+          </div>
+          <h1 class="header-title align-center">
+            <a href="../../index.html">Horizon</a>
+          </h1>
+        </div>
+        <nav class="navbar align-center ml-auto">
+          <ul class="nav-list flex-row">
+            <li class="align-center">
+              <a
+                href="https://github.com/vanshitalavange/horizon-UI"
+                class="nav-icon"
+                ><i class="fa fa-github github"></i
+              ></a>
+            </li>
+            <li class="align-center">
+              <button class="btn-light-mode">
+                <span class="material-icons"> light_mode </span>
+              </button>
+              <button class="btn-dark-mode">
+                <span class="material-icons"> dark_mode </span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <aside class="sidebar">
+        <div class="sidebar-header flex-row wrap-reverse">
+          <h1 class="sidebar-title align-center">
+            <a href="../../index.html">Horizon</a>
+          </h1>
+          <span class="material-icons-round align-center ml-auto menu-close">
+            close
+          </span>
+        </div>
+        <h6 class="sidebar-heading">Get Started</h6>
+        <ul class="sidebar-list flex-column">
+          <li class="sidebar-item">
+            <a href="../docs-layout/docs.html" class="sidebar-link"
+              >Introduction</a
+            >
+          </li>
+          <li class="sidebar-item">
+            <a href="../typography/text-utilities.html" class="sidebar-link"
+              >Typography</a
+            >
+          </li>
+        </ul>
+        <h6 class="sidebar-heading component-heading">Components</h6>
+        <ul class="sidebar-list flex-column">
+          <li class="sidebar-item">
+            <a href="../alerts/alerts.html" class="sidebar-link">Alerts</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../avatars/avatar.html" class="sidebar-link">Avatars</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../badges/badges.html" class="sidebar-link">Badges</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../buttons/buttons.html" class="sidebar-link">Buttons</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../cards/cards.html" class="sidebar-link">Cards</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../image/image.html" class="sidebar-link">Image</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../inputs/input.html" class="sidebar-link">Input</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../grid/grid.html" class="sidebar-link">Grid</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="../ratings/rating.html" class="sidebar-link">Ratings</a>
+          </li>
+          <li class="sidebar-item active">
+            <a href="./lists.html" class="sidebar-link">Lists</a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="page-main">
+        <div class="content flex-column">
+          <h1 class="content-title">Lists</h1>
+          <p class="content-text">
+            Lists are used to enlist a group of similar items. Horizon contains
+            different types of lists like ordered list, unordered list, list
+            without bullets, horizontal list and stacked list
+          </p>
+        </div>
+
+        <h2>Ordered list</h2>
+
+        <div class="wrapper flex-row-center">
+          <ol class="list-spaced flex-column">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ol>
+        </div>
+
+        <div class="codeblock-container">
+          <pre>
+          <code class="codeblock" class="language-html"> 
+            &lt;ol class=&quot;list-spaced flex-column&quot;&gt;
+            &lt;li&gt;Item 1&lt;/li&gt;
+            &lt;li&gt;Item 2&lt;/li&gt;
+            &lt;li&gt;Item 3&lt;/li&gt;
+            &lt;/ol&gt;
+          </code>
+          </pre>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </div>
+
+        <h2>Unordered list</h2>
+
+        <div class="wrapper flex-row-center">
+          <ul class="list-spaced list-unordered flex-column">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </div>
+
+        <div class="codeblock-container">
+          <pre>
+              <code class="codeblock" class="language-html"> 
+                &lt;ul class=&quot;list-spaced list-unordered flex-column&quot;&gt;
+            &lt;li&gt;Item 1&lt;/li&gt;
+            &lt;li&gt;Item 2&lt;/li&gt;
+            &lt;li&gt;Item 3&lt;/li&gt;
+            &lt;/ul&gt;
+              </code>
+            </pre>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </div>
+
+        <h2>List without bullets</h2>
+        <div class="wrapper flex-row-center flex-wrap">
+          <ul class="list-spaced flex-column">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </div>
+
+        <div class="codeblock-container">
+          <pre>
+              <code class="codeblock" class="language-html"> 
+                &lt;ul class=&quot;list-spaced flex-column&quot;&gt;
+            &lt;li&gt;Item 1&lt;/li&gt;
+            &lt;li&gt;Item 2&lt;/li&gt;
+            &lt;li&gt;Item 3&lt;/li&gt;
+            &lt;/ul&gt;
+              </code>
+              </pre>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </div>
+
+        <h2>Horizontal list</h2>
+        <div class="wrapper flex-row-center flex-wrap">
+          <ul class="list-spaced-sm flex-row">
+            <li class="list-item">Item 1</li>
+            <li class="list-item">Item 2</li>
+            <li class="list-item">Item 3</li>
+          </ul>
+        </div>
+
+        <div class="codeblock-container">
+          <pre>
+              <code class="codeblock" class="language-html"> 
+                &lt;ul class=&quot;list-spaced-sm flex-row&quot;&gt;
+                &lt;li class=&quot;list-item&quot;&gt;Item 1&lt;/li&gt;
+                &lt;li class=&quot;list-item&quot;&gt;Item 2&lt;/li&gt;
+                &lt;li class=&quot;list-item&quot;&gt;Item 3&lt;/li&gt;
+                &lt;/ul&gt;
+              </code>
+              </pre>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </div>
+
+        <h2>Stacked list</h2>
+        <div class="wrapper flex-row-center flex-wrap">
+          <ul class="list-spaced-sm flex-column">
+            <li class="list-item">Item 1</li>
+            <li class="list-item">Item 2</li>
+            <li class="list-item">Item 3</li>
+          </ul>
+        </div>
+
+        <div class="codeblock-container">
+          <pre>
+              <code class="codeblock" class="language-html"> 
+                &lt;ul class=&quot;list-spaced-sm flex-column&quot;&gt;
+                    &lt;li class=&quot;list-item&quot;&gt;Item 1&lt;/li&gt;
+                    &lt;li class=&quot;list-item&quot;&gt;Item 2&lt;/li&gt;
+                    &lt;li class=&quot;list-item&quot;&gt;Item 3&lt;/li&gt;
+                &lt;/ul&gt;
+              </code>
+              </pre>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </div>
+
+        <div class="flex-row">
+          <div class="page-link flex-row-center">
+            <span class="material-icons"> chevron_left </span>
+            <a class="prev-link" href="../ratings/rating.html">Ratings</a>
+          </div>
+        </div>
+      </main>
+      <footer class="page-footer text-centered">
+        created by
+        <a class="footer-link" href="https://github.com/vanshitalavange">vanshitalavange</a> -
+        <strong>@neogcamp</strong>
+      </footer>
+    </div>
+    <script src="../docs-layout/docs.js"></script>
+    <!-- codeblocks js links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../codeblocks/codeblock.js"></script>
+    <script src="../../JS/light-dark-mode.js"></script>
+  </body>
+</html>

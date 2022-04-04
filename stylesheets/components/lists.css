@@ -1,0 +1,14 @@
+.list-spaced {
+  gap: var(--spacing-xs);
+}
+.list-unordered {
+  list-style: circle;
+}
+.list-spaced-sm{
+    gap: var(--spacing-sm);
+}
+.list-item {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-rd-3);
+  border: 1px solid var(--secondary-color);
+}
