@@ -1,6 +1,6 @@
 body {
-  background-color: var(--dark-theme-bg);
-  color: var(--white-color);
+  /* background-color: var(--dark-theme-bg);
+  color: var(--white-color); */
 }
 .page {
   width: 80vw;
@@ -87,9 +87,9 @@ body {
   font-size: 1.1rem;
 }
 .sidebar-item:hover {
-  background-color: var(--purple-light);
+  /* background-color: var(--purple-light); */
   border-radius: 2px;
-  color:var(--black-color);
+  /* color:green; */
 }
 .active {
   background-color: var(--baltic-sea-color);
