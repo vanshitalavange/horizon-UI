@@ -1,0 +1,22 @@
+.snackbar {
+  padding: 0.7rem var(--spacing-xs);
+  border-radius: var(--border-rd-3);
+  background-color: #333333;
+  color: var(--white-color);
+  position: fixed;
+  z-index: 2;
+  bottom: 1rem;
+  max-width: 28rem;
+  gap: var(--spacing-sm);
+}
+.snackbar-baseline {
+}
+.snackbar-leading {
+  left:2rem;
+}
+.snackbar-btn {
+  color: var(--purple-dark);
+}
+.snackbar-actions {
+  gap: var(--spacing-xs);
+}

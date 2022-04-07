@@ -153,7 +153,13 @@ body {
 .page-link:hover {
   color: var(--blue-semi-dark);
 }
-
+.btn-snackbar-type{
+  padding:var(--spacing-sm);
+  border-radius: 5px;
+  color:var(--white-color);
+  background-color: var(--flame-pea);
+  font-size: 16px;
+}
 @media only screen and (min-width: 1350px) {
   html {
     font-size: 120%;

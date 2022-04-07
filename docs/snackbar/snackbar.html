@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Horizon | Lists</title>
+    <title>Horizon | Snackbar</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
       rel="stylesheet"
@@ -102,156 +102,128 @@
           <li class="sidebar-item">
             <a href="../ratings/rating.html" class="sidebar-link">Ratings</a>
           </li>
-          <li class="sidebar-item active">
-            <a href="./lists.html" class="sidebar-link">Lists</a>
-          </li>
           <li class="sidebar-item">
-            <a href="../snackbar/snackbar.html" class="sidebar-link">Snackbar</a>
+            <a href="../lists/lists.html" class="sidebar-link">Lists</a>
+          </li>
+          <li class="sidebar-item active">
+            <a href="./snackbar.html" class="sidebar-link">Snackbar</a>
           </li>
         </ul>
       </aside>
 
       <main class="page-main">
         <div class="content flex-column">
-          <h1 class="content-title">Lists</h1>
+          <h1 class="content-title">Snackbar</h1>
           <p class="content-text">
-            Lists are used to enlist a group of similar items. Horizon contains
-            different types of lists like ordered list, unordered list, list
-            without bullets, horizontal list and stacked list
+            Snackbar provide feedbacks to the users based on their actions. They
+            are usually displayed at the bottom of the screen
           </p>
         </div>
 
-        <h2>Ordered list</h2>
+        <h2>Baseline</h2>
 
         <div class="wrapper flex-row-center">
-          <ol class="list-spaced flex-column">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ol>
+          <button class="btn-snackbar-type baseline">SHOW BASELINE</button>
+        </div>
+        <div
+          class="snackbar snackbar-baseline flex-row justify-space-between flex-wrap"
+        >
+          <p>Can't send photo. Retry in 5 seconds.</p>
+          <div class="snackbar-actions flex-row flex-wrap">
+            <button class="snackbar-btn">RETRY</button>
+            <span class="material-icons close-snackbar"> close </span>
+          </div>
         </div>
 
         <div class="codeblock-container">
           <pre>
           <code class="codeblock" class="language-html"> 
-            &lt;ol class=&quot;list-spaced flex-column&quot;&gt;
-            &lt;li&gt;Item 1&lt;/li&gt;
-            &lt;li&gt;Item 2&lt;/li&gt;
-            &lt;li&gt;Item 3&lt;/li&gt;
-            &lt;/ol&gt;
+            &lt;div class=&quot;snackbar snackbar-baseline flex-row justify-space-between flex-wrap&quot;&gt;
+            &lt;p&gt;Can&apos;t send photo. Retry in 5 seconds.&lt;/p&gt;
+            &lt;div class=&quot;snackbar-actions flex-row flex-wrap&quot;&gt;
+              &lt;button class=&quot;snackbar-btn&quot;&gt;RETRY&lt;/button&gt;
+              &lt;span class=&quot;material-icons close-snackbar&quot;&gt; close &lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
           </code>
           </pre>
           <i class="fas fa-copy copy"></i>
           <span class="copied-snackbar">Copied</span>
         </div>
 
-        <h2>Unordered list</h2>
+        <h2>Leading</h2>
 
         <div class="wrapper flex-row-center">
-          <ul class="list-spaced list-unordered flex-column">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
+          <button class="btn-snackbar-type leading">SHOW LEADING</button>
         </div>
-
-        <div class="codeblock-container">
-          <pre>
-              <code class="codeblock" class="language-html"> 
-                &lt;ul class=&quot;list-spaced list-unordered flex-column&quot;&gt;
-            &lt;li&gt;Item 1&lt;/li&gt;
-            &lt;li&gt;Item 2&lt;/li&gt;
-            &lt;li&gt;Item 3&lt;/li&gt;
-            &lt;/ul&gt;
-              </code>
-            </pre>
-          <i class="fas fa-copy copy"></i>
-          <span class="copied-snackbar">Copied</span>
-        </div>
-
-        <h2>List without bullets</h2>
-        <div class="wrapper flex-row-center flex-wrap">
-          <ul class="list-spaced flex-column">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
-        </div>
-
-        <div class="codeblock-container">
-          <pre>
-              <code class="codeblock" class="language-html"> 
-                &lt;ul class=&quot;list-spaced flex-column&quot;&gt;
-            &lt;li&gt;Item 1&lt;/li&gt;
-            &lt;li&gt;Item 2&lt;/li&gt;
-            &lt;li&gt;Item 3&lt;/li&gt;
-            &lt;/ul&gt;
-              </code>
-              </pre>
-          <i class="fas fa-copy copy"></i>
-          <span class="copied-snackbar">Copied</span>
-        </div>
-
-        <h2>Horizontal list</h2>
-        <div class="wrapper flex-row-center flex-wrap">
-          <ul class="list-spaced-sm flex-row">
-            <li class="list-item">Item 1</li>
-            <li class="list-item">Item 2</li>
-            <li class="list-item">Item 3</li>
-          </ul>
-        </div>
-
-        <div class="codeblock-container">
-          <pre>
-              <code class="codeblock" class="language-html"> 
-                &lt;ul class=&quot;list-spaced-sm flex-row&quot;&gt;
-                &lt;li class=&quot;list-item&quot;&gt;Item 1&lt;/li&gt;
-                &lt;li class=&quot;list-item&quot;&gt;Item 2&lt;/li&gt;
-                &lt;li class=&quot;list-item&quot;&gt;Item 3&lt;/li&gt;
-                &lt;/ul&gt;
-              </code>
-              </pre>
-          <i class="fas fa-copy copy"></i>
-          <span class="copied-snackbar">Copied</span>
-        </div>
-
-        <h2>Stacked list</h2>
-        <div class="wrapper flex-row-center flex-wrap">
-          <ul class="list-spaced-sm flex-column">
-            <li class="list-item">Item 1</li>
-            <li class="list-item">Item 2</li>
-            <li class="list-item">Item 3</li>
-          </ul>
-        </div>
-
-        <div class="codeblock-container">
-          <pre>
-              <code class="codeblock" class="language-html"> 
-                &lt;ul class=&quot;list-spaced-sm flex-column&quot;&gt;
-                    &lt;li class=&quot;list-item&quot;&gt;Item 1&lt;/li&gt;
-                    &lt;li class=&quot;list-item&quot;&gt;Item 2&lt;/li&gt;
-                    &lt;li class=&quot;list-item&quot;&gt;Item 3&lt;/li&gt;
-                &lt;/ul&gt;
-              </code>
-              </pre>
-          <i class="fas fa-copy copy"></i>
-          <span class="copied-snackbar">Copied</span>
-        </div>
-
-        <div class="flex-row justify-space-between">
-          <div class="page-link flex-row-center">
-            <span class="material-icons"> chevron_left </span>
-            <a class="prev-link" href="../ratings/rating.html">Ratings</a>
+        <div
+          class="snackbar snackbar-leading flex-row justify-space-between flex-wrap"
+        >
+          <p>Can't send photo. Retry in 5 seconds.</p>
+          <div class="snackbar-actions flex-row flex-wrap">
+            <button class="snackbar-btn">RETRY</button>
+            <span class="material-icons close-snackbar"> close </span>
           </div>
-          <div class="page-link flex-row-center">
-            <span class="material-icons"> chevron_right </span>
-             <a class="next-link" href="../snackbar/snackbar.html">Grid</a>
-           </div>
+        </div>
+
+        <div class="codeblock-container">
+          <pre>
+          <code class="codeblock" class="language-html"> 
+            &lt;div class=&quot;snackbar snackbar-leading flex-row justify-space-between flex-wrap&quot;&gt;
+            &lt;p&gt;Can&apos;t send photo. Retry in 5 seconds.&lt;/p&gt;
+            &lt;div class=&quot;snackbar-actions flex-row flex-wrap&quot;&gt;
+              &lt;button class=&quot;snackbar-btn&quot;&gt;RETRY&lt;/button&gt;
+              &lt;span class=&quot;material-icons close-snackbar&quot;&gt; close &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+          </code>
+          </pre>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </div>
+
+        <h2>Stacked</h2>
+        <div class="wrapper flex-row-center flex-wrap">
+          <button class="btn-snackbar-type stacked">SHOW STACKED</button>
+        </div>
+        <div
+          class="snackbar snackbar-stacked flex-column justify-space-between"
+        >
+          <p>Item already has the lable travel. You can add a new label</p>
+          <div class="snackbar-actions flex-row flex-wrap align-end">
+            <button class="snackbar-btn">ADD NEW LABEL</button>
+            <span class="material-icons close-snackbar"> close </span>
+          </div>
+        </div>
+        <div class="codeblock-container">
+          <pre>
+            <code class="codeblock" class="language-html"> 
+                &lt;div class=&quot;snackbar snackbar-stacked flex-column justify-space-between&quot;&gt;
+                &lt;p&gt;Item already has the lable travel. You can add a new label&lt;/p&gt;
+                &lt;div class=&quot;snackbar-actions flex-row flex-wrap align-end&quot;&gt;
+                  &lt;button class=&quot;snackbar-btn&quot;&gt;ADD NEW LABEL&lt;/button&gt;
+                  &lt;span class=&quot;material-icons close-snackbar&quot;&gt; close &lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+            <i class="fas fa-copy copy"></i>
+            <span class="copied-snackbar">Copied</span>
+          </pre>
+          <div class="flex-row">
+            <div class="page-link flex-row-center">
+              <span class="material-icons"> chevron_left </span>
+              <a class="prev-link" href="../lists/lists.html">Lists</a>
+            </div>
+          </div>
         </div>
       </main>
+
       <footer class="page-footer text-centered">
         created by
-        <a class="footer-link" href="https://github.com/vanshitalavange">vanshitalavange</a> -
+        <a class="footer-link" href="https://github.com/vanshitalavange"
+          >vanshitalavange</a
+        >
+        -
         <strong>@neogcamp</strong>
       </footer>
     </div>
@@ -263,5 +235,6 @@
     </script>
     <script src="../codeblocks/codeblock.js"></script>
     <script src="../../JS/light-dark-mode.js"></script>
+    <script src="./snackbar.js"></script>
   </body>
 </html>
