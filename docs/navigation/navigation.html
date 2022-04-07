@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Horizon | Snackbar</title>
+    <title>Horizon |</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
       rel="stylesheet"
@@ -100,133 +100,72 @@
             <a href="../grid/grid.html" class="sidebar-link">Grid</a>
           </li>
           <li class="sidebar-item">
-            <a href="../ratings/rating.html" class="sidebar-link">Ratings</a>
+            <a href="../rating/rating.html" class="sidebar-link">Ratings</a>
           </li>
           <li class="sidebar-item">
             <a href="../lists/lists.html" class="sidebar-link">Lists</a>
           </li>
-          <li class="sidebar-item active">
-            <a href="./snackbar.html" class="sidebar-link">Snackbar</a>
-          </li>
           <li class="sidebar-item">
-            <a href="../navigation/navigation.html" class="sidebar-link">Navigation</a>
+            <a href="../snackbar/snackbar.html" class="sidebar-link"
+              >Snackbar</a
+            >
+          </li>
+          <li class="sidebar-item active">
+            <a href="./navigation.html" class="sidebar-link">Navigation</a>
           </li>
         </ul>
       </aside>
 
       <main class="page-main">
         <div class="content flex-column">
-          <h1 class="content-title">Snackbar</h1>
+          <h1 class="content-title">Navigation</h1>
           <p class="content-text">
-            Snackbar provide feedbacks to the users based on their actions. They
-            are usually displayed at the bottom of the screen
+            Navigation holds links to the important components of a website
           </p>
         </div>
 
-        <h2>Baseline</h2>
+        <h2>Desktop navigation</h2>
 
-        <div class="wrapper flex-row-center">
-          <button class="btn-snackbar-type baseline">SHOW BASELINE</button>
-        </div>
-        <div
-          class="snackbar snackbar-baseline flex-row justify-space-between flex-wrap"
-        >
-          <p>Can't send photo. Retry in 5 seconds.</p>
-          <div class="snackbar-actions flex-row flex-wrap">
-            <button class="snackbar-btn">RETRY</button>
-            <span class="material-icons close-snackbar"> close </span>
-          </div>
-        </div>
-
-        <div class="codeblock-container">
-          <pre>
-          <code class="codeblock" class="language-html"> 
-            &lt;div class=&quot;snackbar snackbar-baseline flex-row justify-space-between flex-wrap&quot;&gt;
-            &lt;p&gt;Can&apos;t send photo. Retry in 5 seconds.&lt;/p&gt;
-            &lt;div class=&quot;snackbar-actions flex-row flex-wrap&quot;&gt;
-              &lt;button class=&quot;snackbar-btn&quot;&gt;RETRY&lt;/button&gt;
-              &lt;span class=&quot;material-icons close-snackbar&quot;&gt; close &lt;/span&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-          </code>
-          </pre>
-          <i class="fas fa-copy copy"></i>
-          <span class="copied-snackbar">Copied</span>
-        </div>
-
-        <h2>Leading</h2>
-
-        <div class="wrapper flex-row-center">
-          <button class="btn-snackbar-type leading">SHOW LEADING</button>
-        </div>
-        <div
-          class="snackbar snackbar-leading flex-row justify-space-between flex-wrap"
-        >
-          <p>Can't send photo. Retry in 5 seconds.</p>
-          <div class="snackbar-actions flex-row flex-wrap">
-            <button class="snackbar-btn">RETRY</button>
-            <span class="material-icons close-snackbar"> close </span>
-          </div>
+        <div class="wrapper flex-row">
+          <header class="navigation flex-row justify-space-between">
+            <div class="flex-row nav-menu">
+              <span class="material-icons"> menu </span>
+              <h3 class="nav-title">Standard</h3>
+            </div>
+            <nav class="nav-links flex-row">
+              <span class="material-icons"> print </span>
+              <span class="material-icons"> file_download </span>
+              <span class="material-icons"> bookmark </span>
+            </nav>
+          </header>
         </div>
 
         <div class="codeblock-container">
           <pre>
           <code class="codeblock" class="language-html"> 
-            &lt;div class=&quot;snackbar snackbar-leading flex-row justify-space-between flex-wrap&quot;&gt;
-            &lt;p&gt;Can&apos;t send photo. Retry in 5 seconds.&lt;/p&gt;
-            &lt;div class=&quot;snackbar-actions flex-row flex-wrap&quot;&gt;
-              &lt;button class=&quot;snackbar-btn&quot;&gt;RETRY&lt;/button&gt;
-              &lt;span class=&quot;material-icons close-snackbar&quot;&gt; close &lt;/span&gt;
+            &lt;header class=&quot;navigation flex-row justify-space-between&quot;&gt;
+            &lt;div class=&quot;flex-row nav-menu&quot;&gt;
+              &lt;span class=&quot;material-icons&quot;&gt; menu &lt;/span&gt;
+              &lt;h3 class=&quot;nav-title&quot;&gt;Standard&lt;/h3&gt;
             &lt;/div&gt;
-        &lt;/div&gt;
+            &lt;nav class=&quot;nav-links flex-row&quot;&gt;
+              &lt;span class=&quot;material-icons&quot;&gt; print &lt;/span&gt;
+              &lt;span class=&quot;material-icons&quot;&gt; file_download &lt;/span&gt;
+              &lt;span class=&quot;material-icons&quot;&gt; bookmark &lt;/span&gt;
+            &lt;/nav&gt;
+          &lt;/header&gt;
           </code>
           </pre>
           <i class="fas fa-copy copy"></i>
           <span class="copied-snackbar">Copied</span>
-        </div>
-
-        <h2>Stacked</h2>
-        <div class="wrapper flex-row-center flex-wrap">
-          <button class="btn-snackbar-type stacked">SHOW STACKED</button>
-        </div>
-        <div
-          class="snackbar snackbar-stacked flex-column justify-space-between"
-        >
-          <p>Item already has the lable travel. You can add a new label</p>
-          <div class="snackbar-actions flex-row flex-wrap align-end">
-            <button class="snackbar-btn">ADD NEW LABEL</button>
-            <span class="material-icons close-snackbar"> close </span>
-          </div>
-        </div>
-        <div class="codeblock-container">
-          <pre>
-            <code class="codeblock" class="language-html"> 
-                &lt;div class=&quot;snackbar snackbar-stacked flex-column justify-space-between&quot;&gt;
-                &lt;p&gt;Item already has the lable travel. You can add a new label&lt;/p&gt;
-                &lt;div class=&quot;snackbar-actions flex-row flex-wrap align-end&quot;&gt;
-                  &lt;button class=&quot;snackbar-btn&quot;&gt;ADD NEW LABEL&lt;/button&gt;
-                  &lt;span class=&quot;material-icons close-snackbar&quot;&gt; close &lt;/span&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            </code>
-            <i class="fas fa-copy copy"></i>
-            <span class="copied-snackbar">Copied</span>
-          </pre>
-          <div class="flex-row justify-space-between">
+          <div class="flex-row">
             <div class="page-link flex-row-center">
               <span class="material-icons"> chevron_left </span>
-              <a class="prev-link" href="../lists/lists.html">Lists</a>
-            </div>
-            <div class="page-link flex-row-center">
-              <span class="material-icons"> chevron_right </span>
-              <a class="next-link" href="../navigation/navigation.html"
-                >Navigation</a
-              >
+              <a class="prev-link" href="../snackbar/snackbar.html">Snackbar</a>
             </div>
           </div>
         </div>
       </main>
-
       <footer class="page-footer text-centered">
         created by
         <a class="footer-link" href="https://github.com/vanshitalavange"
@@ -244,6 +183,5 @@
     </script>
     <script src="../codeblocks/codeblock.js"></script>
     <script src="../../JS/light-dark-mode.js"></script>
-    <script src="./snackbar.js"></script>
   </body>
 </html>
