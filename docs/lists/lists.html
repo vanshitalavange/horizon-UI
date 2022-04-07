@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Horizon | Alerts</title>
+    <title>Horizon | Lists</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/porple.min.css"
       rel="stylesheet"
@@ -75,8 +75,8 @@
         </ul>
         <h6 class="sidebar-heading component-heading">Components</h6>
         <ul class="sidebar-list flex-column">
-          <li class="sidebar-item active">
-            <a href="./alerts.html" class="sidebar-link">Alerts</a>
+          <li class="sidebar-item">
+            <a href="../alerts/alerts.html" class="sidebar-link">Alerts</a>
           </li>
           <li class="sidebar-item">
             <a href="../avatars/avatar.html" class="sidebar-link">Avatars</a>
@@ -102,101 +102,143 @@
           <li class="sidebar-item">
             <a href="../ratings/rating.html" class="sidebar-link">Ratings</a>
           </li>
-          <li class="sidebar-item">
-            <a href="../lists/lists.html" class="sidebar-link">Lists</a>
+          <li class="sidebar-item active">
+            <a href="./lists.html" class="sidebar-link">Lists</a>
           </li>
         </ul>
       </aside>
 
       <main class="page-main">
         <div class="content flex-column">
-          <h1 class="content-title">Alerts</h1>
+          <h1 class="content-title">Lists</h1>
           <p class="content-text">
-            An alert displays a short, important message in a way that attracts
-            the user's attention without interrupting the user's task.
+            Lists are used to enlist a group of similar items. Horizon contains
+            different types of lists like ordered list, unordered list, list
+            without bullets, horizontal list and stacked list
           </p>
         </div>
-        <div class="wrapper flex-col">
-          <!-- Primary alert -->
-          <div class="alert alert-primary flex-row flex-wrap">
-            <span class="material-icons-round alert-icon info-icon">
-              info
-            </span>
-            <p class="alert-msg">Informational Notes</p>
-            <span class="material-icons ml-auto"> close </span>
-          </div>
 
-          <!-- Success alert -->
-          <div class="alert alert-success flex-row flex-wrap">
-            <span class="material-icons-round alert-icon check-icon">
-              check_circle
-            </span>
-            <p class="alert-msg">Success</p>
-            <span class="material-icons ml-auto"> close </span>
-          </div>
+        <h2>Ordered list</h2>
 
-          <!-- Error alert -->
-          <div class="alert alert-danger flex-row flex-wrap">
-            <span class="material-icons-round alert-icon danger-icon">
-              dangerous
-            </span>
-            <p class="alert-msg">Error</p>
-            <span class="material-icons ml-auto"> close </span>
-          </div>
-
-          <!-- Warning alert -->
-          <div class="alert alert-warning flex-row flex-wrap">
-            <span class="material-icons-round alert-icon warning-icon">
-              warning
-            </span>
-            <p class="alert-msg">Warning</p>
-            <span class="material-icons ml-auto"> close </span>
-          </div>
+        <div class="wrapper flex-row-center">
+          <ol class="list-spaced flex-column">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ol>
         </div>
 
         <div class="codeblock-container">
           <pre>
           <code class="codeblock" class="language-html"> 
-            &lt;!-- Primary alert --&gt;
-            &lt;div class=&quot;alert alert-primary flex-row flex-wrap&quot;&gt;
-              &lt;span class=&quot;material-icons-round alert-icon info-icon&quot;&gt; info &lt;/span&gt;
-              &lt;p class=&quot;alert-msg&quot;&gt;Informational Notes&lt;/p&gt;
-              &lt;span class=&quot;material-icons ml-auto&quot;&gt; close &lt;/span&gt;
-            &lt;/div&gt;
-  
-            &lt;!-- Success alert --&gt;
-            &lt;div class=&quot;alert alert-success flex-row flex-wrap&quot;&gt;
-              &lt;span class=&quot;material-icons-round alert-icon check-icon&quot;&gt; check_circle &lt;/span&gt;
-              &lt;p class=&quot;alert-msg&quot;&gt;Success&lt;/p&gt;
-              &lt;span class=&quot;material-icons ml-auto&quot;&gt; close &lt;/span&gt;
-            &lt;/div&gt;
-  
-            &lt;!-- Error alert --&gt;
-            &lt;div class=&quot;alert alert-danger flex-row flex-wrap&quot;&gt;
-              &lt;span class=&quot;material-icons-round alert-icon danger-icon&quot;&gt; dangerous &lt;/span&gt;
-              &lt;p class=&quot;alert-msg&quot;&gt;Error&lt;/p&gt;
-              &lt;span class=&quot;material-icons ml-auto&quot;&gt; close &lt;/span&gt;
-            &lt;/div&gt;
-  
-            &lt;!-- Warning alert --&gt;
-            &lt;div class=&quot;alert alert-warning flex-row flex-wrap&quot;&gt;
-              &lt;span class=&quot;material-icons-round alert-icon warning-icon&quot;&gt; warning &lt;/span&gt;
-              &lt;p class=&quot;alert-msg&quot;&gt;Warning&lt;/p&gt;
-              &lt;span class=&quot;material-icons ml-auto&quot;&gt; close &lt;/span&gt;
-            &lt;/div&gt;
+            &lt;ol class=&quot;list-spaced flex-column&quot;&gt;
+            &lt;li&gt;Item 1&lt;/li&gt;
+            &lt;li&gt;Item 2&lt;/li&gt;
+            &lt;li&gt;Item 3&lt;/li&gt;
+            &lt;/ol&gt;
           </code>
           </pre>
           <i class="fas fa-copy copy"></i>
           <span class="copied-snackbar">Copied</span>
         </div>
-        <div class="flex-row justify-space-between">
+
+        <h2>Unordered list</h2>
+
+        <div class="wrapper flex-row-center">
+          <ul class="list-spaced list-unordered flex-column">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </div>
+
+        <div class="codeblock-container">
+          <pre>
+              <code class="codeblock" class="language-html"> 
+                &lt;ul class=&quot;list-spaced list-unordered flex-column&quot;&gt;
+            &lt;li&gt;Item 1&lt;/li&gt;
+            &lt;li&gt;Item 2&lt;/li&gt;
+            &lt;li&gt;Item 3&lt;/li&gt;
+            &lt;/ul&gt;
+              </code>
+            </pre>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </div>
+
+        <h2>List without bullets</h2>
+        <div class="wrapper flex-row-center flex-wrap">
+          <ul class="list-spaced flex-column">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </div>
+
+        <div class="codeblock-container">
+          <pre>
+              <code class="codeblock" class="language-html"> 
+                &lt;ul class=&quot;list-spaced flex-column&quot;&gt;
+            &lt;li&gt;Item 1&lt;/li&gt;
+            &lt;li&gt;Item 2&lt;/li&gt;
+            &lt;li&gt;Item 3&lt;/li&gt;
+            &lt;/ul&gt;
+              </code>
+              </pre>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </div>
+
+        <h2>Horizontal list</h2>
+        <div class="wrapper flex-row-center flex-wrap">
+          <ul class="list-spaced-sm flex-row">
+            <li class="list-item">Item 1</li>
+            <li class="list-item">Item 2</li>
+            <li class="list-item">Item 3</li>
+          </ul>
+        </div>
+
+        <div class="codeblock-container">
+          <pre>
+              <code class="codeblock" class="language-html"> 
+                &lt;ul class=&quot;list-spaced-sm flex-row&quot;&gt;
+                &lt;li class=&quot;list-item&quot;&gt;Item 1&lt;/li&gt;
+                &lt;li class=&quot;list-item&quot;&gt;Item 2&lt;/li&gt;
+                &lt;li class=&quot;list-item&quot;&gt;Item 3&lt;/li&gt;
+                &lt;/ul&gt;
+              </code>
+              </pre>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </div>
+
+        <h2>Stacked list</h2>
+        <div class="wrapper flex-row-center flex-wrap">
+          <ul class="list-spaced-sm flex-column">
+            <li class="list-item">Item 1</li>
+            <li class="list-item">Item 2</li>
+            <li class="list-item">Item 3</li>
+          </ul>
+        </div>
+
+        <div class="codeblock-container">
+          <pre>
+              <code class="codeblock" class="language-html"> 
+                &lt;ul class=&quot;list-spaced-sm flex-column&quot;&gt;
+                    &lt;li class=&quot;list-item&quot;&gt;Item 1&lt;/li&gt;
+                    &lt;li class=&quot;list-item&quot;&gt;Item 2&lt;/li&gt;
+                    &lt;li class=&quot;list-item&quot;&gt;Item 3&lt;/li&gt;
+                &lt;/ul&gt;
+              </code>
+              </pre>
+          <i class="fas fa-copy copy"></i>
+          <span class="copied-snackbar">Copied</span>
+        </div>
+
+        <div class="flex-row">
           <div class="page-link flex-row-center">
             <span class="material-icons"> chevron_left </span>
-            <a class="prev-link" href="../typography/text-utilities.html">Typography</a>
-          </div>
-          <div class="page-link flex-row-center">
-            <span class="material-icons"> chevron_right </span>
-            <a class="next-link" href="../avatars/avatar.html">Avatars</a>
+            <a class="prev-link" href="../ratings/rating.html">Ratings</a>
           </div>
         </div>
       </main>
