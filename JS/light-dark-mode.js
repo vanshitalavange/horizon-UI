@@ -1,6 +1,5 @@
 
 if (localStorage.getItem('theme') === null && location.pathname === "/index.html") {
-  console.log('yes null')
   localStorage.setItem('theme', 'dark')
 }
 let btnLightMode = document.querySelector(".btn-light-mode");
